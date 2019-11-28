@@ -1,6 +1,6 @@
 # PORTFOLIO
 <img src="#" height="30%" align="right">
-> I'm building a portfolio where I can show my works and to get to know me a little bit. 😉
+> I'm building my online portfolio where I can show my works in web development and web designing.
  
 
 ## Table of contents
@@ -12,7 +12,7 @@
 * [Contact](#contact)
 
 ## General info
-...
+I'm building my online portfolio where I can show my works in web development and web designing. Not to mention that you can get to know me a little bit more. 😉
 
 
 ## Technologies
