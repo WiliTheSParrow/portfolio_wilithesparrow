@@ -1,0 +1,7 @@
+- set up sass variables
+- set up fontawesome
+- set up Google fonts
+- responsiveness
+- link JavaScript
+- read about css animations
+- add media icons to menubar
