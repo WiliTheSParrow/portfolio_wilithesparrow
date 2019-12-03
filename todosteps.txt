@@ -1,7 +1,7 @@
-- set up sass variables
-- set up fontawesome
-- set up Google fonts
-- sync google font w my fonts
+* set up sass variables
+* set up fontawesome
+* set up Google fonts
+* sync google font w my fonts
 - responsiveness
 - link JavaScript
 - read about css animations
