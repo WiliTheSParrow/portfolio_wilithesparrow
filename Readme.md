@@ -1,5 +1,5 @@
 # PORTFOLIO
-<img src="#" height="30%" align="right">
+
 > I'm building my online portfolio where I can show my works in web development and web designing.
  
 
