@@ -13,7 +13,7 @@
 
 ## General info
 I'm building my online portfolio where I can show my works in web development and web designing. Not to mention that you can get to know me a little bit more. 😉
-
+  
 
 ## Technologies
 * HTML
