@@ -12,13 +12,14 @@
 * [Contact](#contact)
 
 ## General info
-I'm building my online portfolio where I can show my works in web development and web designing. Not to mention that you can get to know me a little bit more. 😉
+I'm building my online portfolio where I can show my works in web development and web designing. Aaaand you can get to know me a little bit more. 😉 This is my first site using parallax CSS animation and I had a lot of time experimenting with it.
   
 
 ## Technologies
-* HTML
+* HTML5
 * SASS
 * JavaScript
+* Adobe XD
 
 
 ## Click on the link below to check out this project
