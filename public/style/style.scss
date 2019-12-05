@@ -26,10 +26,27 @@ $portfolioFonts:(runningHand: 'QEDonaldRoss',
 ;
 
 body {
+    margin: 0;
     font-family: fonts(writingInfo), serif;
     font-weight: 600;
     font-size: 14px;
     color: color(darkBrown);
     background: color(whiteGrey);
     -webkit-text-size-adjust: 100%; //fix for iOS
+
+    #landingPage {
+        background: url(/public/pic/nature-forest-trees-fog.jpeg);
+        width: 100vw;
+        height: 100vh;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+
+    }
+
+
+
+
+
 }

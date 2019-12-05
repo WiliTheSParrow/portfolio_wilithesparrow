@@ -3,7 +3,8 @@
 * set up Google fonts
 * sync google font w my fonts
 - responsiveness
-- link JavaScript
-- read about css animations
+* link JavaScript
+* read about css animations
 - add media icons to menubar
 - syn my thumnails w symbol or pic
+- link the artist who made the forest pic

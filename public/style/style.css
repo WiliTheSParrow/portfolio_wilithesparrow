@@ -1,9 +1,19 @@
 body {
+  margin: 0;
   font-family: "EB Garamond", serif;
   font-weight: 600;
   font-size: 14px;
   color: #574343;
   background: #FCFCFC;
   -webkit-text-size-adjust: 100%;
+}
+
+body #landingPage {
+  background: url(/public/pic/nature-forest-trees-fog.jpeg);
+  width: 100vw;
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 /*# sourceMappingURL=style.css.map */
