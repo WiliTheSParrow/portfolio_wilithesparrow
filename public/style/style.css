@@ -1,4 +1,5 @@
-body {
+body, html {
+  height: 100%;
   margin: 0;
   font-family: "EB Garamond", serif;
   font-weight: 600;
@@ -8,12 +9,30 @@ body {
   -webkit-text-size-adjust: 100%;
 }
 
-body #landingPage {
+body #landingPage, html #landingPage {
   background: url(/public/pic/nature-forest-trees-fog.jpeg);
   width: 100vw;
-  height: 100vh;
+  min-height: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  opacity: 0.75;
+}
+
+body #aboutMePage, html #aboutMePage {
+  width: 100vw;
+  min-height: 100%;
+}
+
+body #myWorksPage, html #myWorksPage {
+  width: 100vw;
+  min-height: 100%;
+  background: #B54343;
+}
+
+body #contactMePage, html #contactMePage {
+  width: 100vw;
+  min-height: 100%;
+  background: #7843B5;
 }
 /*# sourceMappingURL=style.css.map */

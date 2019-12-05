@@ -25,7 +25,8 @@ $portfolioFonts:(runningHand: 'QEDonaldRoss',
 
 ;
 
-body {
+body, html {
+    height: 100%;
     margin: 0;
     font-family: fonts(writingInfo), serif;
     font-weight: 600;
@@ -37,12 +38,28 @@ body {
     #landingPage {
         background: url(/public/pic/nature-forest-trees-fog.jpeg);
         width: 100vw;
-        height: 100vh;
+        min-height: 100%;
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
+        opacity: 0.75;
+    }
 
+    #aboutMePage{
+        width: 100vw;
+        min-height: 100%;
+    }
 
+    #myWorksPage{
+        width: 100vw;
+        min-height: 100%;
+        background: color(wineRed);
+    }
+
+    #contactMePage{
+        width: 100vw;
+        min-height: 100%;
+        background: color(myPurple);
     }
 
 
