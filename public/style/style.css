@@ -1,4 +1,5 @@
-body, html {
+body,
+html {
   height: 100%;
   margin: 0;
   font-family: "EB Garamond", serif;
@@ -9,28 +10,72 @@ body, html {
   -webkit-text-size-adjust: 100%;
 }
 
-body #landingPage, html #landingPage {
+body #landingPage,
+html #landingPage {
   background: url(/public/pic/nature-forest-trees-fog.jpeg);
   width: 100vw;
   min-height: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  opacity: 0.75;
+  background-attachment: fixed;
 }
 
-body #aboutMePage, html #aboutMePage {
+body #landingPage .content #topText,
+html #landingPage .content #topText {
+  border: 2px solid red;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body #landingPage .content #middleText,
+html #landingPage .content #middleText {
+  border: 2px solid green;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+body #landingPage .content #bottomText,
+html #landingPage .content #bottomText {
+  border: 2px solid purple;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body #aboutMePage,
+html #aboutMePage {
   width: 100vw;
   min-height: 100%;
 }
 
-body #myWorksPage, html #myWorksPage {
+body #myWorksPage,
+html #myWorksPage {
   width: 100vw;
   min-height: 100%;
   background: #B54343;
 }
 
-body #contactMePage, html #contactMePage {
+body #contactMePage,
+html #contactMePage {
   width: 100vw;
   min-height: 100%;
   background: #7843B5;

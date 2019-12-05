@@ -25,7 +25,8 @@ $portfolioFonts:(runningHand: 'QEDonaldRoss',
 
 ;
 
-body, html {
+body,
+html {
     height: 100%;
     margin: 0;
     font-family: fonts(writingInfo), serif;
@@ -42,21 +43,45 @@ body, html {
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-        opacity: 0.75;
+        background-attachment: fixed;
+
+        .content {
+
+            #topText {
+                border: 2px solid red;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            #middleText {
+                border: 2px solid green;
+                display: flex;
+                justify-content: space-around;
+            }
+
+            #bottomText {
+                border: 2px solid purple;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+
     }
 
-    #aboutMePage{
+    #aboutMePage {
         width: 100vw;
         min-height: 100%;
     }
 
-    #myWorksPage{
+    #myWorksPage {
         width: 100vw;
         min-height: 100%;
         background: color(wineRed);
     }
 
-    #contactMePage{
+    #contactMePage {
         width: 100vw;
         min-height: 100%;
         background: color(myPurple);
