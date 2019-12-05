@@ -44,27 +44,32 @@ html {
         background-repeat: no-repeat;
         background-size: cover;
         background-attachment: fixed;
+        position: relative;
 
         .content {
+            width: 100%;
+            position: absolute;
+            top: 20vh;
+            
 
             #topText {
-                border: 2px solid red;
                 display: flex;
                 flex-direction: column;
                 align-items: center;
+                padding: 10px;
             }
 
             #middleText {
-                border: 2px solid green;
                 display: flex;
                 justify-content: space-around;
+                padding: 10px;
             }
 
             #bottomText {
-                border: 2px solid purple;
                 display: flex;
                 flex-direction: column;
                 align-items: center;
+                padding: 10px;
             }
         }
 
