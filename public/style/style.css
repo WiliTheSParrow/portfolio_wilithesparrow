@@ -44,6 +44,7 @@ html #landingPage .content {
   width: 100%;
   position: absolute;
   top: 20vh;
+  text-shadow: 0px 3px 6px #8C8C8C;
 }
 
 body #landingPage .content #topText,
@@ -101,5 +102,9 @@ html #contactMePage {
   width: 100vw;
   min-height: 100%;
   background: #7843B5;
+}
+
+body::-webkit-scrollbar {
+  display: none;
 }
 /*# sourceMappingURL=style.css.map */
