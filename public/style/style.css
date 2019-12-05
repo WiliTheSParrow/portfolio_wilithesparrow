@@ -4,7 +4,6 @@ html {
   margin: 0;
   font-family: "EB Garamond", serif;
   font-weight: 600;
-  font-size: 14px;
   color: #574343;
   background: #FCFCFC;
   -webkit-text-size-adjust: 100%;
@@ -86,8 +85,42 @@ html #landingPage .content #bottomText {
 
 body #aboutMePage,
 html #aboutMePage {
+  background: #FCFCFC;
   width: 100vw;
   min-height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  top: 35vh;
+}
+
+body #aboutMePage #aboutMeContent,
+html #aboutMePage #aboutMeContent {
+  background: #d8d8d8;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding: 40px;
+}
+
+body #aboutMePage #aboutMeContent img,
+html #aboutMePage #aboutMeContent img {
+  width: 60vh;
+  height: 60vh;
+  border-radius: 50%;
+}
+
+body #aboutMePage #aboutMeContent #aboutMeTextContent,
+html #aboutMePage #aboutMeContent #aboutMeTextContent {
+  width: 50%;
+  height: 100%;
+  font-size: 1.5rem;
+  text-align: justify;
 }
 
 body #myWorksPage,
@@ -104,7 +137,13 @@ html #contactMePage {
   background: #7843B5;
 }
 
+/* Hide scrollbar for Chrome, Safari and Opera */
 body::-webkit-scrollbar {
   display: none;
+}
+
+/* Hide scrollbar for IE and Edge */
+body {
+  -ms-overflow-style: none;
 }
 /*# sourceMappingURL=style.css.map */

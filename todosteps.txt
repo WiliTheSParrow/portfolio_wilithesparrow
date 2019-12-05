@@ -8,3 +8,4 @@
 - add media icons to menubar
 - syn my thumnails w symbol or pic
 - link the artist who made the forest pic
+- animation for content to come in
