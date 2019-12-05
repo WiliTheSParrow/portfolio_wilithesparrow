@@ -1,12 +1,9 @@
-h1 {
-  font-family: "QEDonaldRoss";
-}
-
-h2 {
-  font-family: "IM Fell English", serif;
-}
-
-h3 {
+body {
   font-family: "EB Garamond", serif;
+  font-weight: 600;
+  font-size: 14px;
+  color: #574343;
+  background: #FCFCFC;
+  -webkit-text-size-adjust: 100%;
 }
 /*# sourceMappingURL=style.css.map */

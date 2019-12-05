@@ -4,7 +4,8 @@ $portfolioColors:(beigeBrown:#D1C1A8,
     whiteGrey: #FCFCFC,
     wineRed: #B54343,
     myPurple: #7843B5,
-    lightGreyLightened: lighten(lightGrey, 30%));
+    lightGreyLightened: lighten(lightGrey, 30%),
+    darkBrown: #574343);
 
 $portfolioFonts:(runningHand: 'QEDonaldRoss',
     menuBar: 'IM Fell English',
@@ -24,14 +25,11 @@ $portfolioFonts:(runningHand: 'QEDonaldRoss',
 
 ;
 
-h1 {
-    font-family: fonts(runningHand);
-}
-
-h2 {
-    font-family: fonts(menuBar), serif;
-}
-
-h3 {
+body {
     font-family: fonts(writingInfo), serif;
+    font-weight: 600;
+    font-size: 14px;
+    color: color(darkBrown);
+    background: color(whiteGrey);
+    -webkit-text-size-adjust: 100%; //fix for iOS
 }
