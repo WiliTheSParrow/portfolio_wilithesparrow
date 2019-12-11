@@ -94,24 +94,18 @@ html #aboutMePage {
   background-attachment: fixed;
   position: relative;
   top: 35vh;
-}
+  /* #aboutMeBlock1 {
+            width: 502px;
+            height: 462px;
+            background: color(deepBlue);
+        }
 
-body #aboutMePage #aboutMeBlock1,
-html #aboutMePage #aboutMeBlock1 {
-  width: 502px;
-  height: 462px;
-  background: #11182A;
-  -ms-flex-item-align: start;
-      align-self: flex-start;
-}
+        #aboutMeBlock2 {
+            width: 502px;
+            height: 462px;
+            background: color(beigeBrown);
 
-body #aboutMePage #aboutMeBlock2,
-html #aboutMePage #aboutMeBlock2 {
-  width: 502px;
-  height: 462px;
-  background: #D1C1A8;
-  -ms-flex-item-align: end;
-      align-self: flex-end;
+        } */
 }
 
 body #aboutMePage #aboutMeContent,
@@ -139,13 +133,9 @@ html #aboutMePage #aboutMeContent #aboutMeTextContent {
   width: 50%;
   height: 100%;
   font-size: 1.5rem;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  text-align: justify;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  /* display: inline-flex;
+                text-align: justify;
+                justify-content: flex-start; */
 }
 
 body #myWorksPage,

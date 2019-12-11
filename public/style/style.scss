@@ -103,19 +103,18 @@ html {
         position: relative;
         top: 35vh;
 
-        #aboutMeBlock1 {
+        /* #aboutMeBlock1 {
             width: 502px;
             height: 462px;
             background: color(deepBlue);
-            align-self: flex-start;
         }
 
-        #aboutMeBlock2{
+        #aboutMeBlock2 {
             width: 502px;
             height: 462px;
             background: color(beigeBrown);
-            align-self: flex-end;
-        }
+
+        } */
 
         #aboutMeContent {
             background: color(lightGreyLightened);
@@ -134,9 +133,9 @@ html {
                 width: 50%;
                 height: 100%;
                 font-size: 1.5rem;
-                display: inline-flex;
+                /* display: inline-flex;
                 text-align: justify;
-                justify-content: flex-start;
+                justify-content: flex-start; */
 
             }
         }
