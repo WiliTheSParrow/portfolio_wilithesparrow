@@ -85,15 +85,13 @@ html #landingPage .content #bottomText {
 
 body #aboutMePage,
 html #aboutMePage {
+  border: 2px solid green;
   background: #FCFCFC;
   width: 100vw;
-  min-height: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  position: relative;
-  top: 35vh;
   /* #aboutMeBlock1 {
             width: 502px;
             height: 462px;
@@ -118,6 +116,8 @@ html #aboutMePage #aboutMeContent {
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   padding: 40px;
+  margin-top: 15%;
+  margin-bottom: 15%;
 }
 
 body #aboutMePage #aboutMeContent img,
@@ -142,7 +142,13 @@ body #myWorksPage,
 html #myWorksPage {
   width: 100vw;
   min-height: 100%;
-  background: #B54343;
+  background: #FCFCFC;
+  border: 2px solid red;
+}
+
+body #myWorksPage h1,
+html #myWorksPage h1 {
+  font-size: 60px;
 }
 
 body #contactMePage,

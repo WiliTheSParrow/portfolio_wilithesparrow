@@ -93,15 +93,14 @@ html {
     }
 
     #aboutMePage {
+        border: 2px solid green;
         background: color(whiteGrey);
         width: 100vw;
-        min-height: 100%;
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
         background-attachment: fixed;
-        position: relative;
-        top: 35vh;
+      
 
         /* #aboutMeBlock1 {
             width: 502px;
@@ -121,6 +120,8 @@ html {
             display: flex;
             justify-content: space-evenly;
             padding: 40px;
+            margin-top: 15%;
+            margin-bottom: 15%;
 
             img {
                 width: 60vh;
@@ -144,7 +145,14 @@ html {
     #myWorksPage {
         width: 100vw;
         min-height: 100%;
-        background: color(wineRed);
+        background: color(whiteGrey);
+
+        border: 2px solid red;
+
+        h1 {
+            font-size: 60px;
+
+        }
     }
 
     #contactMePage {
