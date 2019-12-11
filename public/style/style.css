@@ -96,6 +96,14 @@ html #aboutMePage {
   top: 35vh;
 }
 
+body #aboutMePage #aboutMeBlock,
+html #aboutMePage #aboutMeBlock {
+  width: 502px;
+  height: 462px;
+  background: #11182A;
+  position: absolute;
+}
+
 body #aboutMePage #aboutMeContent,
 html #aboutMePage #aboutMeContent {
   background: #d8d8d8;

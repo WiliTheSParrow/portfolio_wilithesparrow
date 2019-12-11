@@ -102,6 +102,13 @@ html {
         position: relative;
         top: 35vh;
 
+        #aboutMeBlock{
+            width: 502px;
+            height: 462px;
+            background: #11182A;
+            position: absolute;
+        }
+
         #aboutMeContent {
             background: color(lightGreyLightened);
             display: flex;
@@ -121,7 +128,7 @@ html {
                 text-align: justify;
                 
             }
-        }
+        }       
     }
 
     #myWorksPage {
