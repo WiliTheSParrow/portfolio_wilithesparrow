@@ -96,12 +96,22 @@ html #aboutMePage {
   top: 35vh;
 }
 
-body #aboutMePage #aboutMeBlock,
-html #aboutMePage #aboutMeBlock {
+body #aboutMePage #aboutMeBlock1,
+html #aboutMePage #aboutMeBlock1 {
   width: 502px;
   height: 462px;
   background: #11182A;
-  position: absolute;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+body #aboutMePage #aboutMeBlock2,
+html #aboutMePage #aboutMeBlock2 {
+  width: 502px;
+  height: 462px;
+  background: #D1C1A8;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
 }
 
 body #aboutMePage #aboutMeContent,
@@ -125,10 +135,17 @@ html #aboutMePage #aboutMeContent img {
 
 body #aboutMePage #aboutMeContent #aboutMeTextContent,
 html #aboutMePage #aboutMeContent #aboutMeTextContent {
+  top: 0;
   width: 50%;
   height: 100%;
   font-size: 1.5rem;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   text-align: justify;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 
 body #myWorksPage,

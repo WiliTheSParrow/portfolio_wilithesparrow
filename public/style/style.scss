@@ -5,7 +5,8 @@ $portfolioColors:(beigeBrown:#D1C1A8,
     wineRed: #B54343,
     myPurple: #7843B5,
     lightGreyLightened: lighten(lightGrey, 2%),
-    darkBrown: #574343);
+    darkBrown: #574343,
+    deepBlue:#11182A);
 
 $portfolioFonts:(runningHand: 'QEDonaldRoss',
     menuBar: 'IM Fell English',
@@ -34,7 +35,7 @@ html {
     color: color(darkBrown);
     background: color(whiteGrey);
     -webkit-text-size-adjust: 100%; //fix for iOS
-    
+
 
     #landingPage {
         background: url(/public/pic/nature-forest-trees-fog.jpeg);
@@ -102,11 +103,18 @@ html {
         position: relative;
         top: 35vh;
 
-        #aboutMeBlock{
+        #aboutMeBlock1 {
             width: 502px;
             height: 462px;
-            background: #11182A;
-            position: absolute;
+            background: color(deepBlue);
+            align-self: flex-start;
+        }
+
+        #aboutMeBlock2{
+            width: 502px;
+            height: 462px;
+            background: color(beigeBrown);
+            align-self: flex-end;
         }
 
         #aboutMeContent {
@@ -114,21 +122,24 @@ html {
             display: flex;
             justify-content: space-evenly;
             padding: 40px;
-            
+
             img {
                 width: 60vh;
                 height: 60vh;
                 border-radius: 50%;
             }
 
-            #aboutMeTextContent{
+            #aboutMeTextContent {
+                top: 0;
                 width: 50%;
                 height: 100%;
                 font-size: 1.5rem;
+                display: inline-flex;
                 text-align: justify;
-                
+                justify-content: flex-start;
+
             }
-        }       
+        }
     }
 
     #myWorksPage {
