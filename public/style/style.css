@@ -169,7 +169,7 @@ html #myWorksPage #myWorkPieces {
 body #myWorksPage #myWorkPieces .boxees,
 html #myWorksPage #myWorkPieces .boxees {
   width: 360px;
-  height: 370px;
+  height: 350px;
   background: #d8d8d8;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
