@@ -85,7 +85,6 @@ html #landingPage .content #bottomText {
 
 body #aboutMePage,
 html #aboutMePage {
-  border: 2px solid green;
   background: #FCFCFC;
   width: 100vw;
   background-position: center;
@@ -147,7 +146,6 @@ html #myWorksPage {
 
 body #myWorksPage h1,
 html #myWorksPage h1 {
-  border: 2px solid red;
   font-size: 60px;
   margin: 50px;
   color: #222222;
@@ -171,7 +169,7 @@ html #myWorksPage #myWorkPieces {
 body #myWorksPage #myWorkPieces .boxees,
 html #myWorksPage #myWorkPieces .boxees {
   width: 360px;
-  height: 373px;
+  height: 370px;
   background: #d8d8d8;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -186,22 +184,20 @@ html #myWorksPage #myWorkPieces .boxees {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
   margin-bottom: 50px;
-  border: 2px solid red;
 }
 
 body #myWorksPage #myWorkPieces .boxees a img,
 html #myWorksPage #myWorkPieces .boxees a img {
   width: 100%;
-  border: 2px solid purple;
 }
 
 body #myWorksPage #myWorkPieces .boxees p,
 html #myWorksPage #myWorkPieces .boxees p {
   text-align: center;
   letter-spacing: 1px;
-  border: 2px solid green;
 }
 
 body #contactMePage,

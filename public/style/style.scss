@@ -93,7 +93,6 @@ html {
     }
 
     #aboutMePage {
-        border: 2px solid green;
         background: color(whiteGrey);
         width: 100vw;
         background-position: center;
@@ -148,7 +147,6 @@ html {
         background: color(whiteGrey);
 
         h1 {
-            border: 2px solid red;
             font-size: 60px;
             margin: 50px;
             color: color(darkGrey);
@@ -165,31 +163,27 @@ html {
 
             .boxees {
                 width: 360px;
-                height: 373px;
+                height: 370px;
                 background: color(lightGreyLightened);
                 display: inline-flex;
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
-                padding: 15px;
+                padding-left: 15px;
+                padding-right: 15px;
                 margin-bottom: 50px;
-                border: 2px solid red;
-                
 
                 a {
                     img {
                         width: 100%;
-                        border: 2px solid purple;
                     }
                 }
 
                 p {
                     text-align: center;
                     letter-spacing: 1px;
-                    border: 2px solid green;
                 }
             }
-
         }
     }
 
@@ -198,11 +192,6 @@ html {
         min-height: 100%;
         background: color(myPurple);
     }
-
-
-
-
-
 }
 
 
