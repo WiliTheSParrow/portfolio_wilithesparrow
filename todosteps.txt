@@ -1,11 +1,15 @@
-* set up sass variables
-* set up fontawesome
-* set up Google fonts
-* sync google font w my fonts
 - responsiveness
-* link JavaScript
-* read about css animations
 - add media icons to menubar
 - syn my thumnails w symbol or pic
 - link the artist who made the forest pic
 - animation for content to come in
+- automate how to write out my works
+
+-----------------------------------------------------
+
+* set up sass variables
+* set up fontawesome
+* set up Google fonts
+* sync google font w my fonts
+* link JavaScript
+* read about css animations
