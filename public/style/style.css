@@ -187,6 +187,8 @@ html #myWorksPage #myWorkPieces .boxees {
   padding-left: 15px;
   padding-right: 15px;
   margin-bottom: 50px;
+  -webkit-box-shadow: 0 0 2px 5px #d8d8d8;
+          box-shadow: 0 0 2px 5px #d8d8d8;
 }
 
 body #myWorksPage #myWorkPieces .boxees a img,
