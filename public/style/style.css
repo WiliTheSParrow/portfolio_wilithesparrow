@@ -158,6 +158,13 @@ html #myWorksPage #myWorkPieces {
   margin-left: 50px;
   margin-right: 50px;
   font-size: 14px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 body #myWorksPage #myWorkPieces .boxees,
@@ -188,8 +195,8 @@ html #myWorksPage #myWorkPieces .boxees a img {
   border: 2px solid purple;
 }
 
-body #myWorksPage #myWorkPieces .boxees a p,
-html #myWorksPage #myWorkPieces .boxees a p {
+body #myWorksPage #myWorkPieces .boxees p,
+html #myWorksPage #myWorkPieces .boxees p {
   text-align: center;
   letter-spacing: 1px;
   border: 2px solid green;
