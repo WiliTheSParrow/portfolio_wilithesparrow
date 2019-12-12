@@ -100,7 +100,7 @@ html {
         background-repeat: no-repeat;
         background-size: cover;
         background-attachment: fixed;
-      
+
 
         /* #aboutMeBlock1 {
             width: 502px;
@@ -154,10 +154,33 @@ html {
             color: color(darkGrey);
         }
 
-        #myWorkPieces{
+        #myWorkPieces {
+            margin-left: 50px;
+            margin-right: 50px;
+            font-size: 14px;
 
-            #box1{
-                
+            #box1 {
+                width: 432px;
+                height: 373px;
+                background: color(lightGreyLightened);
+                display: inline-flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                border: 2px solid red;
+
+                img {
+                    width: 405px;
+                    height: 243px;
+                    margin-bottom: 5px;
+                    border: 2px solid purple;
+                }
+                p{
+                    margin: 10px;
+                    text-align: center;
+                    letter-spacing: 1px;
+                    border: 2px solid green;
+                }
             }
         }
     }

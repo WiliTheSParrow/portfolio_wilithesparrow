@@ -153,6 +153,50 @@ html #myWorksPage h1 {
   color: #222222;
 }
 
+body #myWorksPage #myWorkPieces,
+html #myWorksPage #myWorkPieces {
+  margin-left: 50px;
+  margin-right: 50px;
+  font-size: 14px;
+}
+
+body #myWorksPage #myWorkPieces #box1,
+html #myWorksPage #myWorkPieces #box1 {
+  width: 432px;
+  height: 373px;
+  background: #d8d8d8;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 2px solid red;
+}
+
+body #myWorksPage #myWorkPieces #box1 img,
+html #myWorksPage #myWorkPieces #box1 img {
+  width: 405px;
+  height: 243px;
+  margin-bottom: 5px;
+  border: 2px solid purple;
+}
+
+body #myWorksPage #myWorkPieces #box1 p,
+html #myWorksPage #myWorkPieces #box1 p {
+  margin: 10px;
+  text-align: center;
+  letter-spacing: 1px;
+  border: 2px solid green;
+}
+
 body #contactMePage,
 html #contactMePage {
   width: 100vw;
