@@ -171,10 +171,8 @@ html {
                 border: 2px solid red;
 
                 a {
-
                     img {
                         width: 100%;
-                        margin: 5px;
                         border: 2px solid purple;
                     }
 
@@ -183,10 +181,6 @@ html {
                         letter-spacing: 1px;
                         border: 2px solid green;
                     }
-                }
-
-                a:link, a:visited {
-                    text-decoration: none;
                 }
             }
         }

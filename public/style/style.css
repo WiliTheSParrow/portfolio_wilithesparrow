@@ -185,7 +185,6 @@ html #myWorksPage #myWorkPieces .boxees {
 body #myWorksPage #myWorkPieces .boxees a img,
 html #myWorksPage #myWorkPieces .boxees a img {
   width: 100%;
-  margin: 5px;
   border: 2px solid purple;
 }
 
@@ -194,12 +193,6 @@ html #myWorksPage #myWorkPieces .boxees a p {
   text-align: center;
   letter-spacing: 1px;
   border: 2px solid green;
-}
-
-body #myWorksPage #myWorkPieces .boxees a:link, body #myWorksPage #myWorkPieces .boxees a:visited,
-html #myWorksPage #myWorkPieces .boxees a:link,
-html #myWorksPage #myWorkPieces .boxees a:visited {
-  text-decoration: none;
 }
 
 body #contactMePage,
