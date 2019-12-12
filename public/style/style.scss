@@ -159,27 +159,34 @@ html {
             margin-right: 50px;
             font-size: 14px;
 
-            #box1 {
-                width: 432px;
+            .boxees {
+                width: 360px;
                 height: 373px;
                 background: color(lightGreyLightened);
                 display: inline-flex;
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
+                padding: 15px;
                 border: 2px solid red;
 
-                img {
-                    width: 405px;
-                    height: 243px;
-                    margin-bottom: 5px;
-                    border: 2px solid purple;
+                a {
+
+                    img {
+                        width: 100%;
+                        margin: 5px;
+                        border: 2px solid purple;
+                    }
+
+                    p {
+                        text-align: center;
+                        letter-spacing: 1px;
+                        border: 2px solid green;
+                    }
                 }
-                p{
-                    margin: 10px;
-                    text-align: center;
-                    letter-spacing: 1px;
-                    border: 2px solid green;
+
+                a:link, a:visited {
+                    text-decoration: none;
                 }
             }
         }

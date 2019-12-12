@@ -160,9 +160,9 @@ html #myWorksPage #myWorkPieces {
   font-size: 14px;
 }
 
-body #myWorksPage #myWorkPieces #box1,
-html #myWorksPage #myWorkPieces #box1 {
-  width: 432px;
+body #myWorksPage #myWorkPieces .boxees,
+html #myWorksPage #myWorkPieces .boxees {
+  width: 360px;
   height: 373px;
   background: #d8d8d8;
   display: -webkit-inline-box;
@@ -178,23 +178,28 @@ html #myWorksPage #myWorkPieces #box1 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 15px;
   border: 2px solid red;
 }
 
-body #myWorksPage #myWorkPieces #box1 img,
-html #myWorksPage #myWorkPieces #box1 img {
-  width: 405px;
-  height: 243px;
-  margin-bottom: 5px;
+body #myWorksPage #myWorkPieces .boxees a img,
+html #myWorksPage #myWorkPieces .boxees a img {
+  width: 100%;
+  margin: 5px;
   border: 2px solid purple;
 }
 
-body #myWorksPage #myWorkPieces #box1 p,
-html #myWorksPage #myWorkPieces #box1 p {
-  margin: 10px;
+body #myWorksPage #myWorkPieces .boxees a p,
+html #myWorksPage #myWorkPieces .boxees a p {
   text-align: center;
   letter-spacing: 1px;
   border: 2px solid green;
+}
+
+body #myWorksPage #myWorkPieces .boxees a:link, body #myWorksPage #myWorkPieces .boxees a:visited,
+html #myWorksPage #myWorkPieces .boxees a:link,
+html #myWorksPage #myWorkPieces .boxees a:visited {
+  text-decoration: none;
 }
 
 body #contactMePage,
