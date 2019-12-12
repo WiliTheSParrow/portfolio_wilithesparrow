@@ -143,12 +143,14 @@ html #myWorksPage {
   width: 100vw;
   min-height: 100%;
   background: #FCFCFC;
-  border: 2px solid red;
 }
 
 body #myWorksPage h1,
 html #myWorksPage h1 {
+  border: 2px solid red;
   font-size: 60px;
+  margin: 30px;
+  color: #222222;
 }
 
 body #contactMePage,

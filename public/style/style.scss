@@ -147,11 +147,11 @@ html {
         min-height: 100%;
         background: color(whiteGrey);
 
-        border: 2px solid red;
-
         h1 {
+            border: 2px solid red;
             font-size: 60px;
-
+            margin: 30px;
+            color: color(darkGrey);
         }
     }
 
