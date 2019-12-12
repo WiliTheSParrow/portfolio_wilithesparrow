@@ -186,6 +186,7 @@ html #myWorksPage #myWorkPieces .boxees {
       -ms-flex-align: center;
           align-items: center;
   padding: 15px;
+  margin-bottom: 50px;
   border: 2px solid red;
 }
 
