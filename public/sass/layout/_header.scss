@@ -22,20 +22,17 @@
         left: 50%;
         transform: translate(-50%, -50%);
         text-align: center;
-
     }
 
     &__icon-box {
         display: flex;
-        justify-content: center;
+        justify-content: center; 
     }
-
 
     &__icon {
         fill: $color-grey-light;
         width: 9rem;
         height: 9rem;
-
     }
 
 }

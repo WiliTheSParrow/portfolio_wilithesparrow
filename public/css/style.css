@@ -27,7 +27,8 @@ body {
 .heading-primary {
   color: inherit;
   backface-visibility: hidden;
-  margin-bottom: 8rem; }
+  margin-bottom: 8rem;
+  text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.5); }
   .heading-primary--main {
     display: block;
     font-family: "Dawning of a New Day", sans-serif;
