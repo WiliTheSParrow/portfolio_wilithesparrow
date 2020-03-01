@@ -1,0 +1,5 @@
+- animation__grid animation, slower picture animation
+- mediaq__on mobile my work cards should be opened
+- mediaq_optimize picture loading for diff screen types
+
+------------------------------------

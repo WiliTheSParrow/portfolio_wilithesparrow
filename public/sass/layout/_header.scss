@@ -1,0 +1,13 @@
+.header{
+    height: 99vh;
+    background-image: linear-gradient(to right bottom,
+            rgba($color-primary-purple-dark, .5),
+            rgba($color-primary-purple-dark, .5)),
+        url(/img/magic-flowers-largest.jpg);
+        background-size: cover;
+        background-position: center;
+        position: relative;
+
+        clip-path: polygon(0% 0%, 100% 0, 100% 100%, 50% 80%, 0% 100%);
+
+}
