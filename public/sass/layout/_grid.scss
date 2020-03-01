@@ -1,0 +1,36 @@
+.container {
+    display: grid;
+    grid-template-rows: [header-start] min-content [header-end introduction-start] min-content [introduction-end myworks-start] 99vh [myworks-end contactme-start] 99vh[contactme-end];
+
+}
+
+.introduction {
+    height: 100vh;
+    background-color: $color-grey-light;
+    grid-row: introduction-start / introduction-end;
+
+    display: grid;
+    grid-template-columns: repeat(13, 1fr);
+    grid-template-rows: repeat(9, 1fr);
+
+    &__box {
+        &--blue {
+            grid-column: 2 / span 3;
+            grid-row: 4 / span 4;
+        }
+
+        &--purple {
+            grid-column: 6 / span 7;
+            grid-row: 2 / span 5;
+        }
+    }
+
+    &__text {}
+
+    &__img {
+        grid-column: 4 / span 3;
+        grid-row: 3 / span 4;
+
+    }
+
+}

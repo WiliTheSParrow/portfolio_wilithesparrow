@@ -1,0 +1,34 @@
+.introduction {
+    &__box {
+        &--blue {
+            background-color: $color-primary-blue;
+            width: 100%;
+            height: 100%;
+            //object-fit will work if you set the width and height manuall:
+            object-fit: cover;
+            display: block;
+
+        }
+
+        &--purple {
+            background-color: $color-primary-purple-light;
+            width: 100%;
+            height: 100%;
+            //object-fit will work if you set the width and height manuall:
+            object-fit: cover;
+            display: block;
+
+        }
+    }
+
+    &__img {
+        &--1 {
+            width: 20vw;
+            height: 20vw;
+            //object-fit will work if you set the width and height manuall:
+            object-fit: cover;
+            display: block;
+            border-radius: 100%;
+        }
+    }
+}
