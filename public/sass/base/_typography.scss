@@ -14,7 +14,7 @@ body {
     color: inherit;
     backface-visibility: hidden;
     margin-bottom: 8rem;
-    
+
     &--main {
         display: block;
         font-family: $font-secondary;
@@ -31,23 +31,25 @@ body {
     }
 }
 
-.heading-secondary{
+.heading-secondary {
     font-size: 5rem;
     text-transform: uppercase;
 }
 
-.introduction{
-    &__paragraph{
+.introduction {
+    &__paragraph {
         font-size: 2.5rem;
         margin-bottom: 2.5rem;
         margin-left: 1.5rem;
     }
-    
+
 }
 
-.myworks{
-    &__card--title{
+.myworks {
+    &__card--title {
         font-size: 2rem;
         text-shadow: none;
+        font-weight: 500;
+       
     }
 }

@@ -13,7 +13,7 @@ body {
   box-sizing: border-box; }
 
 ::selection {
-  background-color: #ABABC9;
+  background-color: #4F4F78;
   color: #222222; }
 
 body {
@@ -53,35 +53,38 @@ body {
 
 .myworks__card--title {
   font-size: 2rem;
-  text-shadow: none; }
+  text-shadow: none;
+  font-weight: 500; }
 
-.myworks {
-  border: 3px solid orangered; }
-  .myworks__cards {
-    border: 3px solid blueviolet;
+.myworks__cards {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly; }
+
+.myworks__card {
+  background-color: #ABABC9;
+  width: 30rem;
+  height: 30rem;
+  margin: 2.5rem 5rem;
+  border-radius: 3px;
+  position: relative;
+  box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.2); }
+  .myworks__card--title {
     width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly; }
-  .myworks__card {
-    border: 1px solid yellowgreen;
-    background-color: #ABABC9;
-    width: 30rem;
-    height: 30rem;
-    margin: 2.5rem 5rem;
-    border-radius: 3px; }
-    .myworks__card--title {
-      position: absolute;
-      z-index: 10; }
-    .myworks__card--img {
-      width: 100%;
-      height: 80%;
-      clip-path: polygon(50% 20%, 100% 0, 100% 100%, 0 100%, 0 0);
-      transform: translateY(5rem); }
+    position: absolute;
+    z-index: 10;
+    text-align: center;
+    padding: 1rem 1rem; }
+  .myworks__card--img {
+    width: 100%;
+    height: 80%;
+    clip-path: polygon(50% 20%, 100% 0, 100% 100%, 0 100%, 0 0);
+    transform: translateY(5rem); }
 
 .heading-secondary {
   text-align: center;
-  margin: 5rem; }
+  margin: 6rem; }
 
 .introduction__box--blue {
   width: 100%;
@@ -128,7 +131,6 @@ body {
 
 .introduction {
   height: 100vh;
-  background-color: #FAF7F4;
   grid-row: introduction-start / introduction-end;
   display: grid;
   grid-template-columns: repeat(13, 1fr);

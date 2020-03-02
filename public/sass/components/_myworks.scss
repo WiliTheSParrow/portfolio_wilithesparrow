@@ -1,28 +1,28 @@
 .myworks {
-    border: 3px solid orangered;
 
     &__cards {
-        border: 3px solid blueviolet;
         width: 100%;
-
 
         display: flex;
         flex-wrap: wrap;
         justify-content: space-evenly;
-
     }
 
     &__card {
-        border: 1px solid yellowgreen;
         background-color: $color-primary-purple-light;
         width: 30rem;
         height: 30rem;
         margin: 2.5rem 5rem;
         border-radius: 3px;
+        position: relative;
+        box-shadow: $shadow-box;
 
         &--title{
+            width: 100%;
             position: absolute;
             z-index: 10;
+            text-align: center;
+            padding: 1rem 1rem;
         }
 
 
@@ -37,5 +37,5 @@
 
 .heading-secondary {
     text-align: center;
-    margin: 5rem;
+    margin: 6rem;
 }
