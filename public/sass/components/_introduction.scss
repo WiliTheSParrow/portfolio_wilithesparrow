@@ -9,7 +9,7 @@
         &--purple {
             @include boxProperties;
             background-color: $color-primary-purple-light;
-            padding: 11rem;
+            padding: 7.5rem;
          
 
         }
@@ -17,8 +17,8 @@
 
     &__img {
         &--1 {
-            width: 20vw;
-            height: 20vw;
+            width: 25vw;
+            height: 25vw;
             //object-fit will work if you set the width and height manuall:
             object-fit: cover;
             display: block;
