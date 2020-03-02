@@ -1,0 +1,14 @@
+.myworks{
+    border: 3px solid orangered;
+    height: 100vh;
+
+    &__card{
+        border: 1px solid yellowgreen;
+        width: 20vh;
+        height: 20vh;
+
+        &--img{
+            width: 100%;
+        }
+    }
+}

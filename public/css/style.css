@@ -47,6 +47,16 @@ body {
   margin-bottom: 2.5rem;
   margin-left: 1.5rem; }
 
+.myworks {
+  border: 3px solid orangered;
+  height: 100vh; }
+  .myworks__card {
+    border: 1px solid yellowgreen;
+    width: 20vh;
+    height: 20vh; }
+    .myworks__card--img {
+      width: 100%; }
+
 .introduction__box--blue {
   width: 100%;
   height: 100%;

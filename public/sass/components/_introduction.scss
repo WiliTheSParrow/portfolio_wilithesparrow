@@ -3,15 +3,12 @@
         &--blue {
             @include boxProperties;
             background-color: $color-primary-blue;
-
         }
 
         &--purple {
             @include boxProperties;
             background-color: $color-primary-purple-light;
             padding: 7.5rem;
-
-
         }
     }
 
@@ -35,7 +32,6 @@
         background-size: cover;
         background-position: bottom;
         position: relative;
-        
         width: 100%;
 
         @supports(clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
