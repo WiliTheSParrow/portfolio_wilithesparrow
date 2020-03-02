@@ -17,7 +17,7 @@ body {
   color: #222222; }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "EB Garamond", sans-serif;
   font-weight: 400;
   line-height: 1.7;
   color: #222222;
@@ -42,18 +42,28 @@ body {
     font-weight: 300;
     letter-spacing: .3rem; }
 
+.heading-secondary {
+  font-size: 5rem;
+  text-transform: uppercase; }
+
 .introduction__paragraph {
   font-size: 2.5rem;
   margin-bottom: 2.5rem;
   margin-left: 1.5rem; }
 
 .myworks {
-  border: 3px solid orangered;
-  height: 100vh; }
+  border: 3px solid orangered; }
+  .myworks__cards {
+    border: 3px solid blueviolet;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly; }
   .myworks__card {
     border: 1px solid yellowgreen;
-    width: 20vh;
-    height: 20vh; }
+    width: 30rem;
+    height: 30rem;
+    margin: 2.5rem 5rem; }
     .myworks__card--img {
       width: 100%; }
 
