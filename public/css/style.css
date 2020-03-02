@@ -44,7 +44,7 @@ body {
 
 .introduction__paragraph {
   font-size: 2.5rem;
-  margin-bottom: 2rem;
+  margin-bottom: 2.5rem;
   margin-left: 1.5rem; }
 
 .introduction__box--blue {
@@ -74,6 +74,18 @@ body {
   border-radius: 100%;
   box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.2); }
 
+.introduction__borderimg {
+  background-image: linear-gradient(to bottom, rgba(79, 79, 120, 0.7), rgba(79, 79, 120, 0.5)), url(/img/magic-flowers-largest.jpg);
+  background-size: cover;
+  background-position: bottom;
+  position: relative;
+  width: 100%; }
+  @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
+    .introduction__borderimg {
+      -webkit-clip-path: polygon(50% 20%, 100% 0, 100% 100%, 0 100%, 0 0);
+      clip-path: polygon(50% 20%, 100% 0, 100% 100%, 0 100%, 0 0);
+      height: 50vh; } }
+
 .container {
   display: grid;
   grid-template-rows: [header-start] min-content [header-end introduction-start] min-content [introduction-end myworks-start] 99vh [myworks-end contactme-start] 99vh [contactme-end]; }
@@ -84,7 +96,11 @@ body {
   grid-row: introduction-start / introduction-end;
   display: grid;
   grid-template-columns: repeat(13, 1fr);
-  grid-template-rows: repeat(9, 1fr); }
+  grid-template-rows: repeat(8, 1fr);
+  /* &__borderimg {
+        grid-column: 1 / -1;
+        grid-row: 9 / -1;
+    } */ }
   .introduction__box--blue {
     grid-column: 2 / span 3;
     grid-row: 4 / span 4; }
@@ -96,7 +112,6 @@ body {
     grid-row: 2 / span 4; }
 
 .header {
-  height: 99vh;
   background-image: linear-gradient(to bottom, rgba(79, 79, 120, 0.7), rgba(79, 79, 120, 0.5)), url(/img/magic-flowers-largest.jpg);
   background-size: cover;
   background-position: center;

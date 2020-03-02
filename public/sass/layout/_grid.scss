@@ -11,7 +11,7 @@
 
     display: grid;
     grid-template-columns: repeat(13, 1fr);
-    grid-template-rows: repeat(9, 1fr);
+    grid-template-rows: repeat(8, 1fr);
 
     &__box {
         &--blue {
@@ -25,12 +25,15 @@
         }
     }
 
-    &__text {}
-
     &__img {
         grid-column: 3 / span 3;
         grid-row: 2 / span 4;
 
     }
+
+    /* &__borderimg {
+        grid-column: 1 / -1;
+        grid-row: 9 / -1;
+    } */
 
 }
