@@ -33,3 +33,12 @@ body {
         letter-spacing: .6rem;
     }
 }
+
+.introduction{
+    &__paragraph{
+        font-size: 1.7rem;
+        margin-bottom: 2rem;
+        margin-left: 1.5rem;
+        text-shadow: $shadow-primary;
+    }
+}

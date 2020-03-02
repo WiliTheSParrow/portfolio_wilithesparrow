@@ -1,22 +1,16 @@
 .introduction {
     &__box {
         &--blue {
+            @include boxProperties;
             background-color: $color-primary-blue;
-            width: 100%;
-            height: 100%;
-            //object-fit will work if you set the width and height manuall:
-            object-fit: cover;
-            display: block;
 
         }
 
         &--purple {
+            @include boxProperties;
             background-color: $color-primary-purple-light;
-            width: 100%;
-            height: 100%;
-            //object-fit will work if you set the width and height manuall:
-            object-fit: cover;
-            display: block;
+            padding: 11rem;
+         
 
         }
     }
@@ -29,6 +23,7 @@
             object-fit: cover;
             display: block;
             border-radius: 100%;
+            box-shadow: $shadow-box;
         }
     }
 }
