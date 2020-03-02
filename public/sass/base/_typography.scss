@@ -42,4 +42,12 @@ body {
         margin-bottom: 2.5rem;
         margin-left: 1.5rem;
     }
+    
+}
+
+.myworks{
+    &__card--title{
+        font-size: 2rem;
+        text-shadow: none;
+    }
 }
