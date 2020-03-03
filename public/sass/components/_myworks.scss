@@ -85,18 +85,32 @@
             rgba($color-primary-purple-dark, .9)), url(../img/soccerleague-largest.jpg);
 }
 
-.fantomcard{
+.fantomcard {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 
-    &__title{
+    &__title {
         margin-bottom: 3rem;
     }
 
-    &__icon{
+    &__icon {
+        fill: $color-grey-dark;
         width: 9rem;
-        height: 9rem;       
+        height: 9rem;
+
+
+        &--border {
+            width: 15rem;
+            height: 15rem;
+            border: 7px solid $color-grey-dark;
+            border-radius: 100%;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
     }
 }

@@ -121,8 +121,17 @@ body {
   .fantomcard__title {
     margin-bottom: 3rem; }
   .fantomcard__icon {
+    fill: #222222;
     width: 9rem;
     height: 9rem; }
+    .fantomcard__icon--border {
+      width: 15rem;
+      height: 15rem;
+      border: 7px solid #222222;
+      border-radius: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
 
 .introduction__box--blue {
   width: 100%;
