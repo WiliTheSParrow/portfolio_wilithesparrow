@@ -59,3 +59,16 @@ body {
     text-shadow: none;
     font-weight: 500;
 }
+
+.footer{
+    color: $color-grey-light;
+
+    &__title{
+        font-family: $font-secondary;
+        font-size: 4rem;
+    }
+
+    &__location{
+        font-size: 1.8rem;
+    }
+}

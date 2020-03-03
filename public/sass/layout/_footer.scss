@@ -1,9 +1,45 @@
 .footer {
+    
+    border: 3px solid orangered;
+
+
     background-image: linear-gradient(to bottom,
             rgba($color-primary-purple-dark, .7),
             rgba($color-primary-purple-dark, .5)),
         url(/img/magic-flowers-largest.jpg);
-        background-size: cover;
-        background-position: top;
-        position: relative;
+    background-size: cover;
+    background-position: top;
+    position: relative;
+    
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    &__title{
+        border: 3px solid blueviolet;
+    }
+
+    &__contactdetails{
+        border: 3px solid goldenrod;
+        width: 100%;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__icon {
+        border: 3px solid greenyellow;
+        fill: $color-grey-light;
+        height: 4rem;
+        width: 4rem;
+    }
+
+    &__location{
+        align-self: flex-end;
+    }
+
+    
 }

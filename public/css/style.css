@@ -60,6 +60,14 @@ body {
   text-shadow: none;
   font-weight: 500; }
 
+.footer {
+  color: #FAF7F4; }
+  .footer__title {
+    font-family: "Dawning of a New Day", sans-serif;
+    font-size: 4rem; }
+  .footer__location {
+    font-size: 1.8rem; }
+
 .myworks__cards {
   width: 100%;
   display: flex;
@@ -173,10 +181,30 @@ body {
       height: 50vh; } }
 
 .footer {
+  border: 3px solid orangered;
   background-image: linear-gradient(to bottom, rgba(79, 79, 120, 0.7), rgba(79, 79, 120, 0.5)), url(/img/magic-flowers-largest.jpg);
   background-size: cover;
   background-position: top;
-  position: relative; }
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center; }
+  .footer__title {
+    border: 3px solid blueviolet; }
+  .footer__contactdetails {
+    border: 3px solid goldenrod;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .footer__icon {
+    border: 3px solid greenyellow;
+    fill: #FAF7F4;
+    height: 4rem;
+    width: 4rem; }
+  .footer__location {
+    align-self: flex-end; }
 
 .container {
   display: grid;
@@ -203,7 +231,8 @@ body {
   margin-bottom: 12rem; }
 
 .footer {
-  grid-row: footer-start / footer-end; }
+  grid-row: footer-start / footer-end;
+  height: 50vw; }
 
 .header {
   background-image: linear-gradient(to bottom, rgba(79, 79, 120, 0.7), rgba(79, 79, 120, 0.5)), url(/img/magic-flowers-largest.jpg);
