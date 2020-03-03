@@ -181,11 +181,7 @@ body {
   grid-row: introduction-start / introduction-end;
   display: grid;
   grid-template-columns: repeat(13, 1fr);
-  grid-template-rows: repeat(8, 1fr);
-  /* &__borderimg {
-        grid-column: 1 / -1;
-        grid-row: 9 / -1;
-    } */ }
+  grid-template-rows: repeat(8, 1fr); }
   .introduction__box--blue {
     grid-column: 2 / span 3;
     grid-row: 4 / span 4; }
@@ -197,7 +193,8 @@ body {
     grid-row: 2 / span 4; }
 
 .myworks {
-  grid-row: myworks-start / myworks-end; }
+  grid-row: myworks-start / myworks-end;
+  margin-bottom: 12rem; }
 
 .footer {
   grid-row: footer-start / footer-end; }
