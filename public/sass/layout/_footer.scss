@@ -1,0 +1,9 @@
+.footer {
+    background-image: linear-gradient(to bottom,
+            rgba($color-primary-purple-dark, .7),
+            rgba($color-primary-purple-dark, .5)),
+        url(/img/magic-flowers-largest.jpg);
+        background-size: cover;
+        background-position: top;
+        position: relative;
+}
