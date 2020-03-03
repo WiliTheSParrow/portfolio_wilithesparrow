@@ -21,8 +21,7 @@
     }
 
     &__icon-box {
-        display: flex;
-        justify-content: center;
+        @include centeredFlex;
     }
 
     &__icon {

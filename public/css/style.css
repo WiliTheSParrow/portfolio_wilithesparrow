@@ -111,7 +111,8 @@ body {
     text-align: center; }
   .header__icon-box {
     display: flex;
-    justify-content: center; }
+    justify-content: center;
+    align-content: center; }
   .header__icon {
     fill: #FAF7F4;
     width: 9rem;
@@ -131,9 +132,9 @@ body {
   border-radius: 3px;
   background-color: #ABABC9;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-content: center;
+  flex-direction: column;
   padding: 5rem; }
 
 .introduction__img--1 {
@@ -155,6 +156,10 @@ body {
       clip-path: polygon(50% 20%, 100% 0, 100% 100%, 0 100%, 0 0);
       height: 50vh; } }
 
+.heading-secondary {
+  text-align: center;
+  margin: 6rem; }
+
 .myworks__cards {
   display: flex;
   flex-wrap: wrap;
@@ -174,37 +179,68 @@ body {
     z-index: 10;
     text-align: center;
     padding: 1rem 1rem; }
-  .myworks__card--img {
-    width: 100%;
-    height: 80%;
-    clip-path: polygon(50% 30%, 100% 0, 100% 100%, 0 100%, 0 0);
-    transform: translateY(5rem);
-    background-size: cover;
-    background-blend-mode: screen; }
-
-.heading-secondary {
-  text-align: center;
-  margin: 6rem; }
 
 .card-1 {
+  width: 100%;
+  height: 80%;
+  clip-path: polygon(50% 30%, 100% 0, 100% 100%, 0 100%, 0 0);
+  transform: translateY(5rem);
+  background-size: cover;
+  background-blend-mode: screen;
   background-image: linear-gradient(to bottom, #4f4f78, rgba(79, 79, 120, 0.9)), url(../img/nexter-largest.jpeg); }
 
 .card-2 {
+  width: 100%;
+  height: 80%;
+  clip-path: polygon(50% 30%, 100% 0, 100% 100%, 0 100%, 0 0);
+  transform: translateY(5rem);
+  background-size: cover;
+  background-blend-mode: screen;
   background-image: linear-gradient(to bottom, #4f4f78, rgba(79, 79, 120, 0.9)), url(../img/trillo-largest.jpg); }
 
 .card-3 {
+  width: 100%;
+  height: 80%;
+  clip-path: polygon(50% 30%, 100% 0, 100% 100%, 0 100%, 0 0);
+  transform: translateY(5rem);
+  background-size: cover;
+  background-blend-mode: screen;
   background-image: linear-gradient(to bottom, #4f4f78, rgba(79, 79, 120, 0.9)), url(../img/natours-largest.jpg); }
 
 .card-4 {
+  width: 100%;
+  height: 80%;
+  clip-path: polygon(50% 30%, 100% 0, 100% 100%, 0 100%, 0 0);
+  transform: translateY(5rem);
+  background-size: cover;
+  background-blend-mode: screen;
   background-image: linear-gradient(to bottom, #4f4f78, rgba(79, 79, 120, 0.9)), url(../img/bookstorewebapp-largest.jpg); }
 
 .card-5 {
+  width: 100%;
+  height: 80%;
+  clip-path: polygon(50% 30%, 100% 0, 100% 100%, 0 100%, 0 0);
+  transform: translateY(5rem);
+  background-size: cover;
+  background-blend-mode: screen;
   background-image: linear-gradient(to bottom, #4f4f78, rgba(79, 79, 120, 0.9)), url(../img/itgigls-largest.jpg); }
 
 .card-6 {
+  width: 100%;
+  height: 80%;
+  clip-path: polygon(50% 30%, 100% 0, 100% 100%, 0 100%, 0 0);
+  transform: translateY(5rem);
+  background-size: cover;
+  background-blend-mode: screen;
   background-image: linear-gradient(to bottom, #4f4f78, rgba(79, 79, 120, 0.9)), url(../img/governmentinfaces-largest.jpg); }
 
 .card-7 {
+  width: 100%;
+  height: 80%;
+  clip-path: polygon(50% 30%, 100% 0, 100% 100%, 0 100%, 0 0);
+  transform: translateY(5rem);
+  background-size: cover;
+  background-blend-mode: screen;
   background-image: linear-gradient(to bottom, #4f4f78, rgba(79, 79, 120, 0.9)), url(../img/soccerleague-largest.jpg); }
 
 .fantomcard {

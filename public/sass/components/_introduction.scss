@@ -9,10 +9,8 @@
             @include boxProperties;
             background-color: $color-primary-purple-light;
             
-            display: flex;
+            @include centeredFlex;
             flex-direction: column;
-            justify-content: center;
-            align-content: center;
             padding: 5rem;
         }
     }

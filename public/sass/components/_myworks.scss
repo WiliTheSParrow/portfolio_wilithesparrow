@@ -1,3 +1,8 @@
+.heading-secondary {
+    text-align: center;
+    margin: 6rem;
+}
+
 .myworks {
 
     &__cards {
@@ -22,22 +27,7 @@
             text-align: center;
             padding: 1rem 1rem;
         }
-
-
-        &--img {
-            width: 100%;
-            height: 80%;
-            clip-path: polygon(50% 30%, 100% 0, 100% 100%, 0 100%, 0 0);
-            transform: translateY(5rem);
-            background-size: cover;
-            background-blend-mode: screen
-        }
     }
-}
-
-.heading-secondary {
-    text-align: center;
-    margin: 6rem;
 }
 
 .card-1 {
@@ -82,7 +72,6 @@
         fill: $color-grey-dark;
         width: 9rem;
         height: 9rem;
-
 
         &--border {
             width: 15rem;
