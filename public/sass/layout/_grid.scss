@@ -1,6 +1,6 @@
 .container {
     display: grid;
-    grid-template-rows: [header-start] min-content [header-end introduction-start] min-content [introduction-end myworks-start] 99vh [myworks-end contactme-start] 99vh[contactme-end];
+    grid-template-rows: [header-start] min-content [header-end introduction-start] min-content [introduction-end myworks-start] min-content [myworks-end footer-start] min-content [footer-end];
 
 }
 
@@ -35,4 +35,12 @@
         grid-row: 9 / -1;
     } */
 
+}
+
+.myworks {
+    grid-row: myworks-start / myworks-end;
+}
+
+.footer {
+    grid-row: footer-start / footer-end;
 }
