@@ -18,9 +18,8 @@ body {
 
 body {
   font-family: "EB Garamond", sans-serif;
-  font-weight: 500;
-  line-height: 1.7;
-  color: #222222; }
+  color: #222222;
+  line-height: 1.7; }
 
 .header {
   color: #FAF7F4; }
@@ -52,19 +51,18 @@ body {
 
 .myworks__card--title {
   font-size: 2.4rem;
-  text-shadow: none;
   font-weight: 500; }
 
 .fantomcard__title {
   font-size: 2.4rem;
-  text-shadow: none;
   font-weight: 500; }
 
 .footer {
   color: #FAF7F4; }
   .footer__title {
     font-family: "Dawning of a New Day", sans-serif;
-    font-size: 4rem; }
+    font-size: 4rem;
+    font-weight: 500; }
   .footer__location {
     font-size: 1.8rem; }
 
@@ -140,9 +138,31 @@ body {
       justify-content: center;
       align-items: center; }
 
+.header {
+  background-image: linear-gradient(to bottom, rgba(79, 79, 120, 0.7), rgba(79, 79, 120, 0.5)), url(/img/magic-flowers-largest.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative; }
+  @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
+    .header {
+      -webkit-clip-path: polygon(0% 0%, 100% 0, 100% 100%, 50% 80%, 0% 100%);
+      clip-path: polygon(0% 0%, 100% 0, 100% 100%, 50% 88%, 0% 100%);
+      height: 99vh; } }
+  .header__text-box {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center; }
+  .header__icon-box {
+    display: flex;
+    justify-content: center; }
+  .header__icon {
+    fill: #FAF7F4;
+    width: 9rem;
+    height: 9rem; }
+
 .introduction__box--blue {
-  width: 100%;
-  height: 100%;
   object-fit: cover;
   display: block;
   box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.2);
@@ -150,8 +170,6 @@ body {
   background-color: #9EB5D1; }
 
 .introduction__box--purple {
-  width: 100%;
-  height: 100%;
   object-fit: cover;
   display: block;
   box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.2);
@@ -236,27 +254,3 @@ body {
 
 .footer {
   grid-row: footer-start / footer-end; }
-
-.header {
-  background-image: linear-gradient(to bottom, rgba(79, 79, 120, 0.7), rgba(79, 79, 120, 0.5)), url(/img/magic-flowers-largest.jpg);
-  background-size: cover;
-  background-position: center;
-  position: relative; }
-  @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
-    .header {
-      -webkit-clip-path: polygon(0% 0%, 100% 0, 100% 100%, 50% 80%, 0% 100%);
-      clip-path: polygon(0% 0%, 100% 0, 100% 100%, 50% 88%, 0% 100%);
-      height: 99vh; } }
-  .header__text-box {
-    position: absolute;
-    top: 45%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center; }
-  .header__icon-box {
-    display: flex;
-    justify-content: center; }
-  .header__icon {
-    fill: #FAF7F4;
-    width: 9rem;
-    height: 9rem; }
