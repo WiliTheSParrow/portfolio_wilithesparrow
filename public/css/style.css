@@ -87,8 +87,10 @@ body {
     width: 4rem; }
   .footer__location {
     display: flex; }
-  .footer .element:not(:last-child) {
-    margin-right: 5rem; }
+  .footer .element {
+    border: 2px solid orangered; }
+    .footer .element:not(:last-child) {
+      margin-right: 5rem; }
   .footer .town {
     align-self: flex-end;
     margin-left: 1rem; }

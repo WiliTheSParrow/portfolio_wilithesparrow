@@ -30,6 +30,7 @@
     }
 
     .element {
+        border: 2px solid orangered;
 
         &:not(:last-child) {
             margin-right: 5rem;
