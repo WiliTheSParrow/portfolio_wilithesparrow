@@ -4,3 +4,19 @@
     box-shadow: $shadow-box;
     border-radius: 3px;
 }
+
+@mixin flowerBackground {
+    background-image: linear-gradient(to bottom,
+            rgba($color-primary-purple-dark, .7),
+            rgba($color-primary-purple-dark, .5)),
+        url(/img/magic-flowers-largest.jpg);
+    background-size: cover;
+    position: relative;
+    @content;
+}
+
+@mixin cardBackgroundImg($imageurl){
+    background-image: linear-gradient(to bottom,
+            rgba($color-primary-purple-dark, 1.5),
+            rgba($color-primary-purple-dark, .9)), $imageurl;
+}

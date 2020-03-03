@@ -41,46 +41,31 @@
 }
 
 .card-1 {
-    background-image: linear-gradient(to bottom,
-            rgba($color-primary-purple-dark, 1.5),
-            rgba($color-primary-purple-dark, .9)), url(../img/nexter-largest.jpeg);
-
+    @include cardBackgroundImg(url(../img/nexter-largest.jpeg));
 }
 
 .card-2 {
-    background-image: linear-gradient(to bottom,
-            rgba($color-primary-purple-dark, 1.5),
-            rgba($color-primary-purple-dark, .9)), url(../img/trillo-largest.jpg);
+    @include cardBackgroundImg(url(../img/trillo-largest.jpg));
 }
 
 .card-3 {
-    background-image: linear-gradient(to bottom,
-            rgba($color-primary-purple-dark, 1.5),
-            rgba($color-primary-purple-dark, .9)), url(../img/natours-largest.jpg);
+    @include cardBackgroundImg(url(../img/natours-largest.jpg));
 }
 
 .card-4 {
-    background-image: linear-gradient(to bottom,
-            rgba($color-primary-purple-dark, 1.5),
-            rgba($color-primary-purple-dark, .9)), url(../img/bookstorewebapp-largest.jpg);
+    @include cardBackgroundImg(url(../img/bookstorewebapp-largest.jpg));
 }
 
 .card-5 {
-    background-image: linear-gradient(to bottom,
-            rgba($color-primary-purple-dark, 1.5),
-            rgba($color-primary-purple-dark, .9)), url(../img/itgigls-largest.jpg);
+    @include cardBackgroundImg(url(../img/itgigls-largest.jpg));
 }
 
 .card-6 {
-    background-image: linear-gradient(to bottom,
-            rgba($color-primary-purple-dark, 1.5),
-            rgba($color-primary-purple-dark, .9)), url(../img/governmentinfaces-largest.jpg);
+    @include cardBackgroundImg(url(../img/governmentinfaces-largest.jpg));
 }
 
 .card-7 {
-    background-image: linear-gradient(to bottom,
-            rgba($color-primary-purple-dark, 1.5),
-            rgba($color-primary-purple-dark, .9)), url(../img/soccerleague-largest.jpg);
+    @include cardBackgroundImg(url(../img/soccerleague-largest.jpg));
 }
 
 .fantomcard {

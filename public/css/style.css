@@ -66,6 +66,95 @@ body {
   .footer__location {
     font-size: 1.8rem; }
 
+.footer {
+  background-image: linear-gradient(to bottom, rgba(79, 79, 120, 0.7), rgba(79, 79, 120, 0.5)), url(/img/magic-flowers-largest.jpg);
+  background-size: cover;
+  position: relative;
+  background-position: top;
+  padding: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center; }
+  .footer__contactdetails {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end; }
+  .footer__icon {
+    fill: #FAF7F4;
+    height: 4rem;
+    width: 4rem; }
+  .footer__location {
+    display: flex; }
+  .footer .element:not(:last-child) {
+    margin-right: 5rem; }
+  .footer .town {
+    align-self: flex-end;
+    margin-left: 1rem; }
+
+.header {
+  background-image: linear-gradient(to bottom, rgba(79, 79, 120, 0.7), rgba(79, 79, 120, 0.5)), url(/img/magic-flowers-largest.jpg);
+  background-size: cover;
+  position: relative;
+  background-position: center; }
+  @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
+    .header {
+      -webkit-clip-path: polygon(0% 0%, 100% 0, 100% 100%, 50% 80%, 0% 100%);
+      clip-path: polygon(0% 0%, 100% 0, 100% 100%, 50% 88%, 0% 100%);
+      height: 99vh; } }
+  .header__text-box {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center; }
+  .header__icon-box {
+    display: flex;
+    justify-content: center; }
+  .header__icon {
+    fill: #FAF7F4;
+    width: 9rem;
+    height: 9rem; }
+
+.introduction__box--blue {
+  object-fit: cover;
+  display: block;
+  box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.2);
+  border-radius: 3px;
+  background-color: #9EB5D1; }
+
+.introduction__box--purple {
+  object-fit: cover;
+  display: block;
+  box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.2);
+  border-radius: 3px;
+  background-color: #ABABC9;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  padding: 5rem; }
+
+.introduction__img--1 {
+  width: 25vw;
+  height: 25vw;
+  object-fit: cover;
+  display: block;
+  border-radius: 100%;
+  box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.2); }
+
+.introduction__borderimg {
+  background-image: linear-gradient(to bottom, rgba(79, 79, 120, 0.7), rgba(79, 79, 120, 0.5)), url(/img/magic-flowers-largest.jpg);
+  background-size: cover;
+  position: relative;
+  background-position: bottom; }
+  @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
+    .introduction__borderimg {
+      -webkit-clip-path: polygon(50% 20%, 100% 0, 100% 100%, 0 100%, 0 0);
+      clip-path: polygon(50% 20%, 100% 0, 100% 100%, 0 100%, 0 0);
+      height: 50vh; } }
+
 .myworks__cards {
   display: flex;
   flex-wrap: wrap;
@@ -137,96 +226,6 @@ body {
       display: flex;
       justify-content: center;
       align-items: center; }
-
-.header {
-  background-image: linear-gradient(to bottom, rgba(79, 79, 120, 0.7), rgba(79, 79, 120, 0.5)), url(/img/magic-flowers-largest.jpg);
-  background-size: cover;
-  background-position: center;
-  position: relative; }
-  @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
-    .header {
-      -webkit-clip-path: polygon(0% 0%, 100% 0, 100% 100%, 50% 80%, 0% 100%);
-      clip-path: polygon(0% 0%, 100% 0, 100% 100%, 50% 88%, 0% 100%);
-      height: 99vh; } }
-  .header__text-box {
-    position: absolute;
-    top: 45%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center; }
-  .header__icon-box {
-    display: flex;
-    justify-content: center; }
-  .header__icon {
-    fill: #FAF7F4;
-    width: 9rem;
-    height: 9rem; }
-
-.introduction__box--blue {
-  object-fit: cover;
-  display: block;
-  box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.2);
-  border-radius: 3px;
-  background-color: #9EB5D1; }
-
-.introduction__box--purple {
-  object-fit: cover;
-  display: block;
-  box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.2);
-  border-radius: 3px;
-  background-color: #ABABC9;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-content: center;
-  padding: 5rem; }
-
-.introduction__img--1 {
-  width: 25vw;
-  height: 25vw;
-  object-fit: cover;
-  display: block;
-  border-radius: 100%;
-  box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.2); }
-
-.introduction__borderimg {
-  background-image: linear-gradient(to bottom, rgba(79, 79, 120, 0.7), rgba(79, 79, 120, 0.5)), url(/img/magic-flowers-largest.jpg);
-  background-size: cover;
-  background-position: bottom;
-  position: relative;
-  width: 100%; }
-  @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
-    .introduction__borderimg {
-      -webkit-clip-path: polygon(50% 20%, 100% 0, 100% 100%, 0 100%, 0 0);
-      clip-path: polygon(50% 20%, 100% 0, 100% 100%, 0 100%, 0 0);
-      height: 50vh; } }
-
-.footer {
-  background-image: linear-gradient(to bottom, rgba(79, 79, 120, 0.7), rgba(79, 79, 120, 0.5)), url(/img/magic-flowers-largest.jpg);
-  background-size: cover;
-  background-position: top;
-  position: relative;
-  padding: 5rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center; }
-  .footer__contactdetails {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end; }
-  .footer__icon {
-    fill: #FAF7F4;
-    height: 4rem;
-    width: 4rem; }
-  .footer__location {
-    display: flex; }
-  .footer .element:not(:last-child) {
-    margin-right: 5rem; }
-  .footer .town {
-    align-self: flex-end;
-    margin-left: 1rem; }
 
 .container {
   display: grid;
