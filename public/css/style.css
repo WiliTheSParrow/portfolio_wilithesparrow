@@ -118,6 +118,13 @@ body {
     width: 9rem;
     height: 9rem; }
 
+.introduction__box--brown {
+  object-fit: cover;
+  display: block;
+  box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.2);
+  border-radius: 3px;
+  background-color: #B28451; }
+
 .introduction__box--blue {
   object-fit: cover;
   display: block;
