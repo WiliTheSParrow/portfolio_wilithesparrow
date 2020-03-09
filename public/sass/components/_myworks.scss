@@ -4,11 +4,13 @@
 }
 
 .myworks {
+    transition: all .5s;
 
     &__cards {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-evenly;
+        
     }
 
     &__card {
@@ -19,7 +21,7 @@
         border-radius: 3px;
         position: relative;
         box-shadow: $shadow-box;
-
+        
 
         &--title {
             width: 100%;
@@ -35,7 +37,12 @@
         bottom: 25%;
         z-index: 15;
         text-align: center;
-        
+
+    }
+
+    &__card:hover &__card--img {
+        filter: blur(3px) brightness(60%);
+        background-size: 160%;
     }
 }
 
