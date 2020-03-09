@@ -1,8 +1,9 @@
 .introduction {
     &__box {
-        &--brown{
+        &--brown {
             @include boxProperties;
             background-color: $color-secondary;
+
         }
 
         &--blue {
@@ -13,7 +14,7 @@
         &--purple {
             @include boxProperties;
             background-color: $color-primary-purple-light;
-            
+
             @include centeredFlex;
             flex-direction: column;
             padding: 5rem;
@@ -31,6 +32,7 @@
             display: block;
             border-radius: 100%;
             box-shadow: $shadow-box;
+            z-index: 2;
         }
     }
 
