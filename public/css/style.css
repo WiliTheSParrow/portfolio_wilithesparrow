@@ -118,51 +118,49 @@ body {
     width: 9rem;
     height: 9rem; }
 
-.introduction__box--brown {
-  object-fit: cover;
-  display: block;
-  box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.2);
-  border-radius: 3px;
-  background-color: #B28451; }
-
-.introduction__box--blue {
-  object-fit: cover;
-  display: block;
-  box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.2);
-  border-radius: 3px;
-  background-color: #9EB5D1; }
-
-.introduction__box--purple {
-  object-fit: cover;
-  display: block;
-  box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.2);
-  border-radius: 3px;
-  background-color: #ABABC9;
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  flex-direction: column;
-  padding: 5rem; }
-
-.introduction__img--1 {
-  width: 25vw;
-  height: 25vw;
-  object-fit: cover;
-  display: block;
-  border-radius: 100%;
-  box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.2);
-  z-index: 2; }
-
-.introduction__borderimg {
-  background-image: linear-gradient(to bottom, rgba(79, 79, 120, 0.7), rgba(79, 79, 120, 0.5)), url(/img/magic-flowers-largest.jpg);
-  background-size: cover;
-  position: relative;
-  background-position: bottom; }
-  @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
-    .introduction__borderimg {
-      -webkit-clip-path: polygon(50% 20%, 100% 0, 100% 100%, 0 100%, 0 0);
-      clip-path: polygon(50% 20%, 100% 0, 100% 100%, 0 100%, 0 0);
-      height: 50vh; } }
+.introduction {
+  margin-top: 2rem; }
+  .introduction__box--brown {
+    object-fit: cover;
+    display: block;
+    box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+    background-color: #B28451; }
+  .introduction__box--blue {
+    object-fit: cover;
+    display: block;
+    box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+    background-color: #9EB5D1; }
+  .introduction__box--purple {
+    object-fit: cover;
+    display: block;
+    box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+    background-color: #ABABC9;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    padding: 5rem; }
+  .introduction__img--1 {
+    width: 25vw;
+    height: 25vw;
+    object-fit: cover;
+    display: block;
+    border-radius: 100%;
+    box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.2);
+    z-index: 2; }
+  .introduction__borderimg {
+    background-image: linear-gradient(to bottom, rgba(79, 79, 120, 0.7), rgba(79, 79, 120, 0.5)), url(/img/magic-flowers-largest.jpg);
+    background-size: cover;
+    position: relative;
+    background-position: bottom; }
+    @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
+      .introduction__borderimg {
+        -webkit-clip-path: polygon(50% 20%, 100% 0, 100% 100%, 0 100%, 0 0);
+        clip-path: polygon(50% 20%, 100% 0, 100% 100%, 0 100%, 0 0);
+        height: 50vh; } }
 
 .heading-secondary {
   text-align: center;

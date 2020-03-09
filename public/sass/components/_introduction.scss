@@ -1,4 +1,6 @@
 .introduction {
+    margin-top: 2rem;
+
     &__box {
         &--brown {
             @include boxProperties;
