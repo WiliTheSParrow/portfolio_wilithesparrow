@@ -197,13 +197,19 @@ body {
 
 .myworks__description {
   position: absolute;
-  bottom: 25%;
+  bottom: 2%;
   z-index: 15;
-  text-align: center; }
+  text-align: center;
+  opacity: 0;
+  transition: all .5s; }
 
 .myworks__card:hover .myworks__card--img {
   transition: all .5s;
   filter: blur(3px) brightness(60%); }
+
+.myworks__card:hover .myworks__description {
+  opacity: 1;
+  transform: translate(0, -80%); }
 
 .card-1 {
   width: 100%;

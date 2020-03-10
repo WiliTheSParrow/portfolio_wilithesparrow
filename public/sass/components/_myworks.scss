@@ -39,16 +39,21 @@
 
     &__description {
         position: absolute;
-        bottom: 25%;
+        bottom: 2%;
         z-index: 15;
         text-align: center;
-
+        opacity: 0;
+        transition: all .5s;
     }
 
     &__card:hover &__card--img {
         transition: all .5s;
         filter: blur(3px) brightness(60%);
+    }
 
+    &__card:hover &__description{
+        opacity: 1;
+        transform: translate(0, -80%);
     }
 }
 
