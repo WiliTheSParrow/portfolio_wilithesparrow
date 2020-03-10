@@ -1,0 +1,26 @@
+.btn-text {
+
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+
+    &:link,
+    &:visited {
+        display: inline-block;
+        padding: 6px;
+        border-bottom: 1px solid #fff;
+    }
+
+    &:hover {
+        border-radius: 3px;
+        background: linear-gradient(to right, $color-primary-purple-dark, $color-secondary);
+        text-shadow: 0 1rem 2rem rgba(#000, .15);
+        transform: translateY(-2px);
+        border: none;
+    }
+
+    &:active {
+        text-shadow: 0 .5rem 1rem rgba(#000, .15);
+        transform: translateY(0);
+    }
+}

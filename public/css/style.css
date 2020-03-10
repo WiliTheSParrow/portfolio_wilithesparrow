@@ -70,6 +70,24 @@ body {
   .footer__location {
     font-size: 1.8rem; }
 
+.btn-text {
+  text-decoration: none;
+  color: #fff;
+  cursor: pointer; }
+  .btn-text:link, .btn-text:visited {
+    display: inline-block;
+    padding: 6px;
+    border-bottom: 1px solid #fff; }
+  .btn-text:hover {
+    border-radius: 3px;
+    background: linear-gradient(to right, #4F4F78, #B28451);
+    text-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+    transform: translateY(-2px);
+    border: none; }
+  .btn-text:active {
+    text-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    transform: translateY(0); }
+
 .footer {
   background-image: linear-gradient(to bottom, rgba(79, 79, 120, 0.7), rgba(79, 79, 120, 0.5)), url(/img/magic-flowers-largest.jpg);
   background-size: cover;
@@ -196,13 +214,16 @@ body {
     transition: all .5s; }
 
 .myworks__description {
+  height: 10rem;
   width: 100%;
   position: absolute;
-  bottom: 2%;
+  bottom: 0;
+  transform: translateY(70%);
   z-index: 15;
   text-align: center;
   opacity: 0;
-  transition: all .5s; }
+  transition: all .5s;
+  padding: 0 1rem; }
 
 .myworks__card:hover .myworks__card--img {
   transition: all .5s;
@@ -211,7 +232,7 @@ body {
 
 .myworks__card:hover .myworks__description {
   opacity: 1;
-  transform: translateY(-120%); }
+  transform: translateY(-100%); }
 
 .card-1 {
   width: 100%;

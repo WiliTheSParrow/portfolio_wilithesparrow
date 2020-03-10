@@ -4,13 +4,13 @@
 }
 
 .myworks {
-    
+
 
     &__cards {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-evenly;
-        
+
     }
 
     &__card {
@@ -21,7 +21,6 @@
         border-radius: 3px;
         position: relative;
         box-shadow: $shadow-box;
-        
 
 
         &--title {
@@ -32,20 +31,24 @@
             padding: 1rem 1rem;
         }
 
-        &--img{
+        &--img {
             transition: all .5s;
         }
     }
 
     &__description {
+        height: 10rem;
         width: 100%;
         position: absolute;
-        bottom: 2%;
+        bottom: 0;
+        transform: translateY(70%);
         z-index: 15;
         text-align: center;
         opacity: 0;
         transition: all .5s;
+        padding: 0 1rem;
 
+       
     }
 
     &__card:hover &__card--img {
@@ -54,9 +57,9 @@
         clip-path: polygon(50% 10%, 100% 0, 100% 100%, 0 100%, 0 0);
     }
 
-    &__card:hover &__description{
+    &__card:hover &__description {
         opacity: 1;
-        transform: translateY(-120%);
+        transform: translateY(-100%);
     }
 }
 
