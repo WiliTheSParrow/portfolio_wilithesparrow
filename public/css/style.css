@@ -211,7 +211,7 @@ body {
 
 .myworks__card:hover .myworks__description {
   opacity: 1;
-  transform: translateY(-180%); }
+  transform: translateY(-120%); }
 
 .card-1 {
   width: 100%;

@@ -22,7 +22,7 @@
         position: relative;
         box-shadow: $shadow-box;
         
-        
+
 
         &--title {
             width: 100%;
@@ -45,6 +45,7 @@
         text-align: center;
         opacity: 0;
         transition: all .5s;
+
     }
 
     &__card:hover &__card--img {
@@ -55,7 +56,7 @@
 
     &__card:hover &__description{
         opacity: 1;
-        transform: translateY(-180%);
+        transform: translateY(-120%);
     }
 }
 
