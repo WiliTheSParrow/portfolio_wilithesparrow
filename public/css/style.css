@@ -221,7 +221,7 @@ body {
   position: absolute;
   bottom: 0;
   transform: translateY(70%);
-  z-index: 15;
+  z-index: -1;
   text-align: center;
   opacity: 0;
   transition: all .5s;
@@ -233,6 +233,7 @@ body {
   clip-path: polygon(50% 10%, 100% 0, 100% 100%, 0 100%, 0 0); }
 
 .myworks__card:hover .myworks__description {
+  z-index: 15;
   opacity: 1;
   transform: translateY(-100%); }
 
