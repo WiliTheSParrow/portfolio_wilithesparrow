@@ -23,6 +23,15 @@
         fill: $color-grey-light;
         height: 4rem;
         width: 4rem;
+
+        &:hover{
+            transform: translateY(-2px);
+            fill: url(#svg-gradient);
+        }
+
+        &:active{
+            transform: translateY(0px);
+        }
     }
 
     &__location {

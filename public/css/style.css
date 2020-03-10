@@ -110,6 +110,11 @@ body {
     fill: #FAF7F4;
     height: 4rem;
     width: 4rem; }
+    .footer__icon:hover {
+      transform: translateY(-2px);
+      fill: url(#svg-gradient); }
+    .footer__icon:active {
+      transform: translateY(0px); }
   .footer__location {
     display: flex; }
   .footer .element {
