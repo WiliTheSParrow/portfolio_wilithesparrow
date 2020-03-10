@@ -50,7 +50,7 @@ body {
   margin-left: 1.5rem; }
 
 .myworks__card--title {
-  font-size: 2.4rem;
+  font-size: 2.6rem;
   font-weight: 500; }
 
 .myworks__description {
@@ -196,6 +196,7 @@ body {
     transition: all .5s; }
 
 .myworks__description {
+  width: 100%;
   position: absolute;
   bottom: 2%;
   z-index: 15;
@@ -205,11 +206,12 @@ body {
 
 .myworks__card:hover .myworks__card--img {
   transition: all .5s;
-  filter: blur(3px) brightness(60%); }
+  filter: blur(3px) brightness(60%);
+  clip-path: polygon(50% 10%, 100% 0, 100% 100%, 0 100%, 0 0); }
 
 .myworks__card:hover .myworks__description {
   opacity: 1;
-  transform: translate(0, -80%); }
+  transform: translateY(-180%); }
 
 .card-1 {
   width: 100%;

@@ -38,6 +38,7 @@
     }
 
     &__description {
+        width: 100%;
         position: absolute;
         bottom: 2%;
         z-index: 15;
@@ -49,11 +50,12 @@
     &__card:hover &__card--img {
         transition: all .5s;
         filter: blur(3px) brightness(60%);
+        clip-path: polygon(50% 10%, 100% 0, 100% 100%, 0 100%, 0 0);
     }
 
     &__card:hover &__description{
         opacity: 1;
-        transform: translate(0, -80%);
+        transform: translateY(-180%);
     }
 }
 
