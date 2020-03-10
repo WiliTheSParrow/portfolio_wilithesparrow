@@ -304,21 +304,23 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  transition: transform .3s; }
   .fantomcard__title {
     margin-bottom: 3rem; }
   .fantomcard__icon {
     fill: #222222;
     width: 9rem;
     height: 9rem; }
-    .fantomcard__icon--border {
-      width: 15rem;
-      height: 15rem;
-      border: 7px solid #222222;
-      border-radius: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center; }
+  .fantomcard:hover {
+    cursor: pointer;
+    transform: translateY(-2px);
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); }
+  .fantomcard:active {
+    transform: translateY(0px);
+    box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.2); }
+  .fantomcard:hover .fantomcard__icon {
+    fill: url(#svg-gradient); }
 
 .container {
   display: grid;

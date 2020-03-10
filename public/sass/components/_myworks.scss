@@ -48,11 +48,11 @@
         transition: all .5s;
         padding: 0 1rem;
 
-       
+
     }
 
     &__card:hover &__card--img {
-        
+
         transition: all .5s;
         filter: blur(3px) brightness(60%);
         clip-path: polygon(50% 10%, 100% 0, 100% 100%, 0 100%, 0 0);
@@ -99,6 +99,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    transition: transform .3s;
 
     &__title {
         margin-bottom: 3rem;
@@ -108,17 +109,22 @@
         fill: $color-grey-dark;
         width: 9rem;
         height: 9rem;
-
-        &--border {
-            width: 15rem;
-            height: 15rem;
-            border: 7px solid $color-grey-dark;
-            border-radius: 100%;
-
-            display: flex;
-            justify-content: center;
-            align-items: center;
-
-        }
     }
+
+    &:hover{
+        cursor: pointer;
+        transform: translateY(-2px);
+        box-shadow: 0 1.5rem 4rem rgba(#000, .15);
+    }
+
+    &:active{
+        transform: translateY(0px);
+        box-shadow: $shadow-box;
+    }
+
+    &:hover &__icon {
+        fill: url(#svg-gradient);
+        
+    }
+
 }
