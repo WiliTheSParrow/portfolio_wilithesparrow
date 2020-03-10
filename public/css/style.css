@@ -73,8 +73,10 @@ body {
 .btn-text {
   text-decoration: none;
   color: #fff;
-  cursor: pointer; }
+  cursor: pointer;
+  transition: all .5s; }
   .btn-text:link, .btn-text:visited {
+    transition: all .5s;
     display: inline-block;
     padding: 6px;
     border-bottom: 1px solid #fff; }
