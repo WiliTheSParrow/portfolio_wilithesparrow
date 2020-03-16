@@ -34,9 +34,6 @@ body {
 
 html {
   font-size: 62.5%; }
-  @media only screen and (min-width: 112.5em) {
-    html {
-      font-size: 80%; } }
 
 body {
   font-family: "EB Garamond", sans-serif;
@@ -56,22 +53,28 @@ body {
     font-size: 13rem;
     font-weight: 400;
     margin-bottom: 2.5rem; }
-    @media only screen and (max-width: 1329px) {
+    @media only screen and (max-width: 75em) {
       .heading-primary--main {
         font-size: 10rem; } }
+    @media only screen and (max-width: 56.25em) {
+      .heading-primary--main {
+        font-size: 7.5rem; } }
   .heading-primary--sub {
     display: block;
     font-size: 3rem;
     font-weight: 300;
     letter-spacing: .4rem; }
-    @media only screen and (max-width: 1329px) {
+    @media only screen and (max-width: 75em) {
       .heading-primary--sub {
-        font-size: 2.2rem; } }
+        font-size: 2rem; } }
+    @media only screen and (max-width: 56.25em) {
+      .heading-primary--sub {
+        font-size: 1.5rem; } }
 
 .heading-secondary {
   font-size: 5rem;
   text-transform: uppercase; }
-  @media only screen and (max-width: 1329px) {
+  @media only screen and (max-width: 75em) {
     .heading-secondary {
       font-size: 4rem; } }
 
@@ -184,10 +187,18 @@ body {
     fill: #FAF7F4;
     width: 9rem;
     height: 9rem; }
-    @media only screen and (max-width: 1329px) {
+    @media only screen and (max-width: 75em) {
       .header__icon {
         width: 7rem;
         height: 7rem; } }
+    @media only screen and (max-width: 56.25em) {
+      .header__icon {
+        width: 6rem;
+        height: 6rem; } }
+    @media only screen and (max-width: 56.25em) {
+      .header__icon {
+        width: 5rem;
+        height: 5rem; } }
 
 .introduction {
   margin-top: 2rem; }

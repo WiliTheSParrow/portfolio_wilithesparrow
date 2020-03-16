@@ -3,7 +3,6 @@
         background-position: center;
     }
 
-
     // clip-path: polygon(0% 0%, 100% 0, 100% 100%, 50% 80%, 0% 100%);
 
     @supports(clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
@@ -29,9 +28,19 @@
         width: 9rem;
         height: 9rem;
 
-        @media only screen and (max-width: 1329px) {
+        @include mediaQueryChange (tab-land) {
             width: 7rem;
             height: 7rem;
+        }
+
+        @include mediaQueryChange(tab-port) {
+            width: 6rem;
+            height: 6rem;
+        }
+
+        @include mediaQueryChange(tab-port) {
+            width: 5rem;
+            height: 5rem;
         }
     }
 }

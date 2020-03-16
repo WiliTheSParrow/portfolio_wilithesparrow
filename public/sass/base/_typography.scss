@@ -1,9 +1,5 @@
-html{
+html {
     font-size: 62.5%; //1 rem = 10px; 10px / 16px = 62.5%
-
-    @include mediaQueryChange(big-desktop){
-        font-size: 80%;
-    }
 }
 
 body {
@@ -14,8 +10,6 @@ body {
 
 .header {
     color: $color-grey-light;
-
-    
 }
 
 .heading-primary {
@@ -30,9 +24,15 @@ body {
         font-weight: 400;
         margin-bottom: 2.5rem;
 
-        @media only screen and (max-width: 1329px){
+        @include mediaQueryChange(tab-land) {
             font-size: 10rem;
         }
+
+        @include mediaQueryChange(tab-port) {
+            font-size: 7.5rem;
+        }
+
+        
     }
 
     &--sub {
@@ -40,9 +40,16 @@ body {
         font-size: 3rem;
         font-weight: 300;
         letter-spacing: .4rem;
-        @media only screen and (max-width: 1329px){
-            font-size: 2.2rem;
+
+        @include mediaQueryChange(tab-land) {
+            font-size: 2rem;
         }
+
+        @include mediaQueryChange(tab-port) {
+            font-size: 1.5rem;
+        }
+
+       
     }
 }
 
@@ -50,7 +57,7 @@ body {
     font-size: 5rem;
     text-transform: uppercase;
 
-    @media only screen and (max-width: 1329px){
+    @include mediaQueryChange (tab-land) {
         font-size: 4rem;
     }
 }
@@ -61,7 +68,7 @@ body {
         margin-bottom: 2.5rem;
         margin-left: 1.5rem;
 
-        @include mediaQueryChange(tab-land){
+        @include mediaQueryChange(tab-land) {
             font-size: 2.3rem;
         }
     }
@@ -71,13 +78,11 @@ body {
     &__card--title {
         font-size: 2.6rem;
         font-weight: 500;
-
-        
     }
 
-    &__description{
+    &__description {
         color: #fff;
-        font-size: 1.8rem;      
+        font-size: 1.8rem;
     }
 }
 
@@ -87,16 +92,16 @@ body {
     font-weight: 500;
 }
 
-.footer{
+.footer {
     color: $color-grey-light;
 
-    &__title{
+    &__title {
         font-family: $font-secondary;
         font-size: 4rem;
         font-weight: 500;
     }
 
-    &__location{
+    &__location {
         font-size: 1.8rem;
     }
 }
