@@ -11,6 +11,11 @@
         height: 99vh;
     }
 
+    @include mediaQueryChange(phone) {
+        -webkit-clip-path: polygon(0% 0%, 100% 0, 100% 100%, 50% 95%, 0% 100%);
+        clip-path: polygon(0% 0%, 100% 0, 100% 100%, 50% 95%, 0% 100%);
+    }
+
     &__text-box {
         position: absolute;
         top: 45%;
