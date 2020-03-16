@@ -49,6 +49,10 @@ body {
 .heading-secondary {
     font-size: 5rem;
     text-transform: uppercase;
+
+    @media only screen and (max-width: 1329px){
+        font-size: 4rem;
+    }
 }
 
 .introduction {
@@ -56,6 +60,10 @@ body {
         font-size: 2.5rem;
         margin-bottom: 2.5rem;
         margin-left: 1.5rem;
+
+        @include mediaQueryChange(tab-land){
+            font-size: 2.3rem;
+        }
     }
 }
 
@@ -63,6 +71,8 @@ body {
     &__card--title {
         font-size: 2.6rem;
         font-weight: 500;
+
+        
     }
 
     &__description{

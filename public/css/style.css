@@ -71,11 +71,17 @@ body {
 .heading-secondary {
   font-size: 5rem;
   text-transform: uppercase; }
+  @media only screen and (max-width: 1329px) {
+    .heading-secondary {
+      font-size: 4rem; } }
 
 .introduction__paragraph {
   font-size: 2.5rem;
   margin-bottom: 2.5rem;
   margin-left: 1.5rem; }
+  @media only screen and (max-width: 75em) {
+    .introduction__paragraph {
+      font-size: 2.3rem; } }
 
 .myworks__card--title {
   font-size: 2.6rem;
@@ -178,6 +184,10 @@ body {
     fill: #FAF7F4;
     width: 9rem;
     height: 9rem; }
+    @media only screen and (max-width: 1329px) {
+      .header__icon {
+        width: 7rem;
+        height: 7rem; } }
 
 .introduction {
   margin-top: 2rem; }
