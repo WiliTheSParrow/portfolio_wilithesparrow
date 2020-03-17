@@ -22,9 +22,9 @@ ORDER: Base + typography > general layout + grid > page layout > components
   padding: 0;
   box-sizing: inherit; }
 
-html, body {
-  overflow-x: hidden; }
-
+/* html, body{
+    overflow-x: hidden;
+} */
 html {
   background-color: #FAF7F4; }
 
@@ -60,6 +60,12 @@ body {
   color: inherit;
   backface-visibility: hidden;
   margin-bottom: 8rem; }
+  @media only screen and (max-width: 56.25em) {
+    .heading-primary {
+      margin-bottom: 10rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .heading-primary {
+      margin-bottom: 15rem; } }
   .heading-primary--main {
     display: block;
     font-family: "Dawning of a New Day", sans-serif;
@@ -68,7 +74,8 @@ body {
     margin-bottom: 2.5rem; }
     @media only screen and (max-width: 56.25em) {
       .heading-primary--main {
-        font-size: 7.3rem; } }
+        font-size: 7.3rem;
+        margin-bottom: 4.5rem; } }
     @media only screen and (max-width: 37.5em) {
       .heading-primary--main {
         font-size: 4.5rem; } }

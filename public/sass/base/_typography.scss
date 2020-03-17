@@ -32,6 +32,14 @@ body {
     backface-visibility: hidden;
     margin-bottom: 8rem;
 
+    @include mediaQueryChange(tab-port) {
+        margin-bottom: 10rem;
+    }
+
+    @include mediaQueryChange(phone) {
+        margin-bottom: 15rem;
+    }
+
     &--main {
         display: block;
         font-family: $font-secondary;
@@ -41,6 +49,7 @@ body {
 
         @include mediaQueryChange(tab-port) {
             font-size: 7.3rem;
+            margin-bottom: 4.5rem;
         }
 
         @include mediaQueryChange(phone) {
