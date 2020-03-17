@@ -1,6 +1,7 @@
 - mediaq__on mobile my work cards should be opened
 - mediaq_optimize picture loading for diff screen types
 - animation__grid animation, slower picture animation
+- change card shadow, specially github fantomcard
 - don't forget menu bar! :-D
 - apply progressive web app meetup knowledge
 - check code duplications 2
