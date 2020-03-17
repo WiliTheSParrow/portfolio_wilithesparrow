@@ -3,6 +3,7 @@
 - animation__grid animation, slower picture animation
 - text color to #000
 - don't forget menu bar! :-D
+- apply progressive web app meetup knowledge
 
 ---------------------------------------------------------
 * try the originally planned font-style
