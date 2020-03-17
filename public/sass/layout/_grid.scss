@@ -6,7 +6,7 @@
 
 .introduction {
     height: 100vh;
-    grid-row: introduction-start / introduction-end;
+    // grid-row: introduction-start / introduction-end;
 
     display: grid;
     grid-template-columns: repeat(13, 1fr);

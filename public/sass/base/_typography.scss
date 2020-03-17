@@ -38,7 +38,7 @@ body {
     }
 
     @include mediaQueryChange(phone) {
-        margin-bottom: 15rem;
+        margin-bottom: 6rem;
     }
 
     &--main {

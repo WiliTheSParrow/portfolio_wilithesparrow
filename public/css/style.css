@@ -65,7 +65,7 @@ body {
       margin-bottom: 10rem; } }
   @media only screen and (max-width: 37.5em) {
     .heading-primary {
-      margin-bottom: 15rem; } }
+      margin-bottom: 6rem; } }
   .heading-primary--main {
     display: block;
     font-family: "Dawning of a New Day", sans-serif;
@@ -187,6 +187,9 @@ body {
   background-size: cover;
   position: relative;
   background-position: center; }
+  @media only screen and (max-width: 37.5em) {
+    .header {
+      background-position: right; } }
   @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
     .header {
       -webkit-clip-path: polygon(0% 0%, 100% 0, 100% 100%, 50% 88%, 0% 100%);
@@ -406,7 +409,6 @@ body {
 
 .introduction {
   height: 100vh;
-  grid-row: introduction-start / introduction-end;
   display: grid;
   grid-template-columns: repeat(13, 1fr);
   grid-template-rows: repeat(8, 1fr); }

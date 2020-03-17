@@ -3,7 +3,9 @@
         background-position: center;
     }
 
-    // clip-path: polygon(0% 0%, 100% 0, 100% 100%, 50% 80%, 0% 100%);
+    @include mediaQueryChange(phone) {
+        background-position: right;
+    }
 
     @supports(clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
         -webkit-clip-path: polygon(0% 0%, 100% 0, 100% 100%, 50% 88%, 0% 100%);
