@@ -1,12 +1,12 @@
-- check: code repetition
-- animation__grid animation, slower picture animation
 - mediaq__on mobile my work cards should be opened
 - mediaq_optimize picture loading for diff screen types
-- add more box in introduction box
-- link portfolio websites to portfolio XD
+- animation__grid animation, slower picture animation
 - text color to #000
-- link my contact info to icons in footer
 - don't forget menu bar! :-D
 
 ---------------------------------------------------------
 * try the originally planned font-style
+* check: code repetition
+* add more box in introduction box
+* link portfolio websites to portfolio XD
+* link my contact info to icons in footer
