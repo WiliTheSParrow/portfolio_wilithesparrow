@@ -9,7 +9,7 @@
     // grid-row: introduction-start / introduction-end;
 
     display: grid;
-    grid-template-columns: repeat(13, 1fr);
+    grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr));
     grid-template-rows: repeat(8, 1fr);
 
     &__box {
@@ -26,14 +26,14 @@
         }
 
         &--purple {
-            grid-column: 6 / span 7;
+            grid-column: 6 / span 9;
             grid-row: 2 / span 5;
         }
 
     }
 
     &__img {
-        grid-column: 3 / span 3;
+        grid-column: 3;
         grid-row: 2 / span 4;
     }
 }
