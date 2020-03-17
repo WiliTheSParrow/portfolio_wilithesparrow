@@ -261,9 +261,9 @@ body {
     background-position: bottom; }
     @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
       .introduction__borderimg {
-        -webkit-clip-path: polygon(50% 20%, 100% 0, 100% 100%, 0 100%, 0 0);
-        clip-path: polygon(50% 20%, 100% 0, 100% 100%, 0 100%, 0 0);
-        height: 50vh; } }
+        -webkit-clip-path: polygon(50% 70%, 100% 0, 100% 100%, 0 100%, 0 0);
+        clip-path: polygon(50% 70%, 100% 0, 100% 100%, 0 100%, 0 0);
+        height: 25vh; } }
 
 .heading-secondary {
   text-align: center;
