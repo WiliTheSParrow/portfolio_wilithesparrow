@@ -255,12 +255,13 @@ body {
   align-content: center;
   flex-direction: column;
   height: 60vh;
-  width: 70vh;
+  width: 90vh;
   padding: 2rem;
   padding-left: 5rem; }
   @media only screen and (max-width: 56.25em) {
     .introduction__box--purple {
       width: 80vw;
+      height: 100%;
       padding: 3rem; } }
   @media only screen and (max-width: 37.5em) {
     .introduction__box--purple {
