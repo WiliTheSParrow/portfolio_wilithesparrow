@@ -1,6 +1,15 @@
 .introduction {
     margin-top: 2rem;
 
+    &__small-boxes{
+        border: 2px solid orangered;
+    }
+
+    
+    &__big-box{
+        border: 2px solid yellowgreen;
+    }
+
     &__box {
         &--brown {
             @include boxProperties;
