@@ -5,7 +5,8 @@
 }
 
 .introduction {
-    border: 5px solid orangered;;
+    border: 5px solid orangered;
+    ;
     height: 70vh;
 
     display: grid;
@@ -16,7 +17,18 @@
         grid-template-columns: 1fr;
         grid-template-rows: repeat(2, 1fr);
     }
-    
+
+    &__small-boxes {
+        @include mediaQueryChange(tab-port) {
+            grid-row: 2;
+        }
+    }
+
+    &__big-box {
+        @include mediaQueryChange(tab-port) {
+            grid-row: 1;
+        }
+    }
 
 
     /*  &__box {

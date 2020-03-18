@@ -1,8 +1,9 @@
-@mixin boxProperties {
+@mixin boxProperties($box-color) {
     object-fit: cover;
     display: block;
     box-shadow: $shadow-box;
     border-radius: 3px;
+    background-color: $box-color;
 }
 
 @mixin flowerBackground {

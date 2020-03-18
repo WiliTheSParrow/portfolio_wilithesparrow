@@ -1,30 +1,26 @@
 .introduction {
     // margin-top: 2rem;
 
-    &__small-boxes{
+    &__small-boxes {
         border: 5px solid blueviolet;
     }
 
-    
-    &__big-box{
+
+    &__big-box {
         border: 5px solid yellowgreen;
     }
 
     &__box {
         &--brown {
-            @include boxProperties;
-            background-color: $color-secondary;
-
+            @include boxProperties(color-secondary);
         }
 
         &--blue {
-            @include boxProperties;
-            background-color: $color-primary-blue;
+            @include boxProperties($color-primary-blue);
         }
 
         &--purple {
-            @include boxProperties;
-            background-color: $color-primary-purple-light;
+            @include boxProperties($color-primary-purple-light);
 
             @include centeredFlex;
             flex-direction: column;

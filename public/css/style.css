@@ -235,7 +235,7 @@ body {
   display: block;
   box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.2);
   border-radius: 3px;
-  background-color: #B28451; }
+  background-color: color-secondary; }
 
 .introduction__box--blue {
   object-fit: cover;
@@ -450,6 +450,12 @@ body {
     .introduction {
       grid-template-columns: 1fr;
       grid-template-rows: repeat(2, 1fr); } }
+  @media only screen and (max-width: 56.25em) {
+    .introduction__small-boxes {
+      grid-row: 2; } }
+  @media only screen and (max-width: 56.25em) {
+    .introduction__big-box {
+      grid-row: 1; } }
 
 .myworks {
   grid-row: myworks-start / myworks-end;
