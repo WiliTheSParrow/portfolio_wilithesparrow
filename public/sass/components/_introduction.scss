@@ -8,6 +8,7 @@
 
     &__big-box {
         border: 5px solid yellowgreen;
+
     }
 
     &__box {
@@ -24,7 +25,25 @@
 
             @include centeredFlex;
             flex-direction: column;
-            margin-right: 3rem;
+
+            height: 60vh;
+            width: 70vh;
+            padding: 2rem;
+            padding-left: 5rem;
+
+            @include mediaQueryChange(tab-port) {
+                width: 80vw;
+                padding: 3rem;
+            }
+
+            @include mediaQueryChange(phone) {
+                background-color: $color-grey-light;
+                box-shadow: none;;
+                width: 100%;
+                height: 40vh;
+                padding: 1.5rem;
+                margin-top: 2rem;
+            }
         }
 
     }
