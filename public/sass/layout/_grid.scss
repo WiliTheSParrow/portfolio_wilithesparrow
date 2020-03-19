@@ -9,7 +9,7 @@
     height: 80vh;
 
     display: grid;
-    grid-template-columns:  1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
     align-content: center;
 
     @include mediaQueryChange(tab-port) {
@@ -19,8 +19,13 @@
     }
 
     &__small-boxes {
-
         // height: 70vh;
+        /* display: grid;
+        grid-template-rows: repeat(5, 1fr);
+        grid-template-columns: repeat(5, 1fr);
+        align-items: center; */
+
+
         @include mediaQueryChange(tab-port) {
             grid-row: 2;
         }
@@ -32,7 +37,7 @@
             display: grid;
             justify-content: center;
         }
-        
+
     }
 
 
