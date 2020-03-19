@@ -1,13 +1,13 @@
 .introduction {
-    // margin-top: 2rem;
+    margin: 3rem 0;
 
     &__small-boxes {
-        border: 5px solid blueviolet;
+        // border: 5px solid blueviolet;
     }
 
 
     &__big-box {
-        border: 5px solid yellowgreen;
+        // border: 5px solid yellowgreen;
 
     }
 
@@ -26,6 +26,9 @@
             @include centeredFlex;
             flex-direction: column;
 
+            padding: 1.5rem;
+            padding-left: 4rem;
+
             /* height: 60vh;
             width: 90vh;
             padding: 2rem;
@@ -39,7 +42,8 @@
 
             @include mediaQueryChange(phone) {
                 background-color: $color-grey-light;
-                box-shadow: none;;
+                box-shadow: none;
+                ;
                 width: 100%;
                 height: 40vh;
                 padding: 1.5rem;
@@ -51,7 +55,7 @@
     &__img {
         &--1 {
             position: relative;
-            width: 170%;
+            width: 150%;
             //object-fit will work if you set the width and height manuall:
             object-fit: cover;
 
@@ -59,6 +63,7 @@
             border-radius: 100%;
             box-shadow: $shadow-box;
             z-index: 20;
+
         }
     }
 
