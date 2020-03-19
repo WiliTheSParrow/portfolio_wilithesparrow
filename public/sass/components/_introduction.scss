@@ -13,7 +13,7 @@
 
     &__box {
         &--brown {
-            @include boxProperties(color-secondary);
+            @include boxProperties($color-secondary);
         }
 
         &--blue {

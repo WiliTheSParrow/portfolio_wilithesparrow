@@ -6,7 +6,7 @@
 
 .introduction {
     border: 5px solid orangered;
-    height: 80vh;
+    // height: 80vh;
 
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -18,12 +18,11 @@
     }
 
     &__small-boxes {
-        // height: 70vh;
-         display: grid;
-         grid-template-rows: repeat(3, 10rem);
-        /* 
+        height: 70vh;
+        display: grid;
+        grid-template-rows: repeat(3, 1fr);
         grid-template-columns: repeat(3, 1fr);
-        align-items: center;  */
+        /*  align-items: center;  */
 
 
         @include mediaQueryChange(tab-port) {

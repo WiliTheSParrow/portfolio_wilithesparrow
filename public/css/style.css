@@ -235,7 +235,7 @@ body {
   display: block;
   box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.2);
   border-radius: 3px;
-  background-color: color-secondary; }
+  background-color: #B28451; }
 
 .introduction__box--blue {
   object-fit: cover;
@@ -433,7 +433,6 @@ body {
 
 .introduction {
   border: 5px solid orangered;
-  height: 80vh;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   /*  &__box {
@@ -465,11 +464,11 @@ body {
       grid-template-columns: 1fr;
       grid-template-rows: repeat(2, 1fr); } }
   .introduction__small-boxes {
+    height: 70vh;
     display: grid;
-    grid-template-rows: repeat(3, 10rem);
-    /* 
-        grid-template-columns: repeat(3, 1fr);
-        align-items: center;  */ }
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    /*  align-items: center;  */ }
     @media only screen and (max-width: 56.25em) {
       .introduction__small-boxes {
         grid-row: 2; } }
