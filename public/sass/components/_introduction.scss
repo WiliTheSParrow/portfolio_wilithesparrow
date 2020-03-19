@@ -26,10 +26,10 @@
             @include centeredFlex;
             flex-direction: column;
 
-            height: 60vh;
+            /* height: 60vh;
             width: 90vh;
             padding: 2rem;
-            padding-left: 5rem;
+            padding-left: 5rem; */
 
             @include mediaQueryChange(tab-port) {
                 width: 80vw;
@@ -46,7 +46,6 @@
                 margin-top: 2rem;
             }
         }
-
     }
 
     &__img {
