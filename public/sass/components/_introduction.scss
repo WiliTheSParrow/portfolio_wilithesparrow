@@ -50,15 +50,15 @@
 
     &__img {
         &--1 {
-            width: 25vw;
-            height: 25vw;
+            position: relative;
+            width: 170%;
             //object-fit will work if you set the width and height manuall:
             object-fit: cover;
 
             display: block;
             border-radius: 100%;
             box-shadow: $shadow-box;
-            z-index: 2;
+            z-index: 20;
         }
     }
 
