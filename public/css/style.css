@@ -440,7 +440,8 @@ body {
     /*  align-items: center;  */ }
     @media only screen and (max-width: 56.25em) {
       .introduction__small-boxes {
-        grid-row: 2; } }
+        grid-row: 2;
+        height: 50vh; } }
   .introduction__big-box {
     height: 80vh;
     display: grid;
@@ -449,6 +450,7 @@ body {
     @media only screen and (max-width: 56.25em) {
       .introduction__big-box {
         grid-row: 1;
+        height: 50vh;
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr;

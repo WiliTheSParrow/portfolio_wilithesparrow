@@ -27,6 +27,7 @@
 
         @include mediaQueryChange(tab-port) {
             grid-row: 2;
+            height: 50vh;
         }
     }
 
@@ -38,6 +39,7 @@
 
         @include mediaQueryChange(tab-port) {
             grid-row: 1;
+            height: 50vh;
 
             display: grid;
             grid-template-columns: 1fr;
