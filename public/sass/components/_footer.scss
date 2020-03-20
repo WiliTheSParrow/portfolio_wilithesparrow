@@ -17,6 +17,11 @@
         justify-content: center;
         align-items: flex-end;
 
+        @include mediaQueryChange(phone) {
+            flex-direction: column;
+            align-items: center;
+        }
+
     }
 
     &__icon {
@@ -24,12 +29,12 @@
         height: 4rem;
         width: 4rem;
 
-        &:hover{
+        &:hover {
             transform: translateY(-2px);
             fill: url(#svg-gradient);
         }
 
-        &:active{
+        &:active {
             transform: translateY(0px);
         }
     }
@@ -44,6 +49,12 @@
 
         &:not(:last-child) {
             margin-right: 5rem;
+        }
+
+        @include mediaQueryChange(phone) {
+            &:not(:last-child) {
+                margin-right: 0;
+            }
         }
     }
 

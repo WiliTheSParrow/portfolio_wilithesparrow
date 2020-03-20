@@ -5,6 +5,10 @@
         margin-bottom: 0;
     }
 
+    @include mediaQueryChange(phone) {
+        height: 90vh;
+    }
+
     &__box {
         &--brown {
             @include boxProperties($color-secondary);
@@ -13,7 +17,10 @@
                 width: 40vw;
                 height: 40vw;
             }
-            @include mediaQueryChange(phone) {display: none;}
+
+            @include mediaQueryChange(phone) {
+                display: none;
+            }
         }
 
         &--blue {
@@ -24,7 +31,10 @@
                 width: 50vw;
                 height: 50vw;
             }
-            @include mediaQueryChange(phone) {display: none;}
+
+            @include mediaQueryChange(phone) {
+                display: none;
+            }
 
         }
 
@@ -46,9 +56,7 @@
             @include mediaQueryChange(phone) {
                 background-color: $color-grey-light;
                 box-shadow: none;
-
                 width: 100%;
-                height: 40vh;
                 padding: 0 3rem;
                 margin-top: 2rem;
             }
@@ -56,6 +64,12 @@
     }
 
     &__img {
+
+        @include mediaQueryChange(phone) {
+            display: flex;
+            justify-content: center;
+        }
+
         &--1 {
             position: relative;
             width: 150%;
@@ -71,9 +85,7 @@
                 width: 49rem;
             }
 
-            @include mediaQueryChange(tab-port) {
-                width: 40rem;
-            }
+
 
         }
     }
