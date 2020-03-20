@@ -38,8 +38,12 @@
 
         @include mediaQueryChange(tab-port) {
             grid-row: 1;
+
             display: grid;
-            justify-content: center;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr;
+
+            justify-items: center;
         }
     }
 
@@ -51,7 +55,7 @@
     &__box {
         &--purple {
             grid-row: 1/6;
-            grid-column: 1/7;    
+            grid-column: 1/7;
         }
 
         &--brown {

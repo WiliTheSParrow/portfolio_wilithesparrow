@@ -257,7 +257,7 @@ body {
     @media only screen and (max-width: 56.25em) {
       .introduction__box--purple {
         width: 80vw;
-        height: 100%;
+        height: 50vw;
         padding: 3rem; } }
     @media only screen and (max-width: 37.5em) {
       .introduction__box--purple {
@@ -450,7 +450,9 @@ body {
       .introduction__big-box {
         grid-row: 1;
         display: grid;
-        justify-content: center; } }
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        justify-items: center; } }
   .introduction__img {
     grid-column: 4 / 7;
     grid-row: 2 / 6; }
