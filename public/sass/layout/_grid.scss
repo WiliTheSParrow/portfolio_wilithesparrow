@@ -29,8 +29,8 @@
             grid-row: 2;
             height: 50vh;
 
-            grid-template-columns: 1fr;
-            grid-template-rows: 1fr;
+            grid-template-columns: repeat(6, 1fr);
+            grid-template-rows: repeat(3, 20rem);
 
             justify-items: center;
             align-items: center;
@@ -62,7 +62,7 @@
 
         @include mediaQueryChange(tab-port) {
             grid-row: 1;
-            grid-column: 1;
+            grid-column: 3/5;
         }
 
     }
@@ -76,6 +76,11 @@
         &--brown {
             grid-row: 1/4;
             grid-column: 3/6;
+
+            @include mediaQueryChange(tab-port) {
+                grid-row: 1/2;
+                grid-column:2/4;
+            }
         }
 
         &--blue {
@@ -83,8 +88,8 @@
             grid-row: 5 / 8;
 
             @include mediaQueryChange(tab-port) {
-                grid-row: 1;
-                grid-column: 1;
+                grid-row: 2/3;
+                grid-column: 4/6;
             }
         }
     }

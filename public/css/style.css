@@ -226,6 +226,9 @@ body {
 
 .introduction {
   margin: 3rem 0; }
+  @media only screen and (max-width: 56.25em) {
+    .introduction {
+      margin-bottom: 0; } }
   .introduction__box--brown {
     object-fit: cover;
     display: block;
@@ -234,7 +237,8 @@ body {
     background-color: #B28451; }
     @media only screen and (max-width: 56.25em) {
       .introduction__box--brown {
-        display: none; } }
+        width: 40vw;
+        height: 40vw; } }
   .introduction__box--blue {
     object-fit: cover;
     display: block;
@@ -243,9 +247,8 @@ body {
     background-color: #9EB5D1; }
     @media only screen and (max-width: 56.25em) {
       .introduction__box--blue {
-        width: 80vw;
-        height: 50vw;
-        padding: 3rem; } }
+        width: 50vw;
+        height: 50vw; } }
   .introduction__box--purple {
     object-fit: cover;
     display: block;
@@ -281,8 +284,7 @@ body {
     z-index: 20; }
     @media only screen and (max-width: 56.25em) {
       .introduction__img--1 {
-        width: 55rem;
-        height: 55rem; } }
+        width: 49rem; } }
   .introduction__borderimg {
     background-image: linear-gradient(to bottom, rgba(79, 79, 120, 0.7), rgba(79, 79, 120, 0.5)), url(/img/magic-flowers-largest.jpg);
     background-size: cover;
@@ -450,8 +452,8 @@ body {
       .introduction__small-boxes {
         grid-row: 2;
         height: 50vh;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(3, 20rem);
         justify-items: center;
         align-items: center; } }
   .introduction__big-box {
@@ -474,20 +476,24 @@ body {
     @media only screen and (max-width: 56.25em) {
       .introduction__img {
         grid-row: 1;
-        grid-column: 1; } }
+        grid-column: 3/5; } }
   .introduction__box--purple {
     grid-row: 1/6;
     grid-column: 1/7; }
   .introduction__box--brown {
     grid-row: 1/4;
     grid-column: 3/6; }
+    @media only screen and (max-width: 56.25em) {
+      .introduction__box--brown {
+        grid-row: 1/2;
+        grid-column: 2/4; } }
   .introduction__box--blue {
     grid-column: 2 / 7;
     grid-row: 5 / 8; }
     @media only screen and (max-width: 56.25em) {
       .introduction__box--blue {
-        grid-row: 1;
-        grid-column: 1; } }
+        grid-row: 2/3;
+        grid-column: 4/6; } }
 
 .myworks {
   grid-row: myworks-start / myworks-end;

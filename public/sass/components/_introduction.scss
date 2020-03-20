@@ -1,14 +1,8 @@
 .introduction {
     margin: 3rem 0;
 
-    &__small-boxes {
-        // border: 5px solid blueviolet;
-    }
-
-
-    &__big-box {
-        // border: 5px solid yellowgreen;
-
+    @include mediaQueryChange(tab-port) {
+        margin-bottom: 0;
     }
 
     &__box {
@@ -16,7 +10,8 @@
             @include boxProperties($color-secondary);
 
             @include mediaQueryChange(tab-port) {
-                display: none;
+                width: 40vw;
+                height: 40vw;
             }
         }
 
@@ -25,9 +20,8 @@
 
 
             @include mediaQueryChange(tab-port) {
-                width: 80vw;
+                width: 50vw;
                 height: 50vw;
-                padding: 3rem;
             }
 
         }
@@ -72,8 +66,7 @@
             z-index: 20;
 
             @include mediaQueryChange(tab-port) {
-                width: 55rem;
-                height: 55rem;
+                width: 49rem;
             }
 
         }
