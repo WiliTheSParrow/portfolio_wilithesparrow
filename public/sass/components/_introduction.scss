@@ -14,10 +14,22 @@
     &__box {
         &--brown {
             @include boxProperties($color-secondary);
+
+            @include mediaQueryChange(tab-port) {
+                display: none;
+            }
         }
 
         &--blue {
             @include boxProperties($color-primary-blue);
+
+
+            @include mediaQueryChange(tab-port) {
+                width: 80vw;
+                height: 50vw;
+                padding: 3rem;
+            }
+
         }
 
         &--purple {
@@ -29,11 +41,6 @@
             padding: 1.5rem;
             padding-left: 9rem;
 
-            /* height: 60vh;
-            width: 90vh;
-            padding: 2rem;
-            padding-left: 5rem; */
-
             @include mediaQueryChange(tab-port) {
                 width: 80vw;
                 height: 50vw;
@@ -43,7 +50,7 @@
             @include mediaQueryChange(phone) {
                 background-color: $color-grey-light;
                 box-shadow: none;
-                ;
+
                 width: 100%;
                 height: 40vh;
                 padding: 1.5rem;
@@ -63,6 +70,11 @@
             border-radius: 100%;
             box-shadow: $shadow-box;
             z-index: 20;
+
+            @include mediaQueryChange(tab-port) {
+                width: 55rem;
+                height: 55rem;
+            }
 
         }
     }

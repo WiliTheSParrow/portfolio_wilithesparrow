@@ -28,6 +28,12 @@
         @include mediaQueryChange(tab-port) {
             grid-row: 2;
             height: 50vh;
+
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr;
+
+            justify-items: center;
+            align-items: center;
         }
     }
 
@@ -46,12 +52,19 @@
             grid-template-rows: 1fr;
 
             justify-items: center;
+            align-items: center;
         }
     }
 
     &__img {
         grid-column: 4 / 7;
         grid-row: 2 / 6;
+
+        @include mediaQueryChange(tab-port) {
+            grid-row: 1;
+            grid-column: 1;
+        }
+
     }
 
     &__box {
@@ -68,6 +81,11 @@
         &--blue {
             grid-column: 2 / 7;
             grid-row: 5 / 8;
+
+            @include mediaQueryChange(tab-port) {
+                grid-row: 1;
+                grid-column: 1;
+            }
         }
     }
 }
