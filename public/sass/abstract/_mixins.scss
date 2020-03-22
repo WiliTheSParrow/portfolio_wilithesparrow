@@ -6,14 +6,51 @@
     background-color: $box-color;
 }
 
+@mixin backgroundImage($url) {
+    background-image: linear-gradient(to bottom,
+            rgba($color-primary-purple-dark, .7),
+            rgba($color-primary-purple-dark, .5)),
+        url($url);
+}
+
 @mixin flowerBackground($bckgrposition) {
     background-image: linear-gradient(to bottom,
             rgba($color-primary-purple-dark, .7),
             rgba($color-primary-purple-dark, .5)),
-        url(/img/magic-flowers-largest.jpg);
+        url(/img/magic-flowers-desktop.jpg);
     background-size: cover;
     position: relative;
     background-position: $bckgrposition;
+
+    @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em),
+    only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),
+    only screen and (min-width: 125em) {
+        background-image: linear-gradient(to bottom,
+                rgba($color-primary-purple-dark, .7),
+                rgba($color-primary-purple-dark, .5)),
+            url(/img/magic-flowers-largest.jpg);
+    }
+
+    @media only screen and (max-width: 75em) {
+        background-image: linear-gradient(to bottom,
+                rgba($color-primary-purple-dark, .7),
+                rgba($color-primary-purple-dark, .5)),
+            url(/img/magic-flowers-tab-lan.jpg);
+    }
+
+    @media only screen and (max-width: 56.25em) {
+        background-image: linear-gradient(to bottom,
+                rgba($color-primary-purple-dark, .7),
+                rgba($color-primary-purple-dark, .5)),
+            url(/img/magic-flowers-tab-por.jpg);
+    }
+
+    @media only screen and (max-width: 37.5em) {
+        background-image: linear-gradient(to bottom,
+                rgba($color-primary-purple-dark, .7),
+                rgba($color-primary-purple-dark, .5)),
+            url(/img/magic-flowers-tab-phone.jpg);
+    }
 }
 
 @mixin cardBackgroundImg($imageurl) {

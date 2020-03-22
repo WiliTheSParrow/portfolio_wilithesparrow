@@ -151,7 +151,7 @@ body {
     transform: translateY(0); }
 
 .footer {
-  background-image: linear-gradient(to bottom, rgba(79, 79, 120, 0.7), rgba(79, 79, 120, 0.5)), url(/img/magic-flowers-largest.jpg);
+  background-image: linear-gradient(to bottom, rgba(79, 79, 120, 0.7), rgba(79, 79, 120, 0.5)), url(/img/magic-flowers-desktop.jpg);
   background-size: cover;
   position: relative;
   background-position: unset;
@@ -160,6 +160,18 @@ body {
   flex-direction: column;
   justify-content: space-around;
   align-items: center; }
+  @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em), only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em), only screen and (min-width: 125em) {
+    .footer {
+      background-image: linear-gradient(to bottom, rgba(79, 79, 120, 0.7), rgba(79, 79, 120, 0.5)), url(/img/magic-flowers-largest.jpg); } }
+  @media only screen and (max-width: 75em) {
+    .footer {
+      background-image: linear-gradient(to bottom, rgba(79, 79, 120, 0.7), rgba(79, 79, 120, 0.5)), url(/img/magic-flowers-tab-lan.jpg); } }
+  @media only screen and (max-width: 56.25em) {
+    .footer {
+      background-image: linear-gradient(to bottom, rgba(79, 79, 120, 0.7), rgba(79, 79, 120, 0.5)), url(/img/magic-flowers-tab-por.jpg); } }
+  @media only screen and (max-width: 37.5em) {
+    .footer {
+      background-image: linear-gradient(to bottom, rgba(79, 79, 120, 0.7), rgba(79, 79, 120, 0.5)), url(/img/magic-flowers-tab-phone.jpg); } }
   .footer__contactdetails {
     width: 100%;
     display: flex;
@@ -197,10 +209,22 @@ body {
     margin-left: 1rem; }
 
 .header {
-  background-image: linear-gradient(to bottom, rgba(79, 79, 120, 0.7), rgba(79, 79, 120, 0.5)), url(/img/magic-flowers-largest.jpg);
+  background-image: linear-gradient(to bottom, rgba(79, 79, 120, 0.7), rgba(79, 79, 120, 0.5)), url(/img/magic-flowers-desktop.jpg);
   background-size: cover;
   position: relative;
   background-position: center; }
+  @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em), only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em), only screen and (min-width: 125em) {
+    .header {
+      background-image: linear-gradient(to bottom, rgba(79, 79, 120, 0.7), rgba(79, 79, 120, 0.5)), url(/img/magic-flowers-largest.jpg); } }
+  @media only screen and (max-width: 75em) {
+    .header {
+      background-image: linear-gradient(to bottom, rgba(79, 79, 120, 0.7), rgba(79, 79, 120, 0.5)), url(/img/magic-flowers-tab-lan.jpg); } }
+  @media only screen and (max-width: 56.25em) {
+    .header {
+      background-image: linear-gradient(to bottom, rgba(79, 79, 120, 0.7), rgba(79, 79, 120, 0.5)), url(/img/magic-flowers-tab-por.jpg); } }
+  @media only screen and (max-width: 37.5em) {
+    .header {
+      background-image: linear-gradient(to bottom, rgba(79, 79, 120, 0.7), rgba(79, 79, 120, 0.5)), url(/img/magic-flowers-tab-phone.jpg); } }
   @media only screen and (max-width: 37.5em) {
     .header {
       background-position: right; } }
@@ -301,10 +325,22 @@ body {
       .introduction__img--1 {
         width: 100%; } }
   .introduction__borderimg {
-    background-image: linear-gradient(to bottom, rgba(79, 79, 120, 0.7), rgba(79, 79, 120, 0.5)), url(/img/magic-flowers-largest.jpg);
+    background-image: linear-gradient(to bottom, rgba(79, 79, 120, 0.7), rgba(79, 79, 120, 0.5)), url(/img/magic-flowers-desktop.jpg);
     background-size: cover;
     position: relative;
     background-position: bottom; }
+    @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em), only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em), only screen and (min-width: 125em) {
+      .introduction__borderimg {
+        background-image: linear-gradient(to bottom, rgba(79, 79, 120, 0.7), rgba(79, 79, 120, 0.5)), url(/img/magic-flowers-largest.jpg); } }
+    @media only screen and (max-width: 75em) {
+      .introduction__borderimg {
+        background-image: linear-gradient(to bottom, rgba(79, 79, 120, 0.7), rgba(79, 79, 120, 0.5)), url(/img/magic-flowers-tab-lan.jpg); } }
+    @media only screen and (max-width: 56.25em) {
+      .introduction__borderimg {
+        background-image: linear-gradient(to bottom, rgba(79, 79, 120, 0.7), rgba(79, 79, 120, 0.5)), url(/img/magic-flowers-tab-por.jpg); } }
+    @media only screen and (max-width: 37.5em) {
+      .introduction__borderimg {
+        background-image: linear-gradient(to bottom, rgba(79, 79, 120, 0.7), rgba(79, 79, 120, 0.5)), url(/img/magic-flowers-tab-phone.jpg); } }
     @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
       .introduction__borderimg {
         -webkit-clip-path: polygon(50% 70%, 100% 0, 100% 100%, 0 100%, 0 0);
