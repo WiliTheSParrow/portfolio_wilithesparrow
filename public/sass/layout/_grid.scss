@@ -31,7 +31,7 @@
 
         @include mediaQueryChange(tab-port) {
             grid-row: 2;
-            height: 50vh;
+            // height: 50vh;
 
             grid-template-columns: repeat(6, 1fr);
             grid-template-rows: repeat(3, 20rem);
@@ -54,7 +54,7 @@
 
         @include mediaQueryChange(tab-port) {
             grid-row: 1;
-            height: 50vh;
+            // height: 50vh;
 
             display: grid;
             grid-template-columns: 1fr;
