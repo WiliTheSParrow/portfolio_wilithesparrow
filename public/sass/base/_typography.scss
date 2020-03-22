@@ -36,10 +36,6 @@ body {
         margin-bottom: 6rem;
     }
 
-    /*   @include mediaQueryChange(phone) {
-        margin-bottom: 6rem;
-    } */
-
     &--main {
         display: block;
         font-family: $font-secondary;
@@ -99,14 +95,6 @@ body {
                 margin-bottom: 2rem;
             }
         }
-
-        /*  @include mediaQueryChange(phone) {
-            margin: 0;
-
-            &:not(:last-child) {
-                margin-bottom: 2rem;
-            }
-        } */
     }
 }
 
