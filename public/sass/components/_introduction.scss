@@ -48,6 +48,11 @@
             padding: 1.5rem;
             padding-left: 9rem;
 
+            @include mediaQueryChange(tab-land) {
+                padding: 2rem 3.5rem;
+
+            }
+
             @include mediaQueryChange(tab-port) {
                 width: 80vw;
                 padding: 3rem;

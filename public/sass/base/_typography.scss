@@ -80,13 +80,21 @@ body {
         margin-bottom: 2.5rem;
         margin-left: 1.5rem;
 
-        @include mediaQueryChange(phone) {
+        @include mediaQueryChange(tab-port) {
             margin: 0;
 
             &:not(:last-child) {
                 margin-bottom: 2rem;
             }
         }
+
+       /*  @include mediaQueryChange(phone) {
+            margin: 0;
+
+            &:not(:last-child) {
+                margin-bottom: 2rem;
+            }
+        } */
     }
 }
 

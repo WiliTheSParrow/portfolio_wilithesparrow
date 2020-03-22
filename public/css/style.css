@@ -95,8 +95,15 @@ body {
 .introduction__paragraph {
   font-size: 2.5rem;
   margin-bottom: 2.5rem;
-  margin-left: 1.5rem; }
-  @media only screen and (max-width: 37.5em) {
+  margin-left: 1.5rem;
+  /*  @include mediaQueryChange(phone) {
+            margin: 0;
+
+            &:not(:last-child) {
+                margin-bottom: 2rem;
+            }
+        } */ }
+  @media only screen and (max-width: 56.25em) {
     .introduction__paragraph {
       margin: 0; }
       .introduction__paragraph:not(:last-child) {
@@ -278,6 +285,9 @@ body {
     flex-direction: column;
     padding: 1.5rem;
     padding-left: 9rem; }
+    @media only screen and (max-width: 75em) {
+      .introduction__box--purple {
+        padding: 2rem 3.5rem; } }
     @media only screen and (max-width: 56.25em) {
       .introduction__box--purple {
         width: 80vw;
@@ -459,7 +469,6 @@ body {
       grid-template-rows: [header-start] min-content [header-end introduction-start] min-content [introduction-end myworks-start] min-content [myworks-end footer-start] min-content [footer-end]; } }
 
 .introduction {
-  border: 5px solid orangered;
   display: grid;
   grid-template-columns: 1.5fr 2fr; }
   @media only screen and (max-width: 56.25em) {
@@ -504,7 +513,7 @@ body {
     grid-row: 2 / 6; }
     @media only screen and (max-width: 56.25em) {
       .introduction__img {
-        grid-row: 1;
+        grid-row: 2;
         grid-column: 3/5; } }
     @media only screen and (max-width: 37.5em) {
       .introduction__img {
