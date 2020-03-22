@@ -1,4 +1,3 @@
-- mediaq__on mobile my work cards should be opened
 - mediaq_optimize picture loading for diff screen types
 - animation__grid animation, slower picture animation
 - change card shadow, specially github fantomcard
@@ -14,3 +13,4 @@
 * link portfolio websites to portfolio XD
 * link my contact info to icons in footer
 * text color to #000
+* mediaq__on mobile my work cards should be opened
