@@ -88,6 +88,14 @@ body {
         @include mediaQueryChange(tab-land) {
             font-size: 2.3rem;
         } */
+
+        @include mediaQueryChange(phone) {
+            margin: 0;
+
+            &:not(:last-child) {
+                margin-bottom: 2rem;
+            }
+        }
     }
 }
 

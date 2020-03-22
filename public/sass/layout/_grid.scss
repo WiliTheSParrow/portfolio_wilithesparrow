@@ -2,6 +2,8 @@
     display: grid;
     grid-template-rows: [header-start] min-content [header-end introduction-start] min-content [introduction-end myworks-start] min-content [myworks-end footer-start] 30vh [footer-end];
 
+
+
     @include mediaQueryChange(phone) {
         grid-template-rows: [header-start] min-content [header-end introduction-start] min-content [introduction-end myworks-start] min-content [myworks-end footer-start] min-content [footer-end];
     }
@@ -22,8 +24,9 @@
     }
 
     @include mediaQueryChange(phone) {
-        display: flex;
-        flex-direction: column-reverse;
+        border: 2px solid orangered;
+        /* display: flex;
+        flex-direction: column; */
     }
 
     &__small-boxes {
@@ -44,7 +47,10 @@
         }
 
         @include mediaQueryChange(phone) {
-            display: block;
+            border: 2px solid yellowgreen;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr;
+            // display: block;
         }
 
         /*  @include mediaQueryChange(phone) {
@@ -73,7 +79,11 @@
         }
 
         @include mediaQueryChange(phone) {
-            display: block;
+            border: 2px solid violet;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr;
+            height: min-content;
+            // display: block;
         }
 
         /* @include mediaQueryChange(phone) {
@@ -90,10 +100,10 @@
             grid-column: 3/5;
         }
 
-        /*  @include mediaQueryChange(phone) {
+         @include mediaQueryChange(phone) {
             grid-row: 1;
             grid-column: 1;
-        } */
+        }
 
     }
 

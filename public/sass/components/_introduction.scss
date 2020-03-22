@@ -5,9 +5,9 @@
         margin-bottom: 0;
     }
 
-    @include mediaQueryChange(phone) {
+    /* @include mediaQueryChange(phone) {
         height: 90vh;
-    }
+    } */
 
     &__box {
         &--brown {
@@ -57,18 +57,18 @@
                 background-color: $color-grey-light;
                 box-shadow: none;
                 width: 100%;
-                padding: 0 3rem;
-                margin-top: 2rem;
+                // padding: 0 3rem;
+                // margin-top: 2rem;
             }
         }
     }
 
     &__img {
 
-        @include mediaQueryChange(phone) {
+        /* @include mediaQueryChange(phone) {
             display: flex;
             justify-content: center;
-        }
+        } */
 
         &--1 {
             position: relative;
@@ -85,6 +85,9 @@
                 width: 49rem;
             }
 
+            @include mediaQueryChange(phone) {
+                width: 100%;
+            }
 
 
         }
