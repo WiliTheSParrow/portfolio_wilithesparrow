@@ -348,21 +348,21 @@ body {
   opacity: 0;
   transition: all .5s;
   padding: 0 1rem; }
-  @media only screen and (max-width: 75em) {
+  @media (hover: none) {
     .myworks__description {
       z-index: 15;
       opacity: 1;
       transform: translateY(-100%); } }
 
-@media only screen and (min-width: 112.5em) {
-  .myworks__card:hover .myworks__card--img {
-    transition: all .5s;
-    filter: blur(3px) brightness(60%);
-    clip-path: polygon(50% 10%, 100% 0, 100% 100%, 0 100%, 0 0); }
-  .myworks__card:hover .myworks__description {
-    z-index: 15;
-    opacity: 1;
-    transform: translateY(-100%); } }
+.myworks__card:hover .myworks__card--img {
+  transition: all .5s;
+  filter: blur(3px) brightness(60%);
+  clip-path: polygon(50% 10%, 100% 0, 100% 100%, 0 100%, 0 0); }
+
+.myworks__card:hover .myworks__description {
+  z-index: 15;
+  opacity: 1;
+  transform: translateY(-100%); }
 
 .card-1 {
   width: 100%;
@@ -372,7 +372,7 @@ body {
   background-size: cover;
   background-blend-mode: screen;
   background-image: linear-gradient(to bottom, #4f4f78, rgba(79, 79, 120, 0.9)), url(../img/nexter-largest.jpeg); }
-  @media only screen and (max-width: 75em) {
+  @media (hover: none) {
     .card-1 {
       filter: blur(3px) brightness(60%);
       clip-path: polygon(50% 10%, 100% 0, 100% 100%, 0 100%, 0 0); } }
@@ -385,7 +385,7 @@ body {
   background-size: cover;
   background-blend-mode: screen;
   background-image: linear-gradient(to bottom, #4f4f78, rgba(79, 79, 120, 0.9)), url(../img/trillo-largest.jpg); }
-  @media only screen and (max-width: 75em) {
+  @media (hover: none) {
     .card-2 {
       filter: blur(3px) brightness(60%);
       clip-path: polygon(50% 10%, 100% 0, 100% 100%, 0 100%, 0 0); } }
@@ -398,7 +398,7 @@ body {
   background-size: cover;
   background-blend-mode: screen;
   background-image: linear-gradient(to bottom, #4f4f78, rgba(79, 79, 120, 0.9)), url(../img/natours-largest.jpg); }
-  @media only screen and (max-width: 75em) {
+  @media (hover: none) {
     .card-3 {
       filter: blur(3px) brightness(60%);
       clip-path: polygon(50% 10%, 100% 0, 100% 100%, 0 100%, 0 0); } }
@@ -411,7 +411,7 @@ body {
   background-size: cover;
   background-blend-mode: screen;
   background-image: linear-gradient(to bottom, #4f4f78, rgba(79, 79, 120, 0.9)), url(../img/bookstorewebapp-largest.jpg); }
-  @media only screen and (max-width: 75em) {
+  @media (hover: none) {
     .card-4 {
       filter: blur(3px) brightness(60%);
       clip-path: polygon(50% 10%, 100% 0, 100% 100%, 0 100%, 0 0); } }
@@ -424,7 +424,7 @@ body {
   background-size: cover;
   background-blend-mode: screen;
   background-image: linear-gradient(to bottom, #4f4f78, rgba(79, 79, 120, 0.9)), url(../img/itgigls-largest.jpg); }
-  @media only screen and (max-width: 75em) {
+  @media (hover: none) {
     .card-5 {
       filter: blur(3px) brightness(60%);
       clip-path: polygon(50% 10%, 100% 0, 100% 100%, 0 100%, 0 0); } }
@@ -437,7 +437,7 @@ body {
   background-size: cover;
   background-blend-mode: screen;
   background-image: linear-gradient(to bottom, #4f4f78, rgba(79, 79, 120, 0.9)), url(../img/governmentinfaces-largest.jpg); }
-  @media only screen and (max-width: 75em) {
+  @media (hover: none) {
     .card-6 {
       filter: blur(3px) brightness(60%);
       clip-path: polygon(50% 10%, 100% 0, 100% 100%, 0 100%, 0 0); } }
@@ -450,7 +450,7 @@ body {
   background-size: cover;
   background-blend-mode: screen;
   background-image: linear-gradient(to bottom, #4f4f78, rgba(79, 79, 120, 0.9)), url(../img/soccerleague-largest.jpg); }
-  @media only screen and (max-width: 75em) {
+  @media (hover: none) {
     .card-7 {
       filter: blur(3px) brightness(60%);
       clip-path: polygon(50% 10%, 100% 0, 100% 100%, 0 100%, 0 0); } }
@@ -461,6 +461,9 @@ body {
   justify-content: center;
   align-items: center;
   transition: transform .3s; }
+  @media only screen and (max-width: 37.5em) {
+    .fantomcard {
+      display: none; } }
   .fantomcard__title {
     margin-bottom: 3rem; }
   .fantomcard__icon {

@@ -46,26 +46,26 @@
         transition: all .5s;
         padding: 0 1rem;
 
-        @include mediaQueryChange(tab-land) {
+        @media (hover: none) {
             z-index: 15;
             opacity: 1;
             transform: translateY(-100%);
         }
     }
 
-    @include mediaQueryChange(big-desktop) {
-        &__card:hover &__card--img {
-            transition: all .5s;
-            filter: blur(3px) brightness(60%);
-            clip-path: polygon(50% 10%, 100% 0, 100% 100%, 0 100%, 0 0);
-        }
 
-        &__card:hover &__description {
-            z-index: 15;
-            opacity: 1;
-            transform: translateY(-100%);
-        }
+    &__card:hover &__card--img {
+        transition: all .5s;
+        filter: blur(3px) brightness(60%);
+        clip-path: polygon(50% 10%, 100% 0, 100% 100%, 0 100%, 0 0);
     }
+
+    &__card:hover &__description {
+        z-index: 15;
+        opacity: 1;
+        transform: translateY(-100%);
+    }
+
 }
 
 .card-1 {
@@ -102,6 +102,10 @@
     justify-content: center;
     align-items: center;
     transition: transform .3s;
+
+    @include mediaQueryChange(phone) {
+        display: none;
+    }
 
     &__title {
         margin-bottom: 3rem;

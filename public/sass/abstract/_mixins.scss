@@ -27,7 +27,7 @@
             rgba($color-primary-purple-dark, 1.5),
             rgba($color-primary-purple-dark, .9)), $imageurl;
 
-    @include mediaQueryChange(tab-land) {
+    @media (hover: none) {
         filter: blur(3px) brightness(60%);
         clip-path: polygon(50% 10%, 100% 0, 100% 100%, 0 100%, 0 0);
     }
