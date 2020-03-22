@@ -222,21 +222,7 @@ body {
   .header__icon {
     fill: #FAF7F4;
     width: 4.5rem;
-    height: 4.5rem;
-    /* @include mediaQueryChange (tab-land) {
-            width: 7rem;
-            height: 7rem;
-        }
-
-        @include mediaQueryChange(tab-port) {
-            width: 6rem;
-            height: 6rem;
-        }
-
-        @include mediaQueryChange(tab-port) {
-            width: 5rem;
-            height: 5rem;
-        } */ }
+    height: 4.5rem; }
 
 .introduction {
   margin: 3rem 0; }
