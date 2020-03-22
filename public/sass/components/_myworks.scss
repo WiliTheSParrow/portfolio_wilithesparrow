@@ -4,8 +4,6 @@
 }
 
 .myworks {
-
-
     &__cards {
         display: flex;
         flex-wrap: wrap;
@@ -48,25 +46,29 @@
         transition: all .5s;
         padding: 0 1rem;
 
-
+        @include mediaQueryChange(tab-land) {
+            z-index: 15;
+            opacity: 1;
+            transform: translateY(-100%);
+        }
     }
 
-    &__card:hover &__card--img {
+    @include mediaQueryChange(big-desktop) {
+        &__card:hover &__card--img {
+            transition: all .5s;
+            filter: blur(3px) brightness(60%);
+            clip-path: polygon(50% 10%, 100% 0, 100% 100%, 0 100%, 0 0);
+        }
 
-        transition: all .5s;
-        filter: blur(3px) brightness(60%);
-        clip-path: polygon(50% 10%, 100% 0, 100% 100%, 0 100%, 0 0);
-    }
-
-    &__card:hover &__description {
-        z-index: 15;
-        opacity: 1;
-        transform: translateY(-100%);
+        &__card:hover &__description {
+            z-index: 15;
+            opacity: 1;
+            transform: translateY(-100%);
+        }
     }
 }
 
 .card-1 {
-
     @include cardBackgroundImg(url(../img/nexter-largest.jpeg));
 }
 
@@ -111,24 +113,24 @@
         height: 9rem;
     }
 
-    &:hover{
+
+    &:hover {
         cursor: pointer;
         transform: translateY(-2px);
         box-shadow: 0 1.5rem 4rem rgba(#000, .15);
     }
 
-    &:active{
+    &:active {
         transform: translateY(0px);
         box-shadow: $shadow-box;
     }
 
     &:hover &__icon {
         fill: url(#svg-gradient);
-        
+
     }
 
-    &--link{
+    &--link {
         text-decoration: none;
     }
-
 }
