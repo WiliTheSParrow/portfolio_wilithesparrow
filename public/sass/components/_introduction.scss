@@ -37,7 +37,6 @@
             @include mediaQueryChange(phone) {
                 display: none;
             }
-
         }
 
         &--purple {
@@ -51,7 +50,6 @@
 
             @include mediaQueryChange(tab-port) {
                 width: 80vw;
-                // height: 50vw;
                 padding: 3rem;
             }
 
@@ -60,17 +58,11 @@
                 box-shadow: none;
                 width: 100%;
                 padding: 0;
-                // margin-top: 2rem;
             }
         }
     }
 
     &__img {
-
-        /* @include mediaQueryChange(phone) {
-            display: flex;
-            justify-content: center;
-        } */
 
         &--1 {
             position: relative;
@@ -90,8 +82,6 @@
             @include mediaQueryChange(phone) {
                 width: 100%;
             }
-
-
         }
     }
 
