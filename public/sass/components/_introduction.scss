@@ -5,9 +5,11 @@
         margin-bottom: 0;
     }
 
-    /* @include mediaQueryChange(phone) {
-        height: 90vh;
-    } */
+    @include mediaQueryChange(phone) {
+        padding: 0 2rem;
+    }
+
+
 
     &__box {
         &--brown {
@@ -57,7 +59,7 @@
                 background-color: $color-grey-light;
                 box-shadow: none;
                 width: 100%;
-                // padding: 0 3rem;
+                padding: 0;
                 // margin-top: 2rem;
             }
         }

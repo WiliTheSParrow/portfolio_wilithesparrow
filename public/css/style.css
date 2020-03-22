@@ -99,11 +99,7 @@ body {
 .introduction__paragraph {
   font-size: 2.5rem;
   margin-bottom: 2.5rem;
-  margin-left: 1.5rem;
-  /* 
-        @include mediaQueryChange(tab-land) {
-            font-size: 2.3rem;
-        } */ }
+  margin-left: 1.5rem; }
   @media only screen and (max-width: 37.5em) {
     .introduction__paragraph {
       margin: 0; }
@@ -241,13 +237,13 @@ body {
         } */ }
 
 .introduction {
-  margin: 3rem 0;
-  /* @include mediaQueryChange(phone) {
-        height: 90vh;
-    } */ }
+  margin: 3rem 0; }
   @media only screen and (max-width: 56.25em) {
     .introduction {
       margin-bottom: 0; } }
+  @media only screen and (max-width: 37.5em) {
+    .introduction {
+      padding: 0 2rem; } }
   .introduction__box--brown {
     object-fit: cover;
     display: block;
@@ -294,7 +290,8 @@ body {
       .introduction__box--purple {
         background-color: #FAF7F4;
         box-shadow: none;
-        width: 100%; } }
+        width: 100%;
+        padding: 0; } }
   .introduction__img {
     /* @include mediaQueryChange(phone) {
             display: flex;
@@ -476,7 +473,6 @@ body {
       grid-template-rows: repeat(2, 1fr); } }
   @media only screen and (max-width: 37.5em) {
     .introduction {
-      border: 2px solid orangered;
       /* display: flex;
         flex-direction: column; */ } }
   .introduction__small-boxes {
@@ -498,9 +494,9 @@ body {
         align-items: center; } }
     @media only screen and (max-width: 37.5em) {
       .introduction__small-boxes {
-        border: 2px solid yellowgreen;
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr; } }
+        grid-template-rows: 1fr;
+        height: 100%; } }
   .introduction__big-box {
     display: grid;
     grid-template-rows: repeat(7, 1fr);
@@ -519,7 +515,6 @@ body {
         align-items: center; } }
     @media only screen and (max-width: 37.5em) {
       .introduction__big-box {
-        border: 2px solid violet;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr;
         height: min-content; } }
