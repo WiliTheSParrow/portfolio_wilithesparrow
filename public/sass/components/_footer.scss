@@ -1,7 +1,5 @@
 .footer {
-    @include flowerBackground {
-        background-position: top;
-    }
+    @include flowerBackground (unset);
 
     padding: 5rem;
 
@@ -24,7 +22,7 @@
 
     }
 
-    &__title{
+    &__title {
         padding-bottom: 2rem;
     }
 
@@ -59,6 +57,7 @@
             &:not(:last-child) {
                 margin-right: 0;
             }
+
             margin: 2.5rem 0;
         }
     }

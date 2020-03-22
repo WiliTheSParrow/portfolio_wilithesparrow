@@ -1,7 +1,5 @@
 .header {
-    @include flowerBackground {
-        background-position: center;
-    }
+    @include flowerBackground(center);
 
     @include mediaQueryChange(phone) {
         background-position: right;
