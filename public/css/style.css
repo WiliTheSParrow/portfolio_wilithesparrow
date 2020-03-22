@@ -465,9 +465,6 @@ body {
   grid-template-rows: [header-start] min-content [header-end introduction-start] min-content [introduction-end myworks-start] min-content [myworks-end footer-start] 30vh [footer-end]; }
   @media only screen and (max-width: 56.25em) {
     .container {
-      grid-template-rows: [header-start] min-content [header-end introduction-start] min-content [introduction-end myworks-start] min-content [myworks-end footer-start] 45vh [footer-end]; } }
-  @media only screen and (max-width: 37.5em) {
-    .container {
       grid-template-rows: [header-start] min-content [header-end introduction-start] min-content [introduction-end myworks-start] min-content [myworks-end footer-start] min-content [footer-end]; } }
 
 .introduction {
