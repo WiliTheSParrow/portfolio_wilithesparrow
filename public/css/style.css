@@ -59,11 +59,11 @@ body {
 .heading-primary {
   color: inherit;
   backface-visibility: hidden;
-  margin-bottom: 8rem; }
+  margin-bottom: 8rem;
+  /*   @include mediaQueryChange(phone) {
+        margin-bottom: 6rem;
+    } */ }
   @media only screen and (max-width: 56.25em) {
-    .heading-primary {
-      margin-bottom: 10rem; } }
-  @media only screen and (max-width: 37.5em) {
     .heading-primary {
       margin-bottom: 6rem; } }
   .heading-primary--main {
@@ -306,6 +306,9 @@ body {
     border-radius: 100%;
     box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.2);
     z-index: 20; }
+    @media only screen and (max-width: 75em) {
+      .introduction__img--1 {
+        width: 30rem; } }
     @media only screen and (max-width: 56.25em) {
       .introduction__img--1 {
         width: 49rem; } }
@@ -511,6 +514,9 @@ body {
   .introduction__img {
     grid-column: 4 / 7;
     grid-row: 2 / 6; }
+    @media only screen and (max-width: 75em) {
+      .introduction__img {
+        grid-row: 3/7; } }
     @media only screen and (max-width: 56.25em) {
       .introduction__img {
         grid-row: 2;

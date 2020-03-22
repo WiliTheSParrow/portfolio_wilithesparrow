@@ -33,12 +33,12 @@ body {
     margin-bottom: 8rem;
 
     @include mediaQueryChange(tab-port) {
-        margin-bottom: 10rem;
-    }
-
-    @include mediaQueryChange(phone) {
         margin-bottom: 6rem;
     }
+
+  /*   @include mediaQueryChange(phone) {
+        margin-bottom: 6rem;
+    } */
 
     &--main {
         display: block;

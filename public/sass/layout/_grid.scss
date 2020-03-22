@@ -73,6 +73,10 @@
         grid-column: 4 / 7;
         grid-row: 2 / 6;
 
+        @include mediaQueryChange(tab-land) {
+            grid-row: 3/7;
+        }
+
         @include mediaQueryChange(tab-port) {
             grid-row: 2;
             grid-column: 3/5;

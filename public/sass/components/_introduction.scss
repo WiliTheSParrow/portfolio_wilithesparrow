@@ -80,6 +80,10 @@
             box-shadow: $shadow-box;
             z-index: 20;
 
+            @include mediaQueryChange(tab-land) {
+                width: 30rem;
+            }
+
             @include mediaQueryChange(tab-port) {
                 width: 49rem;
             }
