@@ -412,6 +412,19 @@ body {
     .card-1 {
       filter: blur(3px) brightness(60%);
       clip-path: polygon(50% 10%, 100% 0, 100% 100%, 0 100%, 0 0); } }
+  @media only screen and (max-width: 37.5em) {
+    .card-1 {
+      width: 100%;
+      height: 80%;
+      clip-path: polygon(50% 30%, 100% 0, 100% 100%, 0 100%, 0 0);
+      transform: translateY(5rem);
+      background-size: cover;
+      background-blend-mode: screen;
+      background-image: linear-gradient(to bottom, #4f4f78, rgba(79, 79, 120, 0.9)), url(../img/nexter-res-phone.jpg); } }
+  @media only screen and (max-width: 37.5em) and (hover: none) {
+    .card-1 {
+      filter: blur(3px) brightness(60%);
+      clip-path: polygon(50% 10%, 100% 0, 100% 100%, 0 100%, 0 0); } }
 
 .card-2 {
   width: 100%;
@@ -422,6 +435,19 @@ body {
   background-blend-mode: screen;
   background-image: linear-gradient(to bottom, #4f4f78, rgba(79, 79, 120, 0.9)), url(../img/trillo-res.jpg); }
   @media (hover: none) {
+    .card-2 {
+      filter: blur(3px) brightness(60%);
+      clip-path: polygon(50% 10%, 100% 0, 100% 100%, 0 100%, 0 0); } }
+  @media only screen and (max-width: 37.5em) {
+    .card-2 {
+      width: 100%;
+      height: 80%;
+      clip-path: polygon(50% 30%, 100% 0, 100% 100%, 0 100%, 0 0);
+      transform: translateY(5rem);
+      background-size: cover;
+      background-blend-mode: screen;
+      background-image: linear-gradient(to bottom, #4f4f78, rgba(79, 79, 120, 0.9)), url(../img/trillo-res-phone.jpg); } }
+  @media only screen and (max-width: 37.5em) and (hover: none) {
     .card-2 {
       filter: blur(3px) brightness(60%);
       clip-path: polygon(50% 10%, 100% 0, 100% 100%, 0 100%, 0 0); } }
@@ -438,6 +464,19 @@ body {
     .card-3 {
       filter: blur(3px) brightness(60%);
       clip-path: polygon(50% 10%, 100% 0, 100% 100%, 0 100%, 0 0); } }
+  @media only screen and (max-width: 37.5em) {
+    .card-3 {
+      width: 100%;
+      height: 80%;
+      clip-path: polygon(50% 30%, 100% 0, 100% 100%, 0 100%, 0 0);
+      transform: translateY(5rem);
+      background-size: cover;
+      background-blend-mode: screen;
+      background-image: linear-gradient(to bottom, #4f4f78, rgba(79, 79, 120, 0.9)), url(../img/natours-res-phone.jpg); } }
+  @media only screen and (max-width: 37.5em) and (hover: none) {
+    .card-3 {
+      filter: blur(3px) brightness(60%);
+      clip-path: polygon(50% 10%, 100% 0, 100% 100%, 0 100%, 0 0); } }
 
 .card-4 {
   width: 100%;
@@ -448,6 +487,19 @@ body {
   background-blend-mode: screen;
   background-image: linear-gradient(to bottom, #4f4f78, rgba(79, 79, 120, 0.9)), url(../img/bookstorewebapp-res.jpg); }
   @media (hover: none) {
+    .card-4 {
+      filter: blur(3px) brightness(60%);
+      clip-path: polygon(50% 10%, 100% 0, 100% 100%, 0 100%, 0 0); } }
+  @media only screen and (max-width: 37.5em) {
+    .card-4 {
+      width: 100%;
+      height: 80%;
+      clip-path: polygon(50% 30%, 100% 0, 100% 100%, 0 100%, 0 0);
+      transform: translateY(5rem);
+      background-size: cover;
+      background-blend-mode: screen;
+      background-image: linear-gradient(to bottom, #4f4f78, rgba(79, 79, 120, 0.9)), url(../img/bookstorewebapp-res-phone.jpg); } }
+  @media only screen and (max-width: 37.5em) and (hover: none) {
     .card-4 {
       filter: blur(3px) brightness(60%);
       clip-path: polygon(50% 10%, 100% 0, 100% 100%, 0 100%, 0 0); } }

@@ -70,18 +70,31 @@
 
 .card-1 {
     @include cardBackgroundImg(url(../img/nexter-res.jpg));
+
+    @include mediaQueryChange(phone) {
+        @include cardBackgroundImg(url(../img/nexter-res-phone.jpg));
+    }
 }
 
 .card-2 {
     @include cardBackgroundImg(url(../img/trillo-res.jpg));
+    @include mediaQueryChange(phone) {
+        @include cardBackgroundImg(url(../img/trillo-res-phone.jpg));
+    }
 }
 
 .card-3 {
     @include cardBackgroundImg(url(../img/natours-res.jpg));
+    @include mediaQueryChange(phone) {
+        @include cardBackgroundImg(url(../img/natours-res-phone.jpg));
+    }
 }
 
 .card-4 {
     @include cardBackgroundImg(url(../img/bookstorewebapp-res.jpg));
+    @include mediaQueryChange(phone) {
+        @include cardBackgroundImg(url(../img/bookstorewebapp-res-phone.jpg));
+    }
 }
 
 .card-5 {
