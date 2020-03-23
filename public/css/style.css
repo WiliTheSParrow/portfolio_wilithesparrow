@@ -407,7 +407,7 @@ body {
   transform: translateY(5rem);
   background-size: cover;
   background-blend-mode: screen;
-  background-image: linear-gradient(to bottom, #4f4f78, rgba(79, 79, 120, 0.9)), url(../img/nexter-largest.jpeg); }
+  background-image: linear-gradient(to bottom, #4f4f78, rgba(79, 79, 120, 0.9)), url(../img/nexter-res.jpg); }
   @media (hover: none) {
     .card-1 {
       filter: blur(3px) brightness(60%);
