@@ -73,27 +73,27 @@
 }
 
 .card-2 {
-    @include cardBackgroundImg(url(../img/trillo-largest.jpg));
+    @include cardBackgroundImg(url(../img/trillo-res.jpg));
 }
 
 .card-3 {
-    @include cardBackgroundImg(url(../img/natours-largest.jpg));
+    @include cardBackgroundImg(url(../img/natours-res.jpg));
 }
 
 .card-4 {
-    @include cardBackgroundImg(url(../img/bookstorewebapp-largest.jpg));
+    @include cardBackgroundImg(url(../img/bookstorewebapp-res.jpg));
 }
 
 .card-5 {
-    @include cardBackgroundImg(url(../img/itgigls-largest.jpg));
+    @include cardBackgroundImg(url(../img/itgigls-res.jpg));
 }
 
 .card-6 {
-    @include cardBackgroundImg(url(../img/governmentinfaces-largest.jpg));
+    @include cardBackgroundImg(url(../img/governmentinfaces-res.jpg));
 }
 
 .card-7 {
-    @include cardBackgroundImg(url(../img/soccerleague-largest.jpg));
+    @include cardBackgroundImg(url(../img/soccerleague-res.jpg));
 }
 
 .fantomcard {

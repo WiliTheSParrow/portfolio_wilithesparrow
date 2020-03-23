@@ -420,7 +420,7 @@ body {
   transform: translateY(5rem);
   background-size: cover;
   background-blend-mode: screen;
-  background-image: linear-gradient(to bottom, #4f4f78, rgba(79, 79, 120, 0.9)), url(../img/trillo-largest.jpg); }
+  background-image: linear-gradient(to bottom, #4f4f78, rgba(79, 79, 120, 0.9)), url(../img/trillo-res.jpg); }
   @media (hover: none) {
     .card-2 {
       filter: blur(3px) brightness(60%);
@@ -433,7 +433,7 @@ body {
   transform: translateY(5rem);
   background-size: cover;
   background-blend-mode: screen;
-  background-image: linear-gradient(to bottom, #4f4f78, rgba(79, 79, 120, 0.9)), url(../img/natours-largest.jpg); }
+  background-image: linear-gradient(to bottom, #4f4f78, rgba(79, 79, 120, 0.9)), url(../img/natours-res.jpg); }
   @media (hover: none) {
     .card-3 {
       filter: blur(3px) brightness(60%);
@@ -446,7 +446,7 @@ body {
   transform: translateY(5rem);
   background-size: cover;
   background-blend-mode: screen;
-  background-image: linear-gradient(to bottom, #4f4f78, rgba(79, 79, 120, 0.9)), url(../img/bookstorewebapp-largest.jpg); }
+  background-image: linear-gradient(to bottom, #4f4f78, rgba(79, 79, 120, 0.9)), url(../img/bookstorewebapp-res.jpg); }
   @media (hover: none) {
     .card-4 {
       filter: blur(3px) brightness(60%);
@@ -459,7 +459,7 @@ body {
   transform: translateY(5rem);
   background-size: cover;
   background-blend-mode: screen;
-  background-image: linear-gradient(to bottom, #4f4f78, rgba(79, 79, 120, 0.9)), url(../img/itgigls-largest.jpg); }
+  background-image: linear-gradient(to bottom, #4f4f78, rgba(79, 79, 120, 0.9)), url(../img/itgigls-res.jpg); }
   @media (hover: none) {
     .card-5 {
       filter: blur(3px) brightness(60%);
@@ -472,7 +472,7 @@ body {
   transform: translateY(5rem);
   background-size: cover;
   background-blend-mode: screen;
-  background-image: linear-gradient(to bottom, #4f4f78, rgba(79, 79, 120, 0.9)), url(../img/governmentinfaces-largest.jpg); }
+  background-image: linear-gradient(to bottom, #4f4f78, rgba(79, 79, 120, 0.9)), url(../img/governmentinfaces-res.jpg); }
   @media (hover: none) {
     .card-6 {
       filter: blur(3px) brightness(60%);
@@ -485,7 +485,7 @@ body {
   transform: translateY(5rem);
   background-size: cover;
   background-blend-mode: screen;
-  background-image: linear-gradient(to bottom, #4f4f78, rgba(79, 79, 120, 0.9)), url(../img/soccerleague-largest.jpg); }
+  background-image: linear-gradient(to bottom, #4f4f78, rgba(79, 79, 120, 0.9)), url(../img/soccerleague-res.jpg); }
   @media (hover: none) {
     .card-7 {
       filter: blur(3px) brightness(60%);
