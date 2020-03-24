@@ -32,6 +32,9 @@ body {
     backface-visibility: hidden;
     margin-bottom: 8rem;
 
+    animation: moveInLeft 1s;
+    transition: transform 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
+
     @include mediaQueryChange(tab-port) {
         margin-bottom: 6rem;
     }
@@ -42,10 +45,6 @@ body {
         font-size: 11rem;
         font-weight: 400;
         margin-bottom: 2.5rem;
-
-        animation: moveInLeft 1s;
-        transition: transform 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
-
 
         @include mediaQueryChange(tab-land) {
             font-size: 10rem;
