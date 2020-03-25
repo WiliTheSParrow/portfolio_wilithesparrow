@@ -13,6 +13,7 @@
 
     &__box {
         &--brown {
+            animation: moveInLeft 1.5s;
             @include boxProperties($color-secondary);
 
             @include mediaQueryChange(tab-port) {
@@ -26,6 +27,7 @@
         }
 
         &--blue {
+            animation: moveInLeft 1.5s;
             @include boxProperties($color-primary-blue);
 
 

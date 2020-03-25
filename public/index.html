@@ -35,7 +35,7 @@
 
         <section class="introduction">
 
-            <div class="introduction__small-boxes">
+            <div class="introduction__small-boxes" data-scroll>
 
                 <figure class="introduction__box--brown">
                 </figure>
@@ -44,10 +44,7 @@
                 </figure>
 
                 <figure class="introduction__img">
-                    <img src="img/self-picture-grey-desktop.jpg" 
-                    alt="ID picture" 
-                    class="introduction__img--1"
-                    srcset="
+                    <img src="img/self-picture-grey-desktop.jpg" alt="ID picture" class="introduction__img--1" srcset="
                     img/self-picture-grey-tab-land.jpg 300w,
                     img/self-picture-grey-tab-port.jpg 400w,
                     img/self-picture-grey-phone.jpg 600w,
@@ -55,7 +52,7 @@
                 </figure>
             </div>
 
-            <div class="introduction__big-box">
+            <div class="introduction__big-box" data-scroll>
 
                 <figure class="introduction__box--purple">
                     <p class="introduction__paragraph">Hi! I'm Julia.</p>
@@ -247,7 +244,10 @@
             <stop offset="100%" stop-color="#B28451" />
         </linearGradient>
     </svg>
-
+    <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
+    <script>
+        ScrollOut();
+    </script>
 </body>
 
 </html>

@@ -300,6 +300,7 @@ body {
     .introduction {
       padding: 0 2rem; } }
   .introduction__box--brown {
+    animation: moveInLeft 1.5s;
     object-fit: cover;
     display: block;
     box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.2);
@@ -313,6 +314,7 @@ body {
       .introduction__box--brown {
         display: none; } }
   .introduction__box--blue {
+    animation: moveInLeft 1.5s;
     object-fit: cover;
     display: block;
     box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.2);
