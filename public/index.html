@@ -250,7 +250,11 @@
 
 </body>
 <script>
-    ScrollOut();
+    ScrollOut({
+        targets: ".introduction__small-boxes",
+        once: true,
+        threshold: .5
+    });
 </script>
 
 </html>
