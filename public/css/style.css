@@ -292,14 +292,7 @@ body {
     animation: bounce 9s infinite; }
 
 .introduction {
-  margin: 3rem 0;
-  /*  &__small-boxes {
-        opacity: .9;
-    }
-
-    &__big-box {
-        opacity: .8;
-    } */ }
+  margin: 3rem 0; }
   @media only screen and (max-width: 56.25em) {
     .introduction {
       margin-bottom: 0; } }
@@ -343,7 +336,7 @@ body {
     align-content: center;
     flex-direction: column;
     padding: 1.5rem;
-    padding-left: 9rem; }
+    padding-left: 6.5rem; }
     @media only screen and (max-width: 75em) {
       .introduction__box--purple {
         padding: 2rem 3.5rem; } }
@@ -400,9 +393,8 @@ body {
 [data-scroll] {
   transition: all 2s; }
 
-.introduction__small-boxes [data-scroll="in"] {
-  opacity: 1;
-  animation: moveInLeft 2s; }
+[data-scroll="in"] {
+  opacity: 1; }
 
 [data-scroll="out"] {
   opacity: 0; }

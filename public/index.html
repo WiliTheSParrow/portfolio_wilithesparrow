@@ -37,7 +37,7 @@
 
         <section class="introduction">
 
-            <div class="introduction__small-boxes" data-scroll>
+            <div class="introduction__small-boxes">
 
                 <figure class="introduction__box--brown">
                 </figure>
@@ -45,7 +45,7 @@
                 <figure class="introduction__box--blue">
                 </figure>
 
-                <figure class="introduction__img">
+                <figure class="introduction__img" data-scroll>
                     <img src="img/self-picture-grey-desktop.jpg" alt="ID picture" class="introduction__img--1" srcset="
                     img/self-picture-grey-tab-land.jpg 300w,
                     img/self-picture-grey-tab-port.jpg 400w,
@@ -54,20 +54,23 @@
                 </figure>
             </div>
 
-            <div class="introduction__big-box" data-scroll>
+            <div class="introduction__big-box">
 
                 <figure class="introduction__box--purple">
-                    <p class="introduction__paragraph">Hi! I'm Julia.</p>
-                    <p class="introduction__paragraph">Wife, cat mom and horror movie lover. Of course I like coffee.
+                    <p class="introduction__paragraph" data-scroll>Hi! I'm Julia.</p>
+                    <p class="introduction__paragraph" data-scroll>Wife, cat mom and horror movie lover. Of course I
+                        like coffee.
                     </p>
-                    <p class="introduction__paragraph">Currently, I'm working at BusinessMonitor as Front-end Designer.
+                    <p class="introduction__paragraph" data-scroll>Currently, I'm working at BusinessMonitor as
+                        Front-end Designer.
                         In
                         my spare time you'll find me on concerts, travelling OR home knitting and crocheting while
                         watching
                         some spooky stuff.</p>
-                    <p class="introduction__paragraph>I learned Web Development and Web Design by myself. I'm very passionate about making the digital
-                    world a more " candy for the eye" place. Not to mention making it more user friendly.</p> <p
-                        class="introduction__paragraph">Do you agree with my mission? Then contact me!</p>
+                    <p class="introduction__paragraph" data-scroll>I learned Web Development and Web Design by myself.
+                        I'm very passionate about making the digital
+                        world a more " candy for the eye" place. Not to mention making it more user friendly.</p>
+                    <p class="introduction__paragraph" data-scroll>Do you agree with my mission? Then contact me!</p>
                 </figure>
             </div>
 
@@ -251,7 +254,6 @@
 </body>
 <script>
     ScrollOut({
-        targets: ".introduction__small-boxes",
         once: true,
         threshold: .5
     });
