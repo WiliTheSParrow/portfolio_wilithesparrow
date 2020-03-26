@@ -1,5 +1,6 @@
 .header {
     @include flowerBackground(center);
+    background-attachment: fixed;
 
     @include mediaQueryChange(phone) {
         background-position: right;

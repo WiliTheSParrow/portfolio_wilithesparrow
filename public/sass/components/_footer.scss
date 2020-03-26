@@ -1,5 +1,6 @@
 .footer {
     @include flowerBackground (unset);
+    background-attachment: fixed;
 
     padding: 5rem;
 
