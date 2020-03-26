@@ -18,7 +18,7 @@
         margin: 5rem 5rem;
         border-radius: 3px;
         position: relative;
-        box-shadow: $shadow-box;
+        box-shadow: $shadow-box-2;
 
 
         &--title {
@@ -129,7 +129,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    transition: transform .3s;
+    // transition: all .3s;
+    
 
     @include mediaQueryChange(phone) {
         display: none;
@@ -147,9 +148,10 @@
 
 
     &:hover {
+        transition: all 0.3s cubic-bezier(.25,.8,.25,1);
         cursor: pointer;
         transform: translateY(-2px);
-        box-shadow: 0 1.5rem 4rem rgba(#000, .15);
+        box-shadow: $shadow-box-3;
     }
 
     &:active {
