@@ -15,6 +15,13 @@ ORDER: Base + typography > general layout + grid > page layout > components
 
 1em = 16px
 */
+.navigation {
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1500; }
+
 @keyframes moveInLeft {
   0% {
     opacity: 0;
