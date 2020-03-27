@@ -1,11 +1,24 @@
 .navigation {
-    height: 100vh;
+    border: 2px solid orangered;
+    height: 10vh;
     position: absolute;
     top: 0;
     right: 0;
     z-index: 1500;
 
-    &__link{
-        
+    display: flex;
+    align-items: center;
+
+    &__link {
+
+        &:link,
+        &:visited {
+            display: inline-block;
+            font-size: 1.6rem;
+            font-weight: 300;
+            padding: 1rem 2rem;
+            color: #fff;
+            text-decoration: none;
+        }
     }
 }
