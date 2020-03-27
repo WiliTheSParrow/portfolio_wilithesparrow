@@ -1,4 +1,4 @@
-- don't forget menu bar! :-D
+
 - check code duplications 2
 - check commented codes and comments
 - apply progressive web app meetup knowledge
@@ -15,3 +15,4 @@
 * mediaq_optimize picture loading for diff screen types
 * animation__grid animation, slower picture animation
 * change card shadow, specially github fantomcard
+* don't forget menu bar! :-D
