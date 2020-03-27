@@ -19,7 +19,7 @@ I'm building my online portfolio where I can show my works in web development an
 * HTML5
 * SASS
 * JavaScript
-* Adobe XD
+* jQuery
 
 
 ## Click on the link below to check out this project

@@ -13,6 +13,7 @@
     <link rel="shortcut icon" type="image/png" href="img/favicon-flower.png">
 
     <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
 
     <title>Julia Wilhelm | Portfolio</title>
 </head>
@@ -20,9 +21,9 @@
 <body class="container">
     <div class="navigation">
         <nav class="navigation__nav">
-            <a class="navigation__link" href="#aboutSection">About</a>
-            <a class="navigation__link" href="#worksSection">Works</a>
-            <a class="navigation__link" href="#contactSection">Contact</a>
+            <a href="#" class="navigation__link" id="aboutButton">About</a>
+            <a href="#" class="navigation__link" id="worksButton">Works</a>
+            <a href="#" class="navigation__link" id="contactButton">Contact</a>
         </nav>
     </div>
 
@@ -263,6 +264,24 @@
         ScrollOut({
             once: true,
             threshold: .5
+        });
+
+        $("#aboutButton").click(function () {
+            $([document.documentElement, document.body]).animate({
+                scrollTop: $("#aboutSection").offset().top
+            }, 2000);
+        });
+
+        $("#worksButton").click(function () {
+            $([document.documentElement, document.body]).animate({
+                scrollTop: $("#worksSection").offset().top
+            }, 2000);
+        });
+
+        $("#contactButton").click(function () {
+            $([document.documentElement, document.body]).animate({
+                scrollTop: $("#contactSection").offset().top
+            }, 2000);
         });
     </script>
 </body>
