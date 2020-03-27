@@ -46,6 +46,22 @@ ORDER: Base + typography > general layout + grid > page layout > components
     color: #fff;
     padding-left: 2rem; }
 
+.goToTopBtn {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  border: 1px solid #fff;
+  border-radius: 25px;
+  animation: moveInRight 1.5s;
+  transition: transform 0.6s cubic-bezier(0.34, 1.56, 0.64, 1); }
+  .goToTopBtn__btn:link, .goToTopBtn__btn:visited {
+    font-size: 3rem;
+    font-weight: 300;
+    color: #fff;
+    font-family: "Dawning of a New Day", sans-serif;
+    text-decoration: none;
+    padding-left: 1rem; }
+
 @keyframes moveInLeft {
   0% {
     opacity: 0;
@@ -254,7 +270,7 @@ body {
         flex-direction: column;
         align-items: center; } }
   .footer__title {
-    padding-bottom: 2rem; }
+    padding-bottom: 4rem; }
   .footer__icon {
     fill: #FAF7F4;
     height: 4rem;
@@ -674,9 +690,6 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center; }
-  @media only screen and (max-width: 37.5em) {
-    .fantomcard {
-      display: none; } }
   .fantomcard__title {
     margin-bottom: 3rem; }
   .fantomcard__icon {
@@ -695,6 +708,9 @@ body {
     fill: url(#svg-gradient); }
   .fantomcard--link {
     text-decoration: none; }
+    @media only screen and (max-width: 37.5em) {
+      .fantomcard--link {
+        display: none; } }
 
 .container {
   display: grid;
