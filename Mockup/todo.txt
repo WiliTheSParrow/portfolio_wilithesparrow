@@ -1,5 +1,4 @@
-- footer: more space between title and icons
-- jump to top btn
+
 - check code duplications 2
 - check commented codes and comments
 - apply progressive web app meetup knowledge
@@ -17,3 +16,5 @@
 * animation__grid animation, slower picture animation
 * change card shadow, specially github fantomcard
 * don't forget menu bar! :-D
+* footer: more space between title and icons
+* jump to top btn
