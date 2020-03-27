@@ -16,21 +16,28 @@ ORDER: Base + typography > general layout + grid > page layout > components
 1em = 16px
 */
 .navigation {
-  border: 2px solid orangered;
   height: 10vh;
   position: absolute;
   top: 0;
   right: 0;
   z-index: 1500;
+  padding: 2rem;
   display: flex;
   align-items: center; }
   .navigation__link:link, .navigation__link:visited {
     display: inline-block;
     font-size: 1.6rem;
-    font-weight: 300;
-    padding: 1rem 2rem;
+    font-weight: 600;
+    letter-spacing: .1em;
     color: #fff;
     text-decoration: none; }
+    .navigation__link:link:not(:last-child), .navigation__link:visited:not(:last-child) {
+      padding-right: 2rem; }
+  .navigation__link:not(:last-child)::after {
+    content: "|";
+    float: right;
+    color: #fff;
+    padding-left: 2rem; }
 
 @keyframes moveInLeft {
   0% {
