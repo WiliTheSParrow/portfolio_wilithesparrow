@@ -27,7 +27,7 @@
         </nav>
     </div>
 
-    <header class="header">
+    <header class="header" id="headerSection">
         <div class="header__text-box">
             <h1 class="heading-primary">
                 <span class="heading-primary--main">Julia Wilhelm</span>
@@ -251,7 +251,7 @@
             </div>
 
         </div>
-        <div class="goToTopBtn" data-scroll>
+        <div class="goToTopBtn" id="goToTopBtn" data-scroll>
             <a href="#" class="goToTopBtn__btn">Go Top</a>
         </div>
     </footer>
@@ -286,6 +286,13 @@
         $("#contactButton").click(function () {
             $([document.documentElement, document.body]).animate({
                 scrollTop: $("#contactSection").offset().top
+            }, 2000);
+
+        });
+
+        $("#goToTopBtn").click(function () {
+            $([document.documentElement, document.body]).animate({
+                scrollTop: $("#headerSection").offset().top
             }, 2000);
         });
     </script>
