@@ -1,8 +1,4 @@
-- apply progressive web app meetup knowledge
-    o lighthouse
-    o make shortcut icon
-    o fetch/catch
-    o many more
+- lighthouse >> do requested changes
 - build min CSS
 - make a last big commit and push
 - host and domain situation
