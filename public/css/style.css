@@ -236,16 +236,16 @@ body {
     transform: translateY(0); }
 
 .footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 5rem;
   background-image: linear-gradient(to bottom, rgba(79, 79, 120, 0.7), rgba(79, 79, 120, 0.5)), url(/img/magic-flowers-desktop.jpg);
   background-size: cover;
   position: relative;
   background-position: unset;
-  background-attachment: fixed;
-  padding: 5rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center; }
+  background-attachment: fixed; }
   @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em), only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em), only screen and (min-width: 125em) {
     .footer {
       background-image: linear-gradient(to bottom, rgba(79, 79, 120, 0.7), rgba(79, 79, 120, 0.5)), url(/img/magic-flowers-largest.jpg); } }
@@ -259,10 +259,10 @@ body {
     .footer {
       background-image: linear-gradient(to bottom, rgba(79, 79, 120, 0.7), rgba(79, 79, 120, 0.5)), url(/img/magic-flowers-tab-phone.jpg); } }
   .footer__contactdetails {
-    width: 100%;
     display: flex;
     justify-content: center;
-    align-items: flex-end; }
+    align-items: flex-end;
+    width: 100%; }
     @media only screen and (max-width: 37.5em) {
       .footer__contactdetails {
         flex-direction: column;
@@ -280,19 +280,21 @@ body {
       transform: translateY(0px); }
   .footer__location {
     display: flex; }
-  .footer .element {
-    display: flex;
-    height: 100%; }
-    .footer .element:not(:last-child) {
-      margin-right: 5rem; }
-    @media only screen and (max-width: 37.5em) {
-      .footer .element {
-        margin: 2.5rem 0; }
-        .footer .element:not(:last-child) {
-          margin-right: 0; } }
-  .footer .town {
-    align-self: flex-end;
-    margin-left: 1rem; }
+
+.element {
+  display: flex;
+  height: 100%; }
+  .element:not(:last-child) {
+    margin-right: 5rem; }
+  @media only screen and (max-width: 37.5em) {
+    .element {
+      margin: 2.5rem 0; }
+      .element:not(:last-child) {
+        margin-right: 0; } }
+
+.town {
+  align-self: flex-end;
+  margin-left: 1rem; }
 
 .header {
   background-image: linear-gradient(to bottom, rgba(79, 79, 120, 0.7), rgba(79, 79, 120, 0.5)), url(/img/magic-flowers-desktop.jpg);

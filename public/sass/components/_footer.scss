@@ -1,26 +1,22 @@
 .footer {
-    @include flowerBackground (unset);
-    background-attachment: fixed;
-
-    padding: 5rem;
-
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    padding: 5rem;
+    @include flowerBackground (unset);
+    background-attachment: fixed;
 
     &__contactdetails {
-        width: 100%;
-
         display: flex;
         justify-content: center;
         align-items: flex-end;
+        width: 100%;
 
         @include mediaQueryChange(phone) {
             flex-direction: column;
             align-items: center;
         }
-
     }
 
     &__title {
@@ -45,27 +41,26 @@
     &__location {
         display: flex;
     }
+}
 
-    .element {
-        display: flex;
-        height: 100%;
+.element {
+    display: flex;
+    height: 100%;
 
+    &:not(:last-child) {
+        margin-right: 5rem;
+    }
+
+    @include mediaQueryChange(phone) {
         &:not(:last-child) {
-            margin-right: 5rem;
+            margin-right: 0;
         }
 
-        @include mediaQueryChange(phone) {
-            &:not(:last-child) {
-                margin-right: 0;
-            }
-
-            margin: 2.5rem 0;
-        }
+        margin: 2.5rem 0;
     }
+}
 
-    .town {
-        align-self: flex-end;
-        margin-left: 1rem;
-    }
-
+.town {
+    align-self: flex-end;
+    margin-left: 1rem;
 }
