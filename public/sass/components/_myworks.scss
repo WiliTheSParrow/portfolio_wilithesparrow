@@ -43,6 +43,7 @@
         z-index: -1;
         transition: all .5s;
         transform: translateY(70%);
+        overflow: hidden;
 
         @media (hover: none) {
             z-index: 15;

@@ -7,7 +7,7 @@
     right: 0;
     z-index: 1500;
     padding: 2rem;
-    animation: moveInRight 1.5s;
+    animation: moveInLeft 1s;
     transition: transform 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
 
     @include mediaQueryChange(phone) {
