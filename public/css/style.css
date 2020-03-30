@@ -324,10 +324,10 @@ body {
       height: 99vh; } }
   .header__text-box {
     position: absolute;
+    text-align: center;
     top: 45%;
     left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center; }
+    transform: translate(-50%, -50%); }
   .header__icon-box {
     display: flex;
     justify-content: center;
