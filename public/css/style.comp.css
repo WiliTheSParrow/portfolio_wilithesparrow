@@ -1,0 +1,800 @@
+/*
+0-600px:    Phone
+600-900px:  Tablet portrait
+900-1200px: Tablet landscape
+1200-1800px: is where our normal styles apply  
+1800px +:   Big desktop
+
+$breakpoint argument choices:
+- phone
+- tab-port
+- tab-land
+- big-desktop
+
+ORDER: Base + typography > general layout + grid > page layout > components
+
+1em = 16px
+*/
+.navigation {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  height: 10vh;
+  top: 0;
+  right: 0;
+  z-index: 1500;
+  padding: 2rem;
+  animation: moveInLeft 1s;
+  transition: transform 0.6s cubic-bezier(0.34, 1.56, 0.64, 1); }
+  @media only screen and (max-width: 37.5em) {
+    .navigation {
+      width: 100%;
+      justify-content: center; } }
+  .navigation__link:link, .navigation__link:visited {
+    display: inline-block;
+    font-size: 1.6rem;
+    font-weight: 300;
+    letter-spacing: .1em;
+    color: #fff;
+    text-decoration: none; }
+    .navigation__link:link:not(:last-child), .navigation__link:visited:not(:last-child) {
+      padding-right: 2rem; }
+  .navigation__link:not(:last-child)::after {
+    content: "|";
+    float: right;
+    color: #fff;
+    padding-left: 2rem; }
+
+.goToTopBtn {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  margin: 2rem 4rem;
+  padding: 1rem; }
+  .goToTopBtn:hover {
+    transform: translateY(-3px); }
+  .goToTopBtn:active {
+    transform: translateY(0px); }
+  .goToTopBtn__btn:link, .goToTopBtn__btn:visited {
+    font-size: 3rem;
+    font-weight: 300;
+    color: #fff;
+    font-family: "Dawning of a New Day", sans-serif;
+    text-decoration: none; }
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem); }
+  80% {
+    transform: translateX(1rem); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem); }
+  80% {
+    transform: translateX(-1rem); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(3rem); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
+@keyframes bounce {
+  0% {
+    transform: translate(0); }
+  50% {
+    transform: translateY(2rem); }
+  100% {
+    transform: translateY(0); } }
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  background-color: #FAF7F4; }
+
+body {
+  box-sizing: border-box;
+  padding: 0; }
+
+::selection {
+  background-color: #9EB5D1;
+  color: #222222; }
+
+html {
+  font-size: 62.5%; }
+  @media only screen and (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
+  @media only screen and (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
+  @media only screen and (min-width: 112.5em) {
+    html {
+      font-size: 75%; } }
+
+body {
+  font-family: "EB Garamond", sans-serif;
+  color: #000;
+  line-height: 1.7; }
+
+.header {
+  color: #FAF7F4; }
+
+.heading-primary {
+  backface-visibility: hidden;
+  margin-bottom: 8rem; }
+  @media only screen and (max-width: 56.25em) {
+    .heading-primary {
+      margin-bottom: 6rem; } }
+  .heading-primary--main {
+    display: block;
+    font-family: "Dawning of a New Day", sans-serif;
+    font-size: 11rem;
+    font-weight: 400;
+    margin-bottom: 2.5rem;
+    animation: moveInLeft 1s;
+    transition: transform 0.6s cubic-bezier(0.34, 1.56, 0.64, 1); }
+    @media only screen and (max-width: 75em) {
+      .heading-primary--main {
+        font-size: 10rem; } }
+    @media only screen and (max-width: 56.25em) {
+      .heading-primary--main {
+        font-size: 7.9rem;
+        margin-bottom: 4.5rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .heading-primary--main {
+        font-size: 4.3rem; } }
+  .heading-primary--sub {
+    display: block;
+    font-size: 2.3rem;
+    font-weight: 300;
+    letter-spacing: .2em;
+    animation: moveInLeft 1.5s;
+    transition: transform 0.6s cubic-bezier(0.34, 1.56, 0.64, 1); }
+    @media only screen and (max-width: 75em) {
+      .heading-primary--sub {
+        font-size: 2.1rem; } }
+    @media only screen and (max-width: 56.25em) {
+      .heading-primary--sub {
+        font-size: 1.7rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .heading-primary--sub {
+        font-size: 1.6rem; } }
+
+.heading-secondary {
+  font-size: 5rem;
+  text-transform: uppercase; }
+
+.introduction__paragraph {
+  font-size: 2.5rem;
+  margin-bottom: 2.5rem;
+  margin-left: 1.5rem; }
+  @media only screen and (max-width: 56.25em) {
+    .introduction__paragraph {
+      margin: 0; }
+      .introduction__paragraph:not(:last-child) {
+        margin-bottom: 2rem; } }
+
+.myworks__card--title {
+  font-size: 2.6rem;
+  font-weight: 500; }
+
+.myworks__description {
+  color: #fff;
+  font-size: 1.8rem; }
+
+.fantomcard__title {
+  color: #222222;
+  font-size: 2.4rem;
+  font-weight: 500; }
+
+.footer {
+  color: #FAF7F4; }
+  .footer__title {
+    font-family: "Dawning of a New Day", sans-serif;
+    font-size: 4rem;
+    font-weight: 500; }
+  .footer__location {
+    font-size: 1.8rem; }
+
+.btn-text {
+  text-decoration: none;
+  color: #fff;
+  cursor: pointer;
+  transition: all .5s; }
+  .btn-text:link, .btn-text:visited {
+    display: inline-block;
+    padding: 6px;
+    border-bottom: 1px solid #fff;
+    transition: all .5s; }
+  .btn-text:hover {
+    border-radius: 3px;
+    background: linear-gradient(to right, #4F4F78, #B28451);
+    text-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+    transform: translateY(-2px);
+    border: none; }
+  .btn-text:active {
+    text-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    transform: translateY(0); }
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 5rem;
+  background-image: linear-gradient(to bottom, rgba(79, 79, 120, 0.7), rgba(79, 79, 120, 0.5)), url(/img/magic-flowers-desktop.jpg);
+  background-size: cover;
+  position: relative;
+  background-position: unset;
+  background-attachment: fixed; }
+  @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em), only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em), only screen and (min-width: 125em) {
+    .footer {
+      background-image: linear-gradient(to bottom, rgba(79, 79, 120, 0.7), rgba(79, 79, 120, 0.5)), url(/img/magic-flowers-largest.jpg); } }
+  @media only screen and (max-width: 75em) {
+    .footer {
+      background-image: linear-gradient(to bottom, rgba(79, 79, 120, 0.7), rgba(79, 79, 120, 0.5)), url(/img/magic-flowers-tab-lan.jpg); } }
+  @media only screen and (max-width: 56.25em) {
+    .footer {
+      background-image: linear-gradient(to bottom, rgba(79, 79, 120, 0.7), rgba(79, 79, 120, 0.5)), url(/img/magic-flowers-tab-por.jpg); } }
+  @media only screen and (max-width: 37.5em) {
+    .footer {
+      background-image: linear-gradient(to bottom, rgba(79, 79, 120, 0.7), rgba(79, 79, 120, 0.5)), url(/img/magic-flowers-tab-phone.jpg); } }
+  .footer__contactdetails {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 100%; }
+    @media only screen and (max-width: 37.5em) {
+      .footer__contactdetails {
+        flex-direction: column;
+        align-items: center; } }
+  .footer__title {
+    padding-bottom: 4rem; }
+  .footer__icon {
+    fill: #FAF7F4;
+    height: 4rem;
+    width: 4rem; }
+    .footer__icon:hover {
+      transform: translateY(-2px);
+      fill: url(#svg-gradient); }
+    .footer__icon:active {
+      transform: translateY(0px); }
+  .footer__location {
+    display: flex; }
+
+.element {
+  display: flex;
+  height: 100%; }
+  .element:not(:last-child) {
+    margin-right: 5rem; }
+  @media only screen and (max-width: 37.5em) {
+    .element {
+      margin: 2.5rem 0; }
+      .element:not(:last-child) {
+        margin-right: 0; } }
+
+.town {
+  align-self: flex-end;
+  margin-left: 1rem; }
+
+.header {
+  background-image: linear-gradient(to bottom, rgba(79, 79, 120, 0.7), rgba(79, 79, 120, 0.5)), url(/img/magic-flowers-desktop.jpg);
+  background-size: cover;
+  position: relative;
+  background-position: center;
+  background-attachment: fixed; }
+  @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em), only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em), only screen and (min-width: 125em) {
+    .header {
+      background-image: linear-gradient(to bottom, rgba(79, 79, 120, 0.7), rgba(79, 79, 120, 0.5)), url(/img/magic-flowers-largest.jpg); } }
+  @media only screen and (max-width: 75em) {
+    .header {
+      background-image: linear-gradient(to bottom, rgba(79, 79, 120, 0.7), rgba(79, 79, 120, 0.5)), url(/img/magic-flowers-tab-lan.jpg); } }
+  @media only screen and (max-width: 56.25em) {
+    .header {
+      background-image: linear-gradient(to bottom, rgba(79, 79, 120, 0.7), rgba(79, 79, 120, 0.5)), url(/img/magic-flowers-tab-por.jpg); } }
+  @media only screen and (max-width: 37.5em) {
+    .header {
+      background-image: linear-gradient(to bottom, rgba(79, 79, 120, 0.7), rgba(79, 79, 120, 0.5)), url(/img/magic-flowers-tab-phone.jpg); } }
+  @media only screen and (max-width: 37.5em) {
+    .header {
+      background-position: right; } }
+  @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
+    .header {
+      -webkit-clip-path: polygon(0% 0%, 100% 0, 100% 100%, 50% 88%, 0% 100%);
+      clip-path: polygon(0% 0%, 100% 0, 100% 100%, 50% 88%, 0% 100%);
+      height: 99vh; } }
+  .header__text-box {
+    position: absolute;
+    text-align: center;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+  .header__icon-box {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    animation: moveInBottom 1s;
+    transition: transform 0.6s cubic-bezier(0.34, 1.56, 0.64, 1); }
+  .header__icon {
+    fill: #FAF7F4;
+    width: 4.5rem;
+    height: 4.5rem;
+    animation: bounce 9s infinite; }
+
+.introduction {
+  margin: 3rem 0; }
+  @media only screen and (max-width: 56.25em) {
+    .introduction {
+      margin-bottom: 0; } }
+  @media only screen and (max-width: 37.5em) {
+    .introduction {
+      padding: 0 2rem; } }
+  .introduction__box--brown {
+    object-fit: cover;
+    display: block;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    border-radius: 3px;
+    background-color: #B28451; }
+    @media only screen and (max-width: 56.25em) {
+      .introduction__box--brown {
+        width: 40vw;
+        height: 40vw; } }
+    @media only screen and (max-width: 37.5em) {
+      .introduction__box--brown {
+        display: none; } }
+  .introduction__box--blue {
+    object-fit: cover;
+    display: block;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    border-radius: 3px;
+    background-color: #9EB5D1; }
+    @media only screen and (max-width: 56.25em) {
+      .introduction__box--blue {
+        width: 50vw;
+        height: 50vw; } }
+    @media only screen and (max-width: 37.5em) {
+      .introduction__box--blue {
+        display: none; } }
+  .introduction__box--purple {
+    object-fit: cover;
+    display: block;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    border-radius: 3px;
+    background-color: #ABABC9;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    padding: 1.5rem;
+    padding-left: 6.5rem; }
+    @media only screen and (max-width: 75em) {
+      .introduction__box--purple {
+        padding: 2rem 3.5rem; } }
+    @media only screen and (max-width: 56.25em) {
+      .introduction__box--purple {
+        width: 80vw;
+        padding: 3rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .introduction__box--purple {
+        background-color: #FAF7F4;
+        box-shadow: none;
+        width: 100%;
+        padding: 0; } }
+  .introduction__img--1 {
+    position: relative;
+    display: block;
+    width: 150%;
+    object-fit: cover;
+    border-radius: 100%;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    z-index: 20; }
+    @media only screen and (max-width: 75em) {
+      .introduction__img--1 {
+        width: 30rem; } }
+    @media only screen and (max-width: 56.25em) {
+      .introduction__img--1 {
+        width: 49rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .introduction__img--1 {
+        width: 100%; } }
+  .introduction__borderimg {
+    background-image: linear-gradient(to bottom, rgba(79, 79, 120, 0.7), rgba(79, 79, 120, 0.5)), url(/img/magic-flowers-desktop.jpg);
+    background-size: cover;
+    position: relative;
+    background-position: bottom; }
+    @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em), only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em), only screen and (min-width: 125em) {
+      .introduction__borderimg {
+        background-image: linear-gradient(to bottom, rgba(79, 79, 120, 0.7), rgba(79, 79, 120, 0.5)), url(/img/magic-flowers-largest.jpg); } }
+    @media only screen and (max-width: 75em) {
+      .introduction__borderimg {
+        background-image: linear-gradient(to bottom, rgba(79, 79, 120, 0.7), rgba(79, 79, 120, 0.5)), url(/img/magic-flowers-tab-lan.jpg); } }
+    @media only screen and (max-width: 56.25em) {
+      .introduction__borderimg {
+        background-image: linear-gradient(to bottom, rgba(79, 79, 120, 0.7), rgba(79, 79, 120, 0.5)), url(/img/magic-flowers-tab-por.jpg); } }
+    @media only screen and (max-width: 37.5em) {
+      .introduction__borderimg {
+        background-image: linear-gradient(to bottom, rgba(79, 79, 120, 0.7), rgba(79, 79, 120, 0.5)), url(/img/magic-flowers-tab-phone.jpg); } }
+    @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
+      .introduction__borderimg {
+        -webkit-clip-path: polygon(50% 70%, 100% 0, 100% 100%, 0 100%, 0 0);
+        clip-path: polygon(50% 70%, 100% 0, 100% 100%, 0 100%, 0 0);
+        height: 25vh; } }
+
+[data-scroll] {
+  transition: all 1s; }
+
+[data-scroll="out"] {
+  opacity: 0;
+  transform: translateX(-10rem); }
+
+[data-scroll="in"] {
+  opacity: 1;
+  transform: translate(0); }
+
+.heading-secondary {
+  text-align: center;
+  margin: 6rem; }
+
+.myworks__cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly; }
+
+.myworks__card {
+  position: relative;
+  width: 30rem;
+  height: 30rem;
+  margin: 5rem 5rem;
+  border-radius: 3px;
+  background-color: #ABABC9;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); }
+  .myworks__card--title {
+    position: absolute;
+    width: 100%;
+    z-index: 10;
+    text-align: center;
+    padding: 1rem 1rem; }
+  .myworks__card--img {
+    transition: all .5s; }
+
+.myworks__description {
+  position: absolute;
+  height: max-content;
+  width: 100%;
+  bottom: 0;
+  padding: 0 1rem;
+  text-align: center;
+  opacity: 0;
+  z-index: -1;
+  transition: all .5s;
+  transform: translateY(70%);
+  overflow: hidden; }
+  @media (hover: none) {
+    .myworks__description {
+      z-index: 15;
+      opacity: 1;
+      transform: translateY(-6rem); } }
+
+.myworks__card:hover .myworks__card--img {
+  clip-path: polygon(50% 10%, 100% 0, 100% 100%, 0 100%, 0 0);
+  filter: blur(1px) brightness(35%);
+  transition: all .5s; }
+
+.myworks__card:hover .myworks__description {
+  z-index: 15;
+  opacity: 1;
+  transform: translateY(-6rem); }
+
+.card-1 {
+  width: 100%;
+  height: 80%;
+  clip-path: polygon(50% 30%, 100% 0, 100% 100%, 0 100%, 0 0);
+  transform: translateY(5rem);
+  background-size: cover;
+  background-blend-mode: screen;
+  background-image: linear-gradient(to bottom, #4f4f78, rgba(79, 79, 120, 0.9)), url(../img/nexter-res.jpg); }
+  @media (hover: none) {
+    .card-1 {
+      filter: blur(3px) brightness(60%);
+      clip-path: polygon(50% 10%, 100% 0, 100% 100%, 0 100%, 0 0); } }
+  @media only screen and (max-width: 37.5em) {
+    .card-1 {
+      width: 100%;
+      height: 80%;
+      clip-path: polygon(50% 30%, 100% 0, 100% 100%, 0 100%, 0 0);
+      transform: translateY(5rem);
+      background-size: cover;
+      background-blend-mode: screen;
+      background-image: linear-gradient(to bottom, #4f4f78, rgba(79, 79, 120, 0.9)), url(../img/nexter-res-phone.jpg); } }
+  @media only screen and (max-width: 37.5em) and (hover: none) {
+    .card-1 {
+      filter: blur(3px) brightness(60%);
+      clip-path: polygon(50% 10%, 100% 0, 100% 100%, 0 100%, 0 0); } }
+
+.card-2 {
+  width: 100%;
+  height: 80%;
+  clip-path: polygon(50% 30%, 100% 0, 100% 100%, 0 100%, 0 0);
+  transform: translateY(5rem);
+  background-size: cover;
+  background-blend-mode: screen;
+  background-image: linear-gradient(to bottom, #4f4f78, rgba(79, 79, 120, 0.9)), url(../img/trillo-res.jpg); }
+  @media (hover: none) {
+    .card-2 {
+      filter: blur(3px) brightness(60%);
+      clip-path: polygon(50% 10%, 100% 0, 100% 100%, 0 100%, 0 0); } }
+  @media only screen and (max-width: 37.5em) {
+    .card-2 {
+      width: 100%;
+      height: 80%;
+      clip-path: polygon(50% 30%, 100% 0, 100% 100%, 0 100%, 0 0);
+      transform: translateY(5rem);
+      background-size: cover;
+      background-blend-mode: screen;
+      background-image: linear-gradient(to bottom, #4f4f78, rgba(79, 79, 120, 0.9)), url(../img/trillo-res-phone.jpg); } }
+  @media only screen and (max-width: 37.5em) and (hover: none) {
+    .card-2 {
+      filter: blur(3px) brightness(60%);
+      clip-path: polygon(50% 10%, 100% 0, 100% 100%, 0 100%, 0 0); } }
+
+.card-3 {
+  width: 100%;
+  height: 80%;
+  clip-path: polygon(50% 30%, 100% 0, 100% 100%, 0 100%, 0 0);
+  transform: translateY(5rem);
+  background-size: cover;
+  background-blend-mode: screen;
+  background-image: linear-gradient(to bottom, #4f4f78, rgba(79, 79, 120, 0.9)), url(../img/natours-res.jpg); }
+  @media (hover: none) {
+    .card-3 {
+      filter: blur(3px) brightness(60%);
+      clip-path: polygon(50% 10%, 100% 0, 100% 100%, 0 100%, 0 0); } }
+  @media only screen and (max-width: 37.5em) {
+    .card-3 {
+      width: 100%;
+      height: 80%;
+      clip-path: polygon(50% 30%, 100% 0, 100% 100%, 0 100%, 0 0);
+      transform: translateY(5rem);
+      background-size: cover;
+      background-blend-mode: screen;
+      background-image: linear-gradient(to bottom, #4f4f78, rgba(79, 79, 120, 0.9)), url(../img/natours-res-phone.jpg); } }
+  @media only screen and (max-width: 37.5em) and (hover: none) {
+    .card-3 {
+      filter: blur(3px) brightness(60%);
+      clip-path: polygon(50% 10%, 100% 0, 100% 100%, 0 100%, 0 0); } }
+
+.card-4 {
+  width: 100%;
+  height: 80%;
+  clip-path: polygon(50% 30%, 100% 0, 100% 100%, 0 100%, 0 0);
+  transform: translateY(5rem);
+  background-size: cover;
+  background-blend-mode: screen;
+  background-image: linear-gradient(to bottom, #4f4f78, rgba(79, 79, 120, 0.9)), url(../img/bookstorewebapp-res.jpg); }
+  @media (hover: none) {
+    .card-4 {
+      filter: blur(3px) brightness(60%);
+      clip-path: polygon(50% 10%, 100% 0, 100% 100%, 0 100%, 0 0); } }
+  @media only screen and (max-width: 37.5em) {
+    .card-4 {
+      width: 100%;
+      height: 80%;
+      clip-path: polygon(50% 30%, 100% 0, 100% 100%, 0 100%, 0 0);
+      transform: translateY(5rem);
+      background-size: cover;
+      background-blend-mode: screen;
+      background-image: linear-gradient(to bottom, #4f4f78, rgba(79, 79, 120, 0.9)), url(../img/bookstorewebapp-res-phone.jpg); } }
+  @media only screen and (max-width: 37.5em) and (hover: none) {
+    .card-4 {
+      filter: blur(3px) brightness(60%);
+      clip-path: polygon(50% 10%, 100% 0, 100% 100%, 0 100%, 0 0); } }
+
+.card-5 {
+  width: 100%;
+  height: 80%;
+  clip-path: polygon(50% 30%, 100% 0, 100% 100%, 0 100%, 0 0);
+  transform: translateY(5rem);
+  background-size: cover;
+  background-blend-mode: screen;
+  background-image: linear-gradient(to bottom, #4f4f78, rgba(79, 79, 120, 0.9)), url(../img/itgigls-res.jpg); }
+  @media (hover: none) {
+    .card-5 {
+      filter: blur(3px) brightness(60%);
+      clip-path: polygon(50% 10%, 100% 0, 100% 100%, 0 100%, 0 0); } }
+  @media only screen and (max-width: 37.5em) {
+    .card-5 {
+      width: 100%;
+      height: 80%;
+      clip-path: polygon(50% 30%, 100% 0, 100% 100%, 0 100%, 0 0);
+      transform: translateY(5rem);
+      background-size: cover;
+      background-blend-mode: screen;
+      background-image: linear-gradient(to bottom, #4f4f78, rgba(79, 79, 120, 0.9)), url(../img/itgigls-res-phone.jpg); } }
+  @media only screen and (max-width: 37.5em) and (hover: none) {
+    .card-5 {
+      filter: blur(3px) brightness(60%);
+      clip-path: polygon(50% 10%, 100% 0, 100% 100%, 0 100%, 0 0); } }
+
+.card-6 {
+  width: 100%;
+  height: 80%;
+  clip-path: polygon(50% 30%, 100% 0, 100% 100%, 0 100%, 0 0);
+  transform: translateY(5rem);
+  background-size: cover;
+  background-blend-mode: screen;
+  background-image: linear-gradient(to bottom, #4f4f78, rgba(79, 79, 120, 0.9)), url(../img/governmentinfaces-res.jpg); }
+  @media (hover: none) {
+    .card-6 {
+      filter: blur(3px) brightness(60%);
+      clip-path: polygon(50% 10%, 100% 0, 100% 100%, 0 100%, 0 0); } }
+  @media only screen and (max-width: 37.5em) {
+    .card-6 {
+      width: 100%;
+      height: 80%;
+      clip-path: polygon(50% 30%, 100% 0, 100% 100%, 0 100%, 0 0);
+      transform: translateY(5rem);
+      background-size: cover;
+      background-blend-mode: screen;
+      background-image: linear-gradient(to bottom, #4f4f78, rgba(79, 79, 120, 0.9)), url(../img/governmentinfaces-res-phone.jpg); } }
+  @media only screen and (max-width: 37.5em) and (hover: none) {
+    .card-6 {
+      filter: blur(3px) brightness(60%);
+      clip-path: polygon(50% 10%, 100% 0, 100% 100%, 0 100%, 0 0); } }
+
+.card-7 {
+  width: 100%;
+  height: 80%;
+  clip-path: polygon(50% 30%, 100% 0, 100% 100%, 0 100%, 0 0);
+  transform: translateY(5rem);
+  background-size: cover;
+  background-blend-mode: screen;
+  background-image: linear-gradient(to bottom, #4f4f78, rgba(79, 79, 120, 0.9)), url(../img/soccerleague-res.jpg); }
+  @media (hover: none) {
+    .card-7 {
+      filter: blur(3px) brightness(60%);
+      clip-path: polygon(50% 10%, 100% 0, 100% 100%, 0 100%, 0 0); } }
+  @media only screen and (max-width: 37.5em) {
+    .card-7 {
+      width: 100%;
+      height: 80%;
+      clip-path: polygon(50% 30%, 100% 0, 100% 100%, 0 100%, 0 0);
+      transform: translateY(5rem);
+      background-size: cover;
+      background-blend-mode: screen;
+      background-image: linear-gradient(to bottom, #4f4f78, rgba(79, 79, 120, 0.9)), url(../img/soccerleague-res-phone.jpg); } }
+  @media only screen and (max-width: 37.5em) and (hover: none) {
+    .card-7 {
+      filter: blur(3px) brightness(60%);
+      clip-path: polygon(50% 10%, 100% 0, 100% 100%, 0 100%, 0 0); } }
+
+.fantomcard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .fantomcard__title {
+    margin-bottom: 3rem; }
+  .fantomcard__icon {
+    fill: #222222;
+    width: 9rem;
+    height: 9rem; }
+  .fantomcard:hover {
+    cursor: pointer;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    transform: translateY(-2px);
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1); }
+  .fantomcard:active {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    transform: translateY(0px); }
+  .fantomcard:hover .fantomcard__icon {
+    fill: url(#svg-gradient); }
+  .fantomcard--link {
+    text-decoration: none; }
+    @media only screen and (max-width: 37.5em) {
+      .fantomcard--link {
+        display: none; } }
+
+.container {
+  display: grid;
+  grid-template-rows: [header-start] min-content [header-end introduction-start] min-content [introduction-end myworks-start] min-content [myworks-end footer-start] 30vh [footer-end]; }
+  @media only screen and (max-width: 56.25em) {
+    .container {
+      grid-template-rows: [header-start] min-content [header-end introduction-start] min-content [introduction-end myworks-start] min-content [myworks-end footer-start] min-content [footer-end]; } }
+
+.introduction {
+  display: grid;
+  grid-template-columns: 1.5fr 2fr; }
+  @media only screen and (max-width: 56.25em) {
+    .introduction {
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(2, 1fr); } }
+  .introduction__small-boxes {
+    display: grid;
+    grid-template-rows: repeat(7, 1fr);
+    grid-template-columns: repeat(7, 1fr); }
+    @media only screen and (max-width: 56.25em) {
+      .introduction__small-boxes {
+        grid-row: 2;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(3, 20rem);
+        justify-items: center;
+        align-items: center; } }
+    @media only screen and (max-width: 37.5em) {
+      .introduction__small-boxes {
+        height: 100%;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr; } }
+  .introduction__big-box {
+    display: grid;
+    grid-template-rows: repeat(7, 1fr);
+    grid-template-columns: repeat(7, 1fr); }
+    @media only screen and (max-width: 56.25em) {
+      .introduction__big-box {
+        grid-row: 1;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        justify-items: center;
+        align-items: center; } }
+    @media only screen and (max-width: 37.5em) {
+      .introduction__big-box {
+        height: min-content;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr; } }
+  .introduction__img {
+    grid-column: 4 / 7;
+    grid-row: 2 / 6; }
+    @media only screen and (max-width: 75em) {
+      .introduction__img {
+        grid-row: 3/7; } }
+    @media only screen and (max-width: 56.25em) {
+      .introduction__img {
+        grid-row: 2;
+        grid-column: 3/5; } }
+    @media only screen and (max-width: 37.5em) {
+      .introduction__img {
+        grid-row: 1;
+        grid-column: 1; } }
+  .introduction__box--purple {
+    grid-row: 1/6;
+    grid-column: 1/7; }
+  .introduction__box--brown {
+    grid-row: 1/4;
+    grid-column: 3/6; }
+    @media only screen and (max-width: 56.25em) {
+      .introduction__box--brown {
+        grid-row: 1/2;
+        grid-column: 2/4; } }
+  .introduction__box--blue {
+    grid-column: 2 / 7;
+    grid-row: 5 / 8; }
+    @media only screen and (max-width: 56.25em) {
+      .introduction__box--blue {
+        grid-row: 2/3;
+        grid-column: 4/6; } }
+
+.myworks {
+  grid-row: myworks-start / myworks-end;
+  margin-bottom: 12rem; }
+
+.footer {
+  grid-row: footer-start / footer-end; }
