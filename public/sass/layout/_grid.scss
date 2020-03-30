@@ -11,7 +11,6 @@
     display: grid;
     grid-template-columns: 1.5fr 2fr;
 
-
     @include mediaQueryChange(tab-port) {
         grid-template-columns: 1fr;
         grid-template-rows: repeat(2, 1fr);
@@ -24,7 +23,6 @@
 
         @include mediaQueryChange(tab-port) {
             grid-row: 2;
-            // height: 50vh;
 
             grid-template-columns: repeat(6, 1fr);
             grid-template-rows: repeat(3, 20rem);
@@ -34,9 +32,9 @@
         }
 
         @include mediaQueryChange(phone) {
+            height: 100%;
             grid-template-columns: 1fr;
             grid-template-rows: 1fr;
-            height: 100%;
         }
     }
 
@@ -47,7 +45,6 @@
 
         @include mediaQueryChange(tab-port) {
             grid-row: 1;
-            // height: 50vh;
 
             display: grid;
             grid-template-columns: 1fr;
@@ -58,9 +55,9 @@
         }
 
         @include mediaQueryChange(phone) {
+            height: min-content;
             grid-template-columns: 1fr;
             grid-template-rows: 1fr;
-            height: min-content;
         }
     }
 
@@ -81,7 +78,6 @@
             grid-row: 1;
             grid-column: 1;
         }
-
     }
 
     &__box {
