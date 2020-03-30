@@ -5,6 +5,7 @@
     o Meta descriptions may be included in search results to concisely summarize page content.
     o Theme color for an adress bar
     o For ideal appearance on iOS when users add a progressive web app to the home screen, define an `apple-touch-icon`. It must point to a non-transparent 192px (or 180px) square PNG.
+    o unsafe jquery library?
     o register a service worker
 - build min CSS
 - make a last big commit and push
