@@ -1,8 +1,9 @@
 - lighthouse >> do requested changes
     o img formats to web formats (next-gen formats)
-    o Meta descriptions may be included in search results to concisely summarize page content.
     o unsafe jquery library?
     o register a service worker
+    
+    * Meta descriptions may be included in search results to concisely summarize page content.
     * card 'a.btn-text' colour contrast
     * links do not have a discrenible name, failing elements: 'a'
     * Add `rel="noopener"` or `rel="noreferrer"` to any external links to improve performance and prevent security vulnerabilities.
