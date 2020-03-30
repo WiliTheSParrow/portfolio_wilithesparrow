@@ -108,9 +108,6 @@ ORDER: Base + typography > general layout + grid > page layout > components
   padding: 0;
   box-sizing: inherit; }
 
-/* html, body{
-    overflow-x: hidden;
-} */
 html {
   background-color: #FAF7F4; }
 
@@ -119,7 +116,7 @@ body {
   padding: 0; }
 
 ::selection {
-  background-color: #4F4F78;
+  background-color: #9EB5D1;
   color: #222222; }
 
 html {

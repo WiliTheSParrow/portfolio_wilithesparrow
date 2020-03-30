@@ -7,10 +7,6 @@
 
 }
 
-/* html, body{
-    overflow-x: hidden;
-} */
-
 html {
     background-color: $color-grey-light;
 }
@@ -21,6 +17,6 @@ body {
 }
 
 ::selection {
-    background-color: $color-primary-purple-dark;
+    background-color: $color-primary-blue;
     color: $color-grey-dark;
 }

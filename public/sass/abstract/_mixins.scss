@@ -1,7 +1,7 @@
 @mixin boxProperties($box-color) {
     object-fit: cover;
     display: block;
-    box-shadow: $shadow-box;
+    box-shadow: $shadow-box-1;
     border-radius: 3px;
     background-color: $box-color;
 }
