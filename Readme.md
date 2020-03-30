@@ -1,6 +1,6 @@
 # PORTFOLIO
 
-> I'm building my online portfolio where I can show my works in web development and web designing.
+> My online portfolio where I can show my works in web development and web designing.
  
 
 ## Table of contents
@@ -12,14 +12,16 @@
 * [Contact](#contact)
 
 ## General info
-I'm building my online portfolio where I can show my works in web development and web designing. Aaaand you can get to know me a little bit more. 😉 This is my first site using parallax CSS animation and I had a lot of time experimenting with it.
+My online portfolio where I can show my works and projects in an organized and structured way. Aaaand you can get to know me a little bit more. 😉 This is my first site using parallax CSS animation and practicing everything in advanced SASS and HTML I lerarned. And a little bit more... 😁
   
 
 ## Technologies
 * HTML5
-* SASS
+* CSS
 * JavaScript
+* SASS
 * jQuery
+* ScrollOut
 
 
 ## Click on the link below to check out this project
