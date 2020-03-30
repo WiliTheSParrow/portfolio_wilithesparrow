@@ -1,5 +1,5 @@
 - lighthouse >> do requested changes
-    o card 'a.btn-text' colour contrast
+    * card 'a.btn-text' colour contrast
     o links do not have a discrenible name, failing elements: 'a'
     o Add `rel="noopener"` or `rel="noreferrer"` to any external links to improve performance and prevent security vulnerabilities.
     o Theme color for an adress bar
