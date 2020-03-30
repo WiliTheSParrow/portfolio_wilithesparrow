@@ -2,9 +2,9 @@
     o card 'a.btn-text' colour contrast
     o links do not have a discrenible name, failing elements: 'a'
     o Add `rel="noopener"` or `rel="noreferrer"` to any external links to improve performance and prevent security vulnerabilities.
-    o Meta descriptions may be included in search results to concisely summarize page content.
     o Theme color for an adress bar
     o For ideal appearance on iOS when users add a progressive web app to the home screen, define an `apple-touch-icon`. It must point to a non-transparent 192px (or 180px) square PNG.
+    o Meta descriptions may be included in search results to concisely summarize page content.
     o unsafe jquery library?
     o register a service worker
 - build min CSS
