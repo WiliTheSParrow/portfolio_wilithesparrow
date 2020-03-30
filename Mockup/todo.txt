@@ -1,5 +1,3 @@
-- check code duplications 2
-- check commented codes and comments
 - check and tidy Mockup folder
 - apply progressive web app meetup knowledge
     o lighthouse
@@ -26,3 +24,5 @@
 * don't forget menu bar! :-D
 * footer: more space between title and icons
 * jump to top btn
+* check code duplications 2
+* check commented codes and comments
