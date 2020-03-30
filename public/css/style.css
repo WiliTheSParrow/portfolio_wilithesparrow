@@ -16,19 +16,18 @@ ORDER: Base + typography > general layout + grid > page layout > components
 1em = 16px
 */
 .navigation {
-  height: 10vh;
   position: absolute;
+  display: flex;
+  align-items: center;
+  height: 10vh;
   top: 0;
   right: 0;
   z-index: 1500;
   padding: 2rem;
-  display: flex;
-  align-items: center;
   animation: moveInRight 1.5s;
   transition: transform 0.6s cubic-bezier(0.34, 1.56, 0.64, 1); }
   @media only screen and (max-width: 37.5em) {
     .navigation {
-      display: flex;
       width: 100%;
       justify-content: center; } }
   .navigation__link:link, .navigation__link:visited {
@@ -140,7 +139,6 @@ body {
   color: #FAF7F4; }
 
 .heading-primary {
-  color: inherit;
   backface-visibility: hidden;
   margin-bottom: 8rem; }
   @media only screen and (max-width: 56.25em) {
