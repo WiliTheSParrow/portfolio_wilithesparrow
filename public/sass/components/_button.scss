@@ -6,11 +6,10 @@
 
     &:link,
     &:visited {
-        transition: all .5s;
         display: inline-block;
         padding: 6px;
         border-bottom: 1px solid #fff;
-        
+        transition: all .5s;
     }
 
     &:hover {

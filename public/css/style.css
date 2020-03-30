@@ -221,10 +221,10 @@ body {
   cursor: pointer;
   transition: all .5s; }
   .btn-text:link, .btn-text:visited {
-    transition: all .5s;
     display: inline-block;
     padding: 6px;
-    border-bottom: 1px solid #fff; }
+    border-bottom: 1px solid #fff;
+    transition: all .5s; }
   .btn-text:hover {
     border-radius: 3px;
     background: linear-gradient(to right, #4F4F78, #B28451);
