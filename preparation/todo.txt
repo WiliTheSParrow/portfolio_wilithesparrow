@@ -1,4 +1,3 @@
-- check and tidy Mockup folder
 - apply progressive web app meetup knowledge
     o lighthouse
     o make shortcut icon
@@ -26,3 +25,4 @@
 * jump to top btn
 * check code duplications 2
 * check commented codes and comments
+* check and tidy Mockup folder
