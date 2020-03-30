@@ -1,8 +1,6 @@
 - lighthouse >> do requested changes
     o img formats to web formats (next-gen formats)
-    o unsafe jquery library?
-    o register a service worker
-    
+    * unsafe jquery library?
     * Meta descriptions may be included in search results to concisely summarize page content.
     * card 'a.btn-text' colour contrast
     * links do not have a discrenible name, failing elements: 'a'
