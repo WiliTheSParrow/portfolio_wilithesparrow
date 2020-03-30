@@ -1,5 +1,5 @@
 - lighthouse >> do requested changes
-    o Theme color for an adress bar
+    
     o img formats to web formats (next-gen formats)
     o Meta descriptions may be included in search results to concisely summarize page content.
     o unsafe jquery library?
@@ -9,6 +9,7 @@
     * Add `rel="noopener"` or `rel="noreferrer"` to any external links to improve performance and prevent security vulnerabilities.
     * avoid chaining critical requests
     * For ideal appearance on iOS when users add a progressive web app to the home screen, define an `apple-touch-icon`. It must point to a non-transparent 192px (or 180px) square PNG.
+    * Theme color for an adress bar
 - build min CSS
 - make a last big commit and push
 - host and domain situation
