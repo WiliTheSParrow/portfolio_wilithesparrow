@@ -199,7 +199,7 @@ body {
 
 .myworks__description {
   color: #fff;
-  font-size: 1.9rem; }
+  font-size: 2rem; }
 
 .fantomcard__title {
   color: #222222;
@@ -495,7 +495,7 @@ body {
 
 .myworks__card:hover .myworks__card--img {
   clip-path: polygon(50% 10%, 100% 0, 100% 100%, 0 100%, 0 0);
-  filter: blur(3px) brightness(45%);
+  filter: blur(3px) brightness(35%);
   transition: all .5s; }
 
 .myworks__card:hover .myworks__description {

@@ -53,7 +53,7 @@
 
     &__card:hover &__card--img {
         clip-path: polygon(50% 10%, 100% 0, 100% 100%, 0 100%, 0 0);
-        filter: blur(3px) brightness(45%);
+        filter: blur(3px) brightness(35%);
         transition: all .5s;
     }
 
