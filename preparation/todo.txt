@@ -1,9 +1,6 @@
-- build min CSS
-- make a last big commit and push
-- host and domain situation
-- update Readme.md
+- update Readme.md, final commit
 - put repo to public
----------------------------------------------------------
+------------------------------------------------
 * try the originally planned font-style
 * check: code repetition
 * add more box in introduction box
@@ -30,3 +27,6 @@
     * avoid chaining critical requests
     * For ideal appearance on iOS when users add a progressive web app to the home screen, define an `apple-touch-icon`. It must point to a non-transparent 192px (or 180px) square PNG.
     * Theme color for an adress bar
+* build min CSS
+* make a last big commit and push
+* host and domain situation

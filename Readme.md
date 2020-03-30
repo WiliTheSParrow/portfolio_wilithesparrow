@@ -25,13 +25,13 @@ My online portfolio where I can show my works and projects in an organized and s
 
 
 ## Click on the link below to check out this project
-<a href="#">link</a>
+<a href="http://www.juliawilhelm.org">http://www.juliawilhelm.org</a>
 
 ## Features
 * Version 1.0
 
 ## Status
-Project is: _ongoing_
+Project is: _finished_
 
 ## Contact
 Created by [@wjulia91](https://www.linkedin.com/in/wjulia91/) - feel free to contact me!
