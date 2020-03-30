@@ -151,7 +151,7 @@
 
     &:active {
         transform: translateY(0px);
-        box-shadow: $shadow-box;
+        box-shadow: $shadow-box-1;
     }
 
     &:hover &__icon {

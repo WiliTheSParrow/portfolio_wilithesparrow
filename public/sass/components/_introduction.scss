@@ -79,7 +79,7 @@
 
             display: block;
             border-radius: 100%;
-            box-shadow: $shadow-box;
+            box-shadow: $shadow-box-1;
             z-index: 20;
 
             @include mediaQueryChange(tab-land) {
