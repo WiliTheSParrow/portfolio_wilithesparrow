@@ -401,9 +401,9 @@ body {
         padding: 0; } }
   .introduction__img--1 {
     position: relative;
+    display: block;
     width: 150%;
     object-fit: cover;
-    display: block;
     border-radius: 100%;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
     z-index: 20; }

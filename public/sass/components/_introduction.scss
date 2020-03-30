@@ -9,11 +9,8 @@
         padding: 0 2rem;
     }
 
-
-
     &__box {
         &--brown {
-            // animation: moveInLeft 1.5s;
             @include boxProperties($color-secondary);
 
             @include mediaQueryChange(tab-port) {
@@ -27,9 +24,7 @@
         }
 
         &--blue {
-            // animation: moveInLeft 1.5s;
             @include boxProperties($color-primary-blue);
-
 
             @include mediaQueryChange(tab-port) {
                 width: 50vw;
@@ -43,16 +38,13 @@
 
         &--purple {
             @include boxProperties($color-primary-purple-light);
-
             @include centeredFlex;
             flex-direction: column;
-
             padding: 1.5rem;
             padding-left: 6.5rem;
 
             @include mediaQueryChange(tab-land) {
                 padding: 2rem 3.5rem;
-
             }
 
             @include mediaQueryChange(tab-port) {
@@ -70,14 +62,12 @@
     }
 
     &__img {
-
         &--1 {
             position: relative;
+            display: block;
             width: 150%;
             //object-fit will work if you set the width and height manuall:
             object-fit: cover;
-
-            display: block;
             border-radius: 100%;
             box-shadow: $shadow-box-1;
             z-index: 20;
@@ -109,7 +99,6 @@
 
 [data-scroll] {
     transition: all 1s;
-
 }
 
 [data-scroll="out"] {
