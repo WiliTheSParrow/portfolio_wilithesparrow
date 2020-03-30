@@ -1,4 +1,3 @@
-
 - check code duplications 2
 - check commented codes and comments
 - apply progressive web app meetup knowledge
