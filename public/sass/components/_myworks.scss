@@ -34,7 +34,7 @@
 
     &__description {
         position: absolute;
-        height: 11rem;
+        height: max-content;
         width: 100%;
         bottom: 0;
         padding: 0 1rem;
@@ -48,7 +48,7 @@
         @media (hover: none) {
             z-index: 15;
             opacity: 1;
-            transform: translateY(-100%);
+            transform: translateY(-6rem);
         }
     }
 
@@ -61,7 +61,7 @@
     &__card:hover &__description {
         z-index: 15;
         opacity: 1;
-        transform: translateY(-100%);
+        transform: translateY(-6rem);
     }
 }
 

@@ -1,5 +1,4 @@
 - lighthouse >> do requested changes
-    
     o img formats to web formats (next-gen formats)
     o Meta descriptions may be included in search results to concisely summarize page content.
     o unsafe jquery library?

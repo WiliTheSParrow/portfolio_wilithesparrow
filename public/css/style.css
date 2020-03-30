@@ -199,7 +199,7 @@ body {
 
 .myworks__description {
   color: #fff;
-  font-size: 2rem; }
+  font-size: 1.8rem; }
 
 .fantomcard__title {
   color: #222222;
@@ -478,7 +478,7 @@ body {
 
 .myworks__description {
   position: absolute;
-  height: 11rem;
+  height: max-content;
   width: 100%;
   bottom: 0;
   padding: 0 1rem;
@@ -492,7 +492,7 @@ body {
     .myworks__description {
       z-index: 15;
       opacity: 1;
-      transform: translateY(-100%); } }
+      transform: translateY(-6rem); } }
 
 .myworks__card:hover .myworks__card--img {
   clip-path: polygon(50% 10%, 100% 0, 100% 100%, 0 100%, 0 0);
@@ -502,7 +502,7 @@ body {
 .myworks__card:hover .myworks__description {
   z-index: 15;
   opacity: 1;
-  transform: translateY(-100%); }
+  transform: translateY(-6rem); }
 
 .card-1 {
   width: 100%;
