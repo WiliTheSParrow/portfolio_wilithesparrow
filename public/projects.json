@@ -1,8 +1,50 @@
-[
-	{
+[{
         "title": "Whiskey Selection",
         "desc": "Ever wanted to get into scotch but don't know where to start? Check out these whiskies from Scotland!",
-		"image": "whiskey-res.jpg",
-		"uri": "https://whiskey-web-app.web.app/"
-	}
+        "image": "whiskey-res.jpg",
+        "url": "https://whiskey-web-app.web.app/"
+    },
+
+    {
+        "title": "Nexter",
+        "desc": "A single page website to practice advanced CSS grid techniques.",
+        "image": "nexter-res.jpg",
+        "url": "https://nexter-by-julia-wilhelm.firebaseapp.com/"
+    },
+    {
+        "title": "Trillo",
+        "desc": "A single page website to practice advanced flexbox techniques.",
+        "image": "trillo-res.jpg",
+        "url": "https://trillo-by-julia-wilhelm.firebaseapp.com/"
+    },
+    {
+        "title": "Natours",
+        "desc": "A single page website to practice advanced SASS techniques, grid and media queries.",
+        "image": "natours-res.jpg",
+        "url": "https://natours-by-julia-wilhelm.firebaseapp.com/"
+    },
+    {
+        "title": "H. P. Lovecraft Bookstore",
+        "desc": "A single page web application for a fictional bookstore to promote H.P. Lovecraft books.",
+        "image": "bookstorewebapp-res.jpg",
+        "url": "https://hplovecraftbooks.firebaseapp.com/"
+    },
+    {
+        "title": "It GiGls",
+        "desc": "A Mobile Web Application for a fictional group of friends to keep up to date with music and concerts.",
+        "image": "itgigls-res.jpg",
+        "url": "https://itgigls-7ea48.firebaseapp.com/"
+    },
+    {
+        "title": "The Government In Faces",
+        "desc": "An informative site for live governmental data by ProPublica API, built using Vue.js.",
+        "image": "governmentinfaces-res.jpg",
+        "url": "https://tgifwebapp.firebaseapp.com/"
+    },
+    {
+        "title": "Norwich Y. Soccer League",
+        "desc": "A single page website for a fictional youth football team using Vue.js.",
+        "image": "soccerleague-res.jpg",
+        "url": "https://nyscwebpage.firebaseapp.com/"
+    }
 ]
