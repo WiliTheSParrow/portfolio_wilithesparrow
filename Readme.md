@@ -22,16 +22,16 @@ My online portfolio where I can show my works and projects in an organized and s
 * SASS
 * jQuery
 * ScrollOut
-
+* Vue JS
 
 ## Click on the link below to check out this project
 <a href="http://www.juliawilhelm.org">http://www.juliawilhelm.org</a>
 
 ## Features
-* Version 1.0
+* Version 1.5
 
 ## Status
-Project is: _finished_
+Project is: _ongoing_
 
 ## Contact
 Created by [@wjulia91](https://www.linkedin.com/in/wjulia91/) - feel free to contact me!
