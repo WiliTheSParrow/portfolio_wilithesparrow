@@ -65,6 +65,14 @@
     }
 }
 
+.card-0 {
+    @include cardBackgroundImg(url(../img/whiskey-res.jpg));
+
+    @include mediaQueryChange(phone) {
+        @include cardBackgroundImg(url(../img/whiskey-res-phone.jpg));
+    }
+}
+
 .card-1 {
     @include cardBackgroundImg(url(../img/nexter-res.jpg));
 
