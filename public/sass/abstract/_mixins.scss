@@ -17,7 +17,7 @@
     background-image: linear-gradient(to bottom,
             rgba($color-primary-purple-dark, .7),
             rgba($color-primary-purple-dark, .5)),
-        url(../img/magic-flowers-desktop.jpg);
+        url(../../img/theme/magic-flowers-desktop.jpg);
     background-size: cover;
     position: relative;
     background-position: $bckgrposition;
@@ -28,28 +28,28 @@
         background-image: linear-gradient(to bottom,
                 rgba($color-primary-purple-dark, .7),
                 rgba($color-primary-purple-dark, .5)),
-            url(/img/magic-flowers-largest.jpg);
+            url(../../img/theme/magic-flowers-largest.jpg);
     }
 
     @media only screen and (max-width: 75em) {
         background-image: linear-gradient(to bottom,
                 rgba($color-primary-purple-dark, .7),
                 rgba($color-primary-purple-dark, .5)),
-            url(/img/magic-flowers-tab-lan.jpg);
+            url(../../img/theme/magic-flowers-tab-lan.jpg);
     }
 
     @media only screen and (max-width: 56.25em) {
         background-image: linear-gradient(to bottom,
                 rgba($color-primary-purple-dark, .7),
                 rgba($color-primary-purple-dark, .5)),
-            url(/img/magic-flowers-tab-por.jpg);
+            url(../../img/theme/magic-flowers-tab-por.jpg);
     }
 
     @media only screen and (max-width: 37.5em) {
         background-image: linear-gradient(to bottom,
                 rgba($color-primary-purple-dark, .7),
                 rgba($color-primary-purple-dark, .5)),
-            url(/img/magic-flowers-tab-phone.jpg);
+            url(../../img/theme/magic-flowers-tab-phone.jpg);
     }
 }
 
