@@ -22,7 +22,7 @@
 
 <body>
     <div id="app">
-        <div class="container">
+        <div class="container" v-for="data in myData">
             <div class="navigation">
                 <nav class="navigation__nav">
                     <a href="#" class="navigation__link" id="aboutButton">About</a>
@@ -33,8 +33,8 @@
             <header class="header" id="headerSection">
                 <div class="header__text-box">
                     <h1 class="heading-primary">
-                        <span class="heading-primary--main">Julia Wilhelm</span>
-                        <span class="heading-primary--sub">Junior Web Developer and Web Designer</span>
+                        <span class="heading-primary--main">{{data.maintitle}}</span>
+                        <span class="heading-primary--sub">{{data.subtitle}}</span>
                     </h1>
                     <div class="header__icon-box">
                         <svg class="header__icon">
@@ -61,7 +61,7 @@
                     </div>
                     <div class="introduction__big-box">
                         <figure class="introduction__box--purple">
-                            <p class="introduction__paragraph" data-scroll>Hi! I'm Julia.</p>
+                            <p class="introduction__paragraph" data-scroll>{{}}</p>
                             <p class="introduction__paragraph" data-scroll>Wife, cat mom and horror movie lover. Of
                                 course I
                                 like coffee.
