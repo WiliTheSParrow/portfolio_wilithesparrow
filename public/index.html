@@ -70,12 +70,9 @@
                     <h2 class="heading-secondary" data-scroll>My Works</h2>
                     <div class="myworks__cards">
 
-                        <div class="myworks__card" data-scroll>
-                            <h3 class="myworks__card--title">Whiskey Selection</h3>
-                            <p class="myworks__description">Ever wanted to get into scotch but don't know where to
-                                start?
-                                Check
-                                out these whiskies from Scotland!
+                        <div class="myworks__card" data-scroll v-for="project in projects">
+                            <h3 class="myworks__card--title">{{project.title}}</h3>
+                            <p class="myworks__description">{{project.desc}}
                                 <br>
                                 <br>
                                 <a href="https://whiskey-web-app.web.app/" target="_blank" rel="noopener"
