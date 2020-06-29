@@ -504,214 +504,69 @@ body {
   opacity: 1;
   transform: translateY(-6rem); }
 
-.card-0 {
-  width: 100%;
-  height: 80%;
-  clip-path: polygon(50% 30%, 100% 0, 100% 100%, 0 100%, 0 0);
-  transform: translateY(5rem);
-  background-size: cover;
-  background-blend-mode: screen;
-  background-image: linear-gradient(to bottom, #4f4f78, rgba(79, 79, 120, 0.9)), url(../img/whiskey-res.jpg); }
-  @media (hover: none) {
-    .card-0 {
-      filter: blur(3px) brightness(60%);
-      clip-path: polygon(50% 10%, 100% 0, 100% 100%, 0 100%, 0 0); } }
-  @media only screen and (max-width: 37.5em) {
-    .card-0 {
-      width: 100%;
-      height: 80%;
-      clip-path: polygon(50% 30%, 100% 0, 100% 100%, 0 100%, 0 0);
-      transform: translateY(5rem);
-      background-size: cover;
-      background-blend-mode: screen;
-      background-image: linear-gradient(to bottom, #4f4f78, rgba(79, 79, 120, 0.9)), url(../img/whiskey-res-phone.jpg); } }
-  @media only screen and (max-width: 37.5em) and (hover: none) {
-    .card-0 {
-      filter: blur(3px) brightness(60%);
-      clip-path: polygon(50% 10%, 100% 0, 100% 100%, 0 100%, 0 0); } }
+/* .card-0 {
+    @include cardBackgroundImg(url(../img/whiskey-res.jpg));
+
+    @include mediaQueryChange(phone) {
+        @include cardBackgroundImg(url(../img/whiskey-res-phone.jpg));
+    }
+}
 
 .card-1 {
-  width: 100%;
-  height: 80%;
-  clip-path: polygon(50% 30%, 100% 0, 100% 100%, 0 100%, 0 0);
-  transform: translateY(5rem);
-  background-size: cover;
-  background-blend-mode: screen;
-  background-image: linear-gradient(to bottom, #4f4f78, rgba(79, 79, 120, 0.9)), url(../img/nexter-res.jpg); }
-  @media (hover: none) {
-    .card-1 {
-      filter: blur(3px) brightness(60%);
-      clip-path: polygon(50% 10%, 100% 0, 100% 100%, 0 100%, 0 0); } }
-  @media only screen and (max-width: 37.5em) {
-    .card-1 {
-      width: 100%;
-      height: 80%;
-      clip-path: polygon(50% 30%, 100% 0, 100% 100%, 0 100%, 0 0);
-      transform: translateY(5rem);
-      background-size: cover;
-      background-blend-mode: screen;
-      background-image: linear-gradient(to bottom, #4f4f78, rgba(79, 79, 120, 0.9)), url(../img/nexter-res-phone.jpg); } }
-  @media only screen and (max-width: 37.5em) and (hover: none) {
-    .card-1 {
-      filter: blur(3px) brightness(60%);
-      clip-path: polygon(50% 10%, 100% 0, 100% 100%, 0 100%, 0 0); } }
+    @include cardBackgroundImg(url(../img/nexter-res.jpg));
+
+    @include mediaQueryChange(phone) {
+        @include cardBackgroundImg(url(../img/nexter-res-phone.jpg));
+    }
+}
 
 .card-2 {
-  width: 100%;
-  height: 80%;
-  clip-path: polygon(50% 30%, 100% 0, 100% 100%, 0 100%, 0 0);
-  transform: translateY(5rem);
-  background-size: cover;
-  background-blend-mode: screen;
-  background-image: linear-gradient(to bottom, #4f4f78, rgba(79, 79, 120, 0.9)), url(../img/trillo-res.jpg); }
-  @media (hover: none) {
-    .card-2 {
-      filter: blur(3px) brightness(60%);
-      clip-path: polygon(50% 10%, 100% 0, 100% 100%, 0 100%, 0 0); } }
-  @media only screen and (max-width: 37.5em) {
-    .card-2 {
-      width: 100%;
-      height: 80%;
-      clip-path: polygon(50% 30%, 100% 0, 100% 100%, 0 100%, 0 0);
-      transform: translateY(5rem);
-      background-size: cover;
-      background-blend-mode: screen;
-      background-image: linear-gradient(to bottom, #4f4f78, rgba(79, 79, 120, 0.9)), url(../img/trillo-res-phone.jpg); } }
-  @media only screen and (max-width: 37.5em) and (hover: none) {
-    .card-2 {
-      filter: blur(3px) brightness(60%);
-      clip-path: polygon(50% 10%, 100% 0, 100% 100%, 0 100%, 0 0); } }
+    @include cardBackgroundImg(url(../img/trillo-res.jpg));
+
+    @include mediaQueryChange(phone) {
+        @include cardBackgroundImg(url(../img/trillo-res-phone.jpg));
+    }
+}
 
 .card-3 {
-  width: 100%;
-  height: 80%;
-  clip-path: polygon(50% 30%, 100% 0, 100% 100%, 0 100%, 0 0);
-  transform: translateY(5rem);
-  background-size: cover;
-  background-blend-mode: screen;
-  background-image: linear-gradient(to bottom, #4f4f78, rgba(79, 79, 120, 0.9)), url(../img/natours-res.jpg); }
-  @media (hover: none) {
-    .card-3 {
-      filter: blur(3px) brightness(60%);
-      clip-path: polygon(50% 10%, 100% 0, 100% 100%, 0 100%, 0 0); } }
-  @media only screen and (max-width: 37.5em) {
-    .card-3 {
-      width: 100%;
-      height: 80%;
-      clip-path: polygon(50% 30%, 100% 0, 100% 100%, 0 100%, 0 0);
-      transform: translateY(5rem);
-      background-size: cover;
-      background-blend-mode: screen;
-      background-image: linear-gradient(to bottom, #4f4f78, rgba(79, 79, 120, 0.9)), url(../img/natours-res-phone.jpg); } }
-  @media only screen and (max-width: 37.5em) and (hover: none) {
-    .card-3 {
-      filter: blur(3px) brightness(60%);
-      clip-path: polygon(50% 10%, 100% 0, 100% 100%, 0 100%, 0 0); } }
+    @include cardBackgroundImg(url(../img/natours-res.jpg));
+
+    @include mediaQueryChange(phone) {
+        @include cardBackgroundImg(url(../img/natours-res-phone.jpg));
+    }
+}
 
 .card-4 {
-  width: 100%;
-  height: 80%;
-  clip-path: polygon(50% 30%, 100% 0, 100% 100%, 0 100%, 0 0);
-  transform: translateY(5rem);
-  background-size: cover;
-  background-blend-mode: screen;
-  background-image: linear-gradient(to bottom, #4f4f78, rgba(79, 79, 120, 0.9)), url(../img/bookstorewebapp-res.jpg); }
-  @media (hover: none) {
-    .card-4 {
-      filter: blur(3px) brightness(60%);
-      clip-path: polygon(50% 10%, 100% 0, 100% 100%, 0 100%, 0 0); } }
-  @media only screen and (max-width: 37.5em) {
-    .card-4 {
-      width: 100%;
-      height: 80%;
-      clip-path: polygon(50% 30%, 100% 0, 100% 100%, 0 100%, 0 0);
-      transform: translateY(5rem);
-      background-size: cover;
-      background-blend-mode: screen;
-      background-image: linear-gradient(to bottom, #4f4f78, rgba(79, 79, 120, 0.9)), url(../img/bookstorewebapp-res-phone.jpg); } }
-  @media only screen and (max-width: 37.5em) and (hover: none) {
-    .card-4 {
-      filter: blur(3px) brightness(60%);
-      clip-path: polygon(50% 10%, 100% 0, 100% 100%, 0 100%, 0 0); } }
+    @include cardBackgroundImg(url(../img/bookstorewebapp-res.jpg));
+
+    @include mediaQueryChange(phone) {
+        @include cardBackgroundImg(url(../img/bookstorewebapp-res-phone.jpg));
+    }
+}
 
 .card-5 {
-  width: 100%;
-  height: 80%;
-  clip-path: polygon(50% 30%, 100% 0, 100% 100%, 0 100%, 0 0);
-  transform: translateY(5rem);
-  background-size: cover;
-  background-blend-mode: screen;
-  background-image: linear-gradient(to bottom, #4f4f78, rgba(79, 79, 120, 0.9)), url(../img/itgigls-res.jpg); }
-  @media (hover: none) {
-    .card-5 {
-      filter: blur(3px) brightness(60%);
-      clip-path: polygon(50% 10%, 100% 0, 100% 100%, 0 100%, 0 0); } }
-  @media only screen and (max-width: 37.5em) {
-    .card-5 {
-      width: 100%;
-      height: 80%;
-      clip-path: polygon(50% 30%, 100% 0, 100% 100%, 0 100%, 0 0);
-      transform: translateY(5rem);
-      background-size: cover;
-      background-blend-mode: screen;
-      background-image: linear-gradient(to bottom, #4f4f78, rgba(79, 79, 120, 0.9)), url(../img/itgigls-res-phone.jpg); } }
-  @media only screen and (max-width: 37.5em) and (hover: none) {
-    .card-5 {
-      filter: blur(3px) brightness(60%);
-      clip-path: polygon(50% 10%, 100% 0, 100% 100%, 0 100%, 0 0); } }
+    @include cardBackgroundImg(url(../img/itgigls-res.jpg));
+
+    @include mediaQueryChange(phone) {
+        @include cardBackgroundImg(url(../img/itgigls-res-phone.jpg));
+    }
+}
 
 .card-6 {
-  width: 100%;
-  height: 80%;
-  clip-path: polygon(50% 30%, 100% 0, 100% 100%, 0 100%, 0 0);
-  transform: translateY(5rem);
-  background-size: cover;
-  background-blend-mode: screen;
-  background-image: linear-gradient(to bottom, #4f4f78, rgba(79, 79, 120, 0.9)), url(../img/governmentinfaces-res.jpg); }
-  @media (hover: none) {
-    .card-6 {
-      filter: blur(3px) brightness(60%);
-      clip-path: polygon(50% 10%, 100% 0, 100% 100%, 0 100%, 0 0); } }
-  @media only screen and (max-width: 37.5em) {
-    .card-6 {
-      width: 100%;
-      height: 80%;
-      clip-path: polygon(50% 30%, 100% 0, 100% 100%, 0 100%, 0 0);
-      transform: translateY(5rem);
-      background-size: cover;
-      background-blend-mode: screen;
-      background-image: linear-gradient(to bottom, #4f4f78, rgba(79, 79, 120, 0.9)), url(../img/governmentinfaces-res-phone.jpg); } }
-  @media only screen and (max-width: 37.5em) and (hover: none) {
-    .card-6 {
-      filter: blur(3px) brightness(60%);
-      clip-path: polygon(50% 10%, 100% 0, 100% 100%, 0 100%, 0 0); } }
+    @include cardBackgroundImg(url(../img/governmentinfaces-res.jpg));
+
+    @include mediaQueryChange(phone) {
+        @include cardBackgroundImg(url(../img/governmentinfaces-res-phone.jpg));
+    }
+}
 
 .card-7 {
-  width: 100%;
-  height: 80%;
-  clip-path: polygon(50% 30%, 100% 0, 100% 100%, 0 100%, 0 0);
-  transform: translateY(5rem);
-  background-size: cover;
-  background-blend-mode: screen;
-  background-image: linear-gradient(to bottom, #4f4f78, rgba(79, 79, 120, 0.9)), url(../img/soccerleague-res.jpg); }
-  @media (hover: none) {
-    .card-7 {
-      filter: blur(3px) brightness(60%);
-      clip-path: polygon(50% 10%, 100% 0, 100% 100%, 0 100%, 0 0); } }
-  @media only screen and (max-width: 37.5em) {
-    .card-7 {
-      width: 100%;
-      height: 80%;
-      clip-path: polygon(50% 30%, 100% 0, 100% 100%, 0 100%, 0 0);
-      transform: translateY(5rem);
-      background-size: cover;
-      background-blend-mode: screen;
-      background-image: linear-gradient(to bottom, #4f4f78, rgba(79, 79, 120, 0.9)), url(../img/soccerleague-res-phone.jpg); } }
-  @media only screen and (max-width: 37.5em) and (hover: none) {
-    .card-7 {
-      filter: blur(3px) brightness(60%);
-      clip-path: polygon(50% 10%, 100% 0, 100% 100%, 0 100%, 0 0); } }
+    @include cardBackgroundImg(url(../img/soccerleague-res.jpg));
 
+    @include mediaQueryChange(phone) {
+        @include cardBackgroundImg(url(../img/soccerleague-res-phone.jpg));
+    }
+} */
 .fantomcard {
   display: flex;
   flex-direction: column;

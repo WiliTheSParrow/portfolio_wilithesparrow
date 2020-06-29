@@ -7,9 +7,7 @@
 }
 
 @mixin backgroundImage($url) {
-    background-image: linear-gradient(to bottom,
-            rgba($color-primary-purple-dark, .7),
-            rgba($color-primary-purple-dark, .5)),
+    background-image: linear-gradient(to bottom,rgba(#4F4F78, .7),rgba(#4F4F78, .5)),
         url($url);
 }
 

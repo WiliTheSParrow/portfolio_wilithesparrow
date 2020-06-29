@@ -23,7 +23,7 @@ var app = new Vue({
                 })
                 .catch(error => error);
         }
-    }
+    },
 
 
 
