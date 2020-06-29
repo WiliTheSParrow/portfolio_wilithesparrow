@@ -6,7 +6,6 @@
     <meta name="Description" content="Web Development and Web Design Portfolio for Julia Wilhelm.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <meta name="theme-color" content="#ABABC9">
     <meta name="u2f-enabled" content="true">
     <meta name="apple-mobile-web-app-title" content="Julia Wilhelm | Portfolio">
     <meta property="og:site_name" content="Julia Wilhelm | Portfolio">
@@ -75,8 +74,7 @@
                             <p class="myworks__description">{{project.desc}}
                                 <br>
                                 <br>
-                                <a href="https://whiskey-web-app.web.app/" target="_blank" rel="noopener"
-                                    class="btn-text">
+                                <a v-bind:href="project.url" target="_blank" rel="noopener" class="btn-text">
                                     Go
                                     to project
                                     &rarr;</a>
@@ -84,7 +82,7 @@
                             <div class="myworks__card--img card-0">&nbsp;</div>
                         </div>
 
-                        <!--  <a href="https://github.com/WiliTheSParrow" target="_blank" rel="noopener" class="fantomcard--link">
+                         <a href="https://github.com/WiliTheSParrow" target="_blank" rel="noopener" class="fantomcard--link">
                         <div class="myworks__card fantomcard" data-scroll>
                             <h3 class="fantomcard__title">Next one?</h3>
                             <div class="fantomcard__icon--border">
@@ -93,7 +91,7 @@
                                 </svg>
                             </div>
                         </div>
-                    </a> -->
+                    </a>
                     </div>
                 </section>
             </main>
