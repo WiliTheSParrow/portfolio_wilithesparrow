@@ -37,9 +37,9 @@
             transform: translateY(5rem);
             background-size: cover;
             background-blend-mode: screen;
-            background-image: linear-gradient(to bottom,
+            /* background-image: linear-gradient(to bottom,
                     rgba($color-primary-purple-dark, 1.5),
-                    rgba($color-primary-purple-dark, .9));
+                    rgba($color-primary-purple-dark, .9)); */
 
             @media (hover: none) {
                 filter: blur(3px) brightness(60%);
