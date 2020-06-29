@@ -1,3 +1,19 @@
+/* @mixin cardBackgroundImg($imageurl) {
+    width: 100%;
+    height: 80%;
+    clip-path: polygon(50% 30%, 100% 0, 100% 100%, 0 100%, 0 0);
+    transform: translateY(5rem);
+    background-size: cover;
+    background-blend-mode: screen;
+    background-image: linear-gradient(to bottom,
+            rgba($color-primary-purple-dark, 1.5),
+            rgba($color-primary-purple-dark, .9)), $imageurl;
+
+    @media (hover: none) {
+        filter: blur(3px) brightness(60%);
+        clip-path: polygon(50% 10%, 100% 0, 100% 100%, 0 100%, 0 0);
+    }
+} */
 /*
 0-600px:    Phone
 600-900px:  Tablet portrait
@@ -474,7 +490,18 @@ body {
     text-align: center;
     padding: 1rem 1rem; }
   .myworks__card--img {
-    transition: all .5s; }
+    transition: all .5s;
+    width: 100%;
+    height: 80%;
+    clip-path: polygon(50% 30%, 100% 0, 100% 100%, 0 100%, 0 0);
+    transform: translateY(5rem);
+    background-size: cover;
+    background-blend-mode: screen;
+    background-image: linear-gradient(to bottom, #4f4f78, rgba(79, 79, 120, 0.9)); }
+    @media (hover: none) {
+      .myworks__card--img {
+        filter: blur(3px) brightness(60%);
+        clip-path: polygon(50% 10%, 100% 0, 100% 100%, 0 100%, 0 0); } }
 
 .myworks__description {
   position: absolute;

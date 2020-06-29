@@ -5,11 +5,14 @@ var app = new Vue({
         projects: []
     },
 
+
     // fetching data from JSON when page loads:
     created: function () {
         this.getLocalData('data.json', 'myData');
         this.getLocalData('projects.json', 'projects');
+        this.gradient();
     },
+
 
     methods: {
         // fetch data from JSON files:
@@ -22,11 +25,15 @@ var app = new Vue({
                     app[destination] = json;
                 })
                 .catch(error => error);
+        },
+
+
+        gradient: function () {
+            let colors = "linear-gradient(to bottom,rgba(#4F4F78, .7),rgba(#4F4F78, .5))";
+
+            return colors;
         }
-    },
-
-
-
+    }
 
 
 
