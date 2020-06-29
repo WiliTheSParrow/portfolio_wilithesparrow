@@ -2,7 +2,8 @@ var app = new Vue({
     el: '#app',
     data: {
         myData: [],
-        projects: []
+        projects: [],
+        linearGradient: "linear-gradient(to bottom,       rgba(#4F4F78, 1.5),rgba(#4F4F78, .9)),"
     },
 
 
@@ -10,7 +11,7 @@ var app = new Vue({
     created: function () {
         this.getLocalData('data.json', 'myData');
         this.getLocalData('projects.json', 'projects');
-        this.gradient();
+
     },
 
 
@@ -27,14 +28,14 @@ var app = new Vue({
                 .catch(error => error);
         },
 
-
-        gradient: function () {
+    },
+    computed: {
+        gradient() {
             let colors = "linear-gradient(to bottom,rgba(#4F4F78, .7),rgba(#4F4F78, .5))";
 
             return colors;
         }
     }
-
 
 
 
