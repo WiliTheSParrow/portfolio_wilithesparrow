@@ -2,8 +2,7 @@ var app = new Vue({
     el: '#app',
     data: {
         myData: [],
-        projects: [],
-        linearGradient: "linear-gradient(to bottom,       rgba(#4F4F78, 1.5),rgba(#4F4F78, .9)),"
+        projects: []
     },
 
 
