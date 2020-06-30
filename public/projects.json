@@ -1,7 +1,7 @@
 [{
         "title": "Whiskey Selection",
         "desc": "Ever wanted to get into scotch but don't know where to start? Check out these whiskies from Scotland!",
-        "image": "whiskey-res.jpg",
+        "image": "../img/projects/whiskey-res.jpg",
         "url": "https://whiskey-web-app.web.app/"
     },
     {
