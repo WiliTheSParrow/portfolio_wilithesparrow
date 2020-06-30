@@ -68,7 +68,6 @@
                 <section class="myworks" id="worksSection">
                     <h2 class="heading-secondary" data-scroll>My Works</h2>
                     <div class="myworks__cards">
-
                         <div class="myworks__card" data-scroll v-for="project in projects">
                             <h3 class="myworks__card--title">{{project.title}}</h3>
                             <p class="myworks__description">{{project.desc}}
@@ -79,22 +78,12 @@
                                     to project
                                     &rarr;</a>
                             </p>
-
-                            <!-- >> extract the complete background attribute -->
                             <div class="myworks__card--img" :style="{ 
-                                backgroundImage: `linear-gradient(rgba(79, 79, 120, 1.5),rgba(79, 79, 120, 0.9)), url('${project.image}')`
+                                backgroundImage: `linear-gradient(rgba(79, 79, 120, 1.5),rgba(79, 79, 120, 0.9)), url('../img/projects/${project.image}')`
                               }">
                                 &nbsp;
                             </div>
-
-                            <!-- 
-                                >> extract background-image to html:
-
-                                <div class="myworks__card--img"  :style="{backgroundImage: 'url(../img/projects/'+project.image+')'}">&nbsp;</div>
-                            
-                            -->
                         </div>
-
                         <a href="https://github.com/WiliTheSParrow" target="_blank" rel="noopener"
                             class="fantomcard--link">
                             <div class="myworks__card fantomcard" data-scroll>
