@@ -14,8 +14,8 @@ var app = new Vue({
         this.getLocalData('data.json', 'myData');
         this.getLocalData('projects.json', 'projects');
 
-    },
 
+    },
 
     methods: {
         // fetch data from JSON files:
@@ -31,13 +31,7 @@ var app = new Vue({
         },
 
     },
-    computed: {
-        gradient() {
-            let colors = "linear-gradient(to bottom,rgba(#4F4F78, .7),rgba(#4F4F78, .5))";
 
-            return colors;
-        }
-    }
 
 })
 
