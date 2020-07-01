@@ -1,4 +1,6 @@
+
 var app = new Vue({
+    
     el: '#app',
     data: {
         myData: [],
@@ -8,6 +10,7 @@ var app = new Vue({
 
     // fetching data from JSON when page loads:
     created: function () {
+        
         this.getLocalData('data.json', 'myData');
         this.getLocalData('projects.json', 'projects');
 
@@ -36,13 +39,5 @@ var app = new Vue({
         }
     }
 
-
-
-
-
-
-
-
-
-
 })
+
