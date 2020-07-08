@@ -7,11 +7,10 @@ const animatedScrollObserver = new IntersectionObserver(
             }
         });
     });
-
-export default {
+    var app = new Vue( {
     // This function is called only once when the directive is bound to the element: 
     bind(el) {
         el.classList.add('before-enter');
         animatedScrollObserver.observe(el);
     }
-}
+})
