@@ -20,8 +20,6 @@ My online portfolio where I can show my works and projects in an organized and s
 * CSS
 * JavaScript
 * SASS
-* jQuery
-* ScrollOut
 * Vue JS
 
 ## Click on the link below to check out this project
