@@ -50,26 +50,26 @@
                         </figure>
                         <figure class="introduction__box--blue">
                         </figure>
-                        <figure class="introduction__img" data-scroll>
+                        <figure class="introduction__img">
                             <img v-bind:src="'img/id-pic/'+data.idpic_desktop" alt="ID picture"
                                 class="introduction__img--1">
                         </figure>
                     </div>
                     <div class="introduction__big-box">
                         <figure class="introduction__box--purple">
-                            <p class="introduction__paragraph" data-scroll>{{data.greeting}}</p>
-                            <p class="introduction__paragraph" data-scroll>{{data.introduction}}</p>
-                            <p class="introduction__paragraph" data-scroll>{{data.workinfo}}</p>
-                            <p class="introduction__paragraph" data-scroll>{{data.mystory}}</p>
-                            <p class="introduction__paragraph" data-scroll>{{data.callforaction}}</p>
+                            <p class="introduction__paragraph">{{data.greeting}}</p>
+                            <p class="introduction__paragraph">{{data.introduction}}</p>
+                            <p class="introduction__paragraph">{{data.workinfo}}</p>
+                            <p class="introduction__paragraph">{{data.mystory}}</p>
+                            <p class="introduction__paragraph">{{data.callforaction}}</p>
                         </figure>
                     </div>
                 </section>
                 <div class="introduction__borderimg"></div>
                 <section class="myworks" id="worksSection">
-                    <h2 class="heading-secondary" data-scroll>My Works</h2>
+                    <h2 class="heading-secondary">My Works</h2>
                     <div class="myworks__cards">
-                        <div class="myworks__card" data-scroll v-for="project in projects">
+                        <div class="myworks__card" v-for="project in projects">
                             <h3 class="myworks__card--title">{{project.title}}</h3>
                             <p class="myworks__description">{{project.desc}}
                                 <br>
@@ -87,7 +87,7 @@
                         </div>
                         <a href="https://github.com/WiliTheSParrow" target="_blank" rel="noopener"
                             class="fantomcard--link">
-                            <div class="myworks__card fantomcard" data-scroll>
+                            <div class="myworks__card fantomcard">
                                 <h3 class="fantomcard__title">Next one?</h3>
                                 <div class="fantomcard__icon--border">
                                     <svg class="fantomcard__icon">
@@ -100,8 +100,8 @@
                 </section>
             </main>
             <footer class="footer" id="contactSection">
-                <h3 class="footer__title" data-scroll>Contact me!</h3>
-                <div class="footer__contactdetails" data-scroll>
+                <h3 class="footer__title">Contact me!</h3>
+                <div class="footer__contactdetails">
                     <div class="footer__location element">
                         <svg class="footer__icon">
                             <use xlink:href="img/icons/sprite.svg#icon-map-pin"></use>
@@ -130,7 +130,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="goToTopBtn" id="goToTopBtn" data-scroll>
+                <div class="goToTopBtn" id="goToTopBtn">
                     <a href="#" class="goToTopBtn__btn" aria-label="goTopBtn">Go Top</a>
                 </div>
             </footer>
