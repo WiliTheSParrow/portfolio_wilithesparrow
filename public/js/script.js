@@ -3,17 +3,24 @@ var app = new Vue({
     el: '#app',
     data: {
         myData: [],
-        projects: []
+        projects: [],
+        sectionAbout: document.getElementById('aboutSection'),
+        windowScrolledToIntroduction: false
     },
 
 
     // fetching data from JSON when page loads:
     created: function () {
-
         this.getLocalData('data.json', 'myData');
         this.getLocalData('projects.json', 'projects');
 
 
+    },
+    mounted: function () {
+        window.addEventListener('scroll', this.setScrolledIntroduction);
+    },
+    destroyed: function () {
+        window.removeEventListener('scroll', this.setScrolledIntroduction);
     },
 
     methods: {
@@ -28,6 +35,11 @@ var app = new Vue({
                 })
                 .catch(error => error);
         },
+
+        setScrolledIntroduction: function () {
+            this.windowScrolledToIntroduction = true;
+            // console.log("You scrolled to Introduction part.")
+        }
 
     },
 
