@@ -14,3 +14,4 @@ const animatedScrollObserver = new IntersectionObserver(
         animatedScrollObserver.observe(el);
     }
 })
+
