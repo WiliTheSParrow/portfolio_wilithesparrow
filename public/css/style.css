@@ -116,6 +116,15 @@ ORDER: Base + typography > general layout + grid > page layout > components
   100% {
     transform: translateY(0); } }
 
+.before-enter {
+  opacity: 0;
+  transform: translateY(100px);
+  transition: all 2s ease-out; }
+
+.enter {
+  opacity: 1;
+  transform: translateY(0px); }
+
 *,
 *::after,
 *::before {
