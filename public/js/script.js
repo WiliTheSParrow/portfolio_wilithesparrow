@@ -15,13 +15,13 @@ var app = new Vue({
         this.getLocalData('projects.json', 'projects');
 
 
-    },
-    mounted: function () {
+    } ,
+   /* mounted: function () {
         window.addEventListener('scroll', this.setScrolledIntroduction);
     },
     destroyed: function () {
         window.removeEventListener('scroll', this.setScrolledIntroduction);
-    },
+    }, */
 
     methods: {
         // fetch data from JSON files:
