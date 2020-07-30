@@ -5,6 +5,12 @@
         "url": "https://whiskey-web-app.web.app/"
     },
     {
+        "title": "Forkify",
+        "desc": "Search over 1,000,000 recipes with forkify.",
+        "image": "pizza-res.jpg",
+        "url": "https://forkify-by-julia-wilhelm.herokuapp.com/"
+    },
+    {
         "title": "Nexter",
         "desc": "A single page website to practice advanced CSS grid techniques.",
         "image": "nexter-res.jpg",
